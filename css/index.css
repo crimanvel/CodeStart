@@ -20,7 +20,25 @@ ul.a {
   flex-direction: row;
   justify-content: space-around;
   grid-column: span 4;
-  grid-column-start: 4;
+  grid-column-start: 3;
   width: 100vh;
   align-items: center;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.introduccion{
+background-color: red;
+grid-column: span 4;
+grid-column-start: 2;
+width: 100vh;
+}
+
+.imagen-principal{
+grid-column: span 4;
+grid-column-start: 8;
+width: 100vh;
 }
