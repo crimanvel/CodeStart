@@ -1,4 +1,4 @@
-/* styles.css - Estilos externos */
+/* style.css - Estilos externos */
 body {
     font-family: Arial, sans-serif;
     background-color: #f6f8fa;
@@ -13,28 +13,22 @@ header {
     padding: 20px;
 }
 
-.main-section {
-    background-color: #fff;
+.content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
     padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
+    text-align: justify; /* Justifica el texto para un aspecto más limpio */
+    line-height: 1.6; /* Espacio entre líneas para una mejor legibilidad */
 }
 
-.main-section:hover {
-    transform: translateY(-5px);
+.section-title {
+    font-size: 24px; /* Tamaño de fuente para los títulos */
+    color: #333; /* Color más oscuro para los títulos */
+    margin-top: 20px; /* Espacio en la parte superior de los títulos */
 }
 
-.download-section {
-    background-color: #f6f8fa;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
-}
-
-.download-section:hover {
-    transform: translateY(-5px);
+.section-text {
+    font-size: 18px; /* Tamaño de fuente para los párrafos */
+    color: #000; /* Color de texto más oscuro para los párrafos */
+    margin: 10px 0; /* Espacio en la parte superior e inferior de los párrafos */
 }
