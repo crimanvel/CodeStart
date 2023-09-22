@@ -1,0 +1,40 @@
+/* styles.css - Estilos externos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-section:hover {
+    transform: translateY(-5px);
+}
+
+.download-section {
+    background-color: #f6f8fa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.download-section:hover {
+    transform: translateY(-5px);
+}
