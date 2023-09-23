@@ -1,17 +1,15 @@
-header {
-}
-
 nav.a {
   background-color: yellow;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  flex-direction: row;
 }
 
 .logo_principal {
-  grid-column: span 2;
-  width: 200px;
-  border-radius: 20px;
+  grid-column: span 1;
+  background-color: aqua;
+  padding: 10px;
+  position: relative;
+  left: 50%;
 }
 
 ul.a {
@@ -25,20 +23,20 @@ ul.a {
   align-items: center;
 }
 
-.header{
+header {
+  background-color: greenyellow;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-.introduccion{
-background-color: red;
-grid-column: span 4;
-grid-column-start: 2;
-width: 100vh;
+.introduccion {
+  background-color: red;
+  font-size: 3em;
+  grid-column: span 2;
+  grid-column-start: 2;
 }
 
-.imagen-principal{
-grid-column: span 4;
-grid-column-start: 8;
-width: 100vh;
+.imagen-principal {
+  grid-column: span 3;
+  grid-column-start: 4;
 }
