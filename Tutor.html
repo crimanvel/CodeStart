@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="Tutor.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript en el Front-End</h1>
+      <nav>
+        <a href="Tutor2.html"><b>Back-End</b></a>
+        <a href="../Informe de JavaScript/index.html"><b>Volver al home</b></a>
+      </nav>
+    </header>
+    <main>
+      <section class="introduccion">
+        <div class="content">
+          <h2>Introducción</h2>
+          <p>
+            JavaScript es un lenguaje de programación fundamental en el
+            desarrollo web moderno que se utiliza en el lado del cliente
+            (front-end) para agregar interactividad y dinamismo a las páginas
+            web. En este informe, exploraremos detalladamente los aspectos
+            esenciales de JavaScript en el contexto del desarrollo front-end,
+            desde su definición y características hasta su aplicación práctica,
+            frameworks populares y tendencias futuras.
+          </p>
+        </div>
+        <img src="js2.png" alt="" />
+      </section>
+      <section id="definición">
+        <div class="content">
+          <h2>Definicion y contexto</h2>
+          <p>
+            JavaScript, comúnmente abreviado como JS, es un lenguaje de
+            programación interpretado que se ejecuta directamente en los
+            navegadores web de los usuarios. Fue desarrollado por Brendan Eich
+            mientras trabajaba en Netscape Communications a principios de la
+            década de 1990 con el objetivo de proporcionar a los navegadores web
+            la capacidad de ejecutar código en el lado del cliente. Esta
+            innovación permitió la interacción en tiempo real en las páginas
+            web, lo que revolucionó la forma en que los usuarios interactúan con
+            la información en línea.
+          </p>
+        </div>
+        <img src="creador.png" alt="" />
+      </section>
+      <section id="características">
+        <div class="content">
+          <h2>Caracteristicas claves</h2>
+          <ul>
+            <li>
+              <b>Interactividad:</b> JavaScript permite que las páginas web
+              respondan a las acciones del usuario de manera dinámica. Puedes
+              crear formularios interactivos, botones que realizan acciones y
+              validar datos en tiempo real sin necesidad de recargar la página.
+            </li>
+            <br />
+            <li>
+              <b>Manipulación del DOM:</b> El Document Object Model (DOM)
+              representa la estructura de una página web. JavaScript facilita la
+              manipulación y modificación del DOM, lo que significa que puedes
+              cambiar el contenido y la apariencia de una página web sin tener
+              que cargar una nueva página.
+            </li>
+            <br />
+            <img src="con.png" alt="" />
+            <br />
+            <li>
+              <b>Comunicación Asíncrona:</b> JavaScript permite realizar
+              solicitudes asíncronas a servidores web, lo que es fundamental
+              para cargar datos y contenido de manera eficiente sin interrumpir
+              la experiencia del usuario. Esto se logra a través de
+              XMLHttpRequest y la API Fetch.
+            </li>
+            <br />
+            <li>
+              <b>Bibliotecas y Frameworks:</b> JavaScript permite realizar
+              solicitudes asíncronas a servidores web, lo que es fundamental
+              para cargar datos y contenido de manera eficiente sin interrumpir
+              la experiencia del usuario. Esto se logra a través de
+              XMLHttpRequest y la API Fetch.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recursos">
+        <div class="content">
+          <h2>Recursos para Aprender JavaScript</h2>
+          <p>
+            Si deseas aprender JavaScript, hay una variedad de recursos
+            disponibles:
+          </p>
+          <ul>
+            <li>
+              <b>Documentación oficial de JavaScript:</b> El sitio web de
+              Mozilla Developer Network (MDN) ofrece una guía completa y
+              actualizada sobre JavaScript.
+            </li>
+            <br />
+            <li>
+              <b>Tutoriales en Línea:</b> Plataformas como Codecademy,
+              freeCodeCamp y W3Schools ofrecen tutoriales interactivos adecuados
+              para principiantes.
+            </li>
+            <br />
+            <img src="js.png" alt="" />
+            <br />
+            <li>
+              <b>Libros:</b> Existen libros excelentes como "Eloquent
+              JavaScript" de Marijn Haverbeke y "JavaScript: The Good Parts" de
+              Douglas Crockford que son recursos valiosos para aprender
+              JavaScript.
+            </li>
+            <br />
+            <li>
+              <b>Cursos en linea:</b> Plataformas como Coursera, Udemy y edX
+              ofrecen cursos de JavaScript para todos los niveles.
+            </li>
+            <br />
+            <li>
+              <b>Comunidad y foros:</b> Participar en comunidades en línea como
+              Stack Overflow puede ser útil para obtener respuestas a preguntas
+              específicas y aprender de otros programadores.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="sintaxis">
+        <div class="content">
+          <h2>Sintaxis Básica</h2>
+          <p>
+            La sintaxis de JavaScript se compone de reglas y estructuras que
+            gobiernan cómo se escriben los programas en el lenguaje. Algunos
+            conceptos básicos incluyen:
+          </p>
+          <ul>
+            <li>
+              <b>Variables:</b> Puedes declarar variables utilizando palabras
+              clave como var, let, y const para almacenar datos.
+              <img src="declaracion.png" id="sin" />
+            </li>
+            <br />
+            <li>
+              <b>Tipos de datos:</b> JavaScript admite tipos de datos como
+              números, cadenas, booleanos, objetos y funciones.
+              <img src="datos.png" id="sin" />
+            </li>
+            <br />
+            <li>
+              <b>Operadores:</b> Los operadores permiten realizar cálculos y
+              operaciones en variables, como la suma (+), resta (-),
+              multiplicación (*), división (/), entre otros.
+              <img src="operadores.png" id="sin" />
+            </li>
+            <br />
+            <li>
+              <b>Estructuras de control:</b> Utiliza estructuras como if, else,
+              while, for, y switch para controlar el flujo de ejecución de tu
+              programa.
+              <img src="estructura-control.png" id="sin" />
+            </li>
+            <br />
+            <li>
+              <b>Funciones:</b> Puedes definir funciones para encapsular y
+              reutilizar código.
+              <img src="funciones.png" id="sin" />
+            </li>
+            <br />
+            <li>
+              <b>Eventos:</b> JavaScript se utiliza para manejar eventos en
+              páginas web, como clics de botones y movimientos del mouse.
+              <img src="eventos.png" id="sin" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="frameworks">
+        <div class="content">
+          <h2>Frameworks populares</h2>
+          <p>
+            Existen diversos frameworks y bibliotecas de JavaScript que
+            simplifican el desarrollo front-end, algunos de los cuales incluyen:
+          </p>
+          <ul>
+            <li>
+              <b>React:</b> Desarrollado por Facebook, React es una biblioteca
+              para crear interfaces de usuario interactivas y reactivas.
+            </li>
+            <br />
+            <img src="React.svg.png" alt="" />
+            <br />
+            <li>
+              <b>Angular:</b> Desarrollado por Google, Angular es un framework
+              completo para el desarrollo de aplicaciones web.
+            </li>
+            <img src="Angular_full_color_logo.svg.png" alt="" />
+            <br />
+            <li>
+              <b>Vue.js:</b> Conocido por su simplicidad y flexibilidad, Vue.js
+              es un framework progresivo y fácil de integrar en proyectos
+              existentes.
+            </li>
+            <br />
+            <img src="Vue.js_Logo_2.svg.png" alt="" />
+          </ul>
+          <br />
+          <p>
+            Estos frameworks proporcionan estructuras y componentes predefinidos
+            que aceleran el desarrollo y mejoran la calidad del código.
+          </p>
+          <img src="frontend-framework-ranking-2.svg" alt="" />
+        </div>
+      </section>
+      <section id="ventajas" class="mi-seccion">
+        <div class="content">
+          <h2>Ventajas del Lenguaje</h2>
+          <p>
+            JavaScript ofrece varias ventajas en el desarrollo <br />front-end:
+          </p>
+          <ul>
+            <li>
+              <b>Interactividad y Experiencia de Usuario:</b> Permite crear
+              interfaces de usuario altamente interactivas y dinámicas,
+              mejorando la experiencia del usuario.
+            </li>
+            <br />
+            <li>
+              <b>Amplia Adopción y Comunidad Activa:</b> JavaScript es
+              ampliamente adoptado y cuenta con una comunidad activa que
+              desarrolla bibliotecas y frameworks, lo que facilita el
+              desarrollo.
+            </li>
+            <br />
+            <li>
+              <b>Compatibilidad con Navegadores Modernos:</b> Funciona en todos
+              los navegadores modernos, lo que garantiza que tu código sea
+              accesible para una audiencia amplia.
+            </li>
+            <br />
+            <li>
+              <b>Integración Fácil:</b> Se integra sin problemas con HTML y CSS,
+              lo que facilita su uso en el desarrollo web.
+            </li>
+          </ul>
+        </div>
+        <img src="si.png" alt="" />
+      </section>
+      <section id="desventajas">
+        <div class="content">
+          <h2>Desventajas del Lenguaje</h2>
+          <p>Aunque JavaScript es poderoso, también tiene desafíos:</p>
+          <ul>
+            <li>
+              <b>Diferencias entre Navegadores:</b> Cada navegador interpreta el
+              código JavaScript de manera ligeramente diferente, lo que puede
+              requerir ajustes para garantizar la compatibilidad.
+            </li>
+            <br />
+            <li>
+              <b>Posibles Problemas de Rendimiento:</b> El uso excesivo de
+              JavaScript puede afectar negativamente el rendimiento de las
+              aplicaciones web, ya que la ejecución de scripts puede consumir
+              recursos del navegador.
+            </li>
+            <br />
+            <li>
+              <b>Vulnerabilidades de Seguridad:</b> El código JavaScript se
+              ejecuta en el lado del cliente y puede ser vulnerable a ataques
+              como inyecciones de código malicioso (XSS) si no se aplican
+              medidas de seguridad adecuadas.
+            </li>
+            <br />
+            <li>
+              <b>Complejidad en Aplicaciones Grandes:</b> En proyectos web
+              extensos, mantener un código JavaScript bien organizado puede ser
+              un desafío, lo que requiere planificación y estructuración
+              cuidadosas.
+            </li>
+          </ul>
+        </div>
+        <img src="noo.jpg" alt="" />
+      </section>
+      <section id="tendencia">
+        <div class="content">
+          <h2>Tendencias futuras</h2>
+          <p>
+            El mundo del desarrollo front-end está en constante evolución.
+            Algunas tendencias futuras incluyen:
+          </p>
+          <ul>
+            <li>
+              <b>WebAssembly y Rendimiento Mejorado:</b> WebAssembly permite
+              ejecutar código de alto rendimiento en navegadores, lo que
+              impulsará aplicaciones web más rápidas y eficientes.
+            </li>
+            <br />
+            <li>
+              <b>Inteligencia Artificial y Machine Learning:</b> JavaScript se
+              utiliza cada vez más para implementar funciones de inteligencia
+              artificial y aprendizaje automático en el navegador, lo que
+              permitirá experiencias web más avanzadas.
+              <br />
+            </li>
+
+            <li>
+              <b>Énfasis en la Seguridad:</b> Se espera un mayor enfoque en
+              mejorar la seguridad en las aplicaciones JavaScript, con nuevas
+              herramientas y prácticas para mitigar riesgos.
+            </li>
+            <br />
+            <li>
+              <b>Evolución de Frameworks y Bibliotecas:</b> Los frameworks y
+              bibliotecas de JavaScript continuarán evolucionando para abordar
+              los desafíos actuales y futuros del desarrollo front-end.
+            </li>
+            <br />
+            <li>
+              <b>Aplicaciones Híbridas y Multiplataforma:</b> La creación de
+              aplicaciones híbridas y multiplataforma utilizando tecnologías
+              como React Native y Vue Native seguirá siendo una tendencia.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="conclusion" class="mi-seccion2">
+        <div class="content">
+          <h2>Conclusión</h2>
+          <p>
+            JavaScript desempeña un papel esencial en el desarrollo front-end,
+            permitiendo la creación de experiencias web interactivas y
+            dinámicas. A medida que la tecnología web avanza, JavaScript
+            evoluciona con ella, ofreciendo nuevas posibilidades y desafíos.
+            Para aquellos que desean incursionar en el desarrollo web, aprender
+            JavaScript es un paso fundamental. A medida que explores y te
+            familiarices con el lenguaje, estarás preparado para contribuir al
+            emocionante mundo del desarrollo front-end y crear experiencias web
+            excepcionales.
+          </p>
+        </div>
+        <img src="java.jpeg" alt="" />
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <ul class="social-links">
+          <li>
+            <img src="github.png" alt="" />
+            <a href="https://github.com/diegotutor21" target="_blank"
+              ><i class="fab fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <img src="instagram.png" alt="" />
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <img src="facebook.png" alt="" />
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i>Facebook</a
+            >
+          </li>
+        </ul>
+        <p>&copy; CodeStart.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
