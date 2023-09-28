@@ -4,16 +4,29 @@
 nav{
     background-color:#dad3e2;
 }
+
+.navbar {
+    background-color: #265457; /* Cambia el color de fondo del navbar */
+    color: #FAE5D3;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+}
 body{
     background-color:#d3e1e2;
 }
 
 /*Estilos del Footer*/
-footer{
-    height: 60px;
-    background-color:#1b2223 ;
-    color:#f4fefd;
+.footer {
+    background-color: #407c87;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    padding-bottom: 0px;
 }
+
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +40,7 @@ footer{
     font-weight: bold;
     margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #0300FF;
+    color: #9fc9cd;
 }
 
 .footer-text {
@@ -61,4 +74,3 @@ footer{
 .icon{
     width: 35px;
 }
-
