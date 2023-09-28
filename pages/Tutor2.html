@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="/css/Tutor2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript en el Back-End</h1>
+      <nav>
+        <a href="Tutor.html"><b>Front-End</b></a>
+        <a href="../Informe de JavaScript/index.html"><b>Volver al home</b></a>
+      </nav>
+    </header>
+    <main>
+      <section class="introduccion">
+        <div class="content">
+          <h2>Introducción</h2>
+          <p>
+            JavaScript es un lenguaje de programación versátil que ha
+            evolucionado más allá de su función principal en el desarrollo web
+            en el lado del cliente (front-end). En los últimos años, JavaScript
+            se ha convertido en un lenguaje popular en el lado del servidor
+            (back-end), lo que significa que también se utiliza para crear la
+            lógica detrás de las aplicaciones web, gestionar bases de datos y
+            proporcionar servicios web.
+          </p>
+        </div>
+        <img src="js2.png" alt="" />
+      </section>
+      <section class="javascript-en-el-back-end">
+        <div class="content">
+          <h2>¿Por qué JavaScript en el Back-End?</h2>
+          <p>
+            La decisión de utilizar JavaScript en el lado del servidor se basa
+            en varias razones:
+          </p>
+          <ul>
+            <li>
+              <b>Unificación del lenguaje:</b> Utilizar JavaScript en ambos
+              lados (front-end y back-end) permite a los desarrolladores
+              trabajar con un lenguaje coherente en toda la aplicación, lo que
+              simplifica el proceso de desarrollo y el mantenimiento.
+            </li>
+            <br />
+            <li>
+              <b>Tiempo real:</b> JavaScript en el back-end es especialmente
+              útil en aplicaciones que requieren comunicación en tiempo real,
+              como aplicaciones de chat o juegos multijugador. Frameworks como
+              Node.js permiten una gestión eficiente de conexiones simultáneas y
+              eventos en tiempo real.
+            </li>
+            <br />
+            <li>
+              <b>Velocidad de ejecución:</b> El motor V8 de JavaScript
+              (desarrollado por Google) es conocido por su rapidez. Esto lo hace
+              adecuado para aplicaciones que necesitan un alto rendimiento en el
+              servidor.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="frameworks-de-back-end">
+        <div class="content">
+          <h2>Frameworks de Back-End en JavaScript</h2>
+          <p>
+            Además de Node.js, existen varios frameworks de back-end en
+            JavaScript que simplifican el desarrollo de aplicaciones web y
+            servicios. Algunos ejemplos destacados son:
+          </p>
+          <ul>
+            <li>
+              <b>Express.js:</b> Es un framework minimalista y rápido que se
+              basa en Node.js. Express.js facilita la creación de aplicaciones
+              web y APIs de manera eficiente y sencilla.
+            </li>
+            <br />
+            <li>
+              <b>NestJS:</b> Este framework se basa en TypeScript y se inspira
+              en Angular. Está diseñado para crear APIs escalables y mantenibles
+              mediante la aplicación de patrones de diseño sólidos.
+            </li>
+            <br />
+            <img src="frameworks.png" alt="" />
+            <br />
+            <li>
+              <b>Koa</b> Creado por el mismo equipo detrás de Express.js, Koa es
+              un framework web más moderno que utiliza características de
+              ECMAScript 2017 y proporciona un manejo más limpio de las promesas
+              y los generadores.
+            </li>
+            <br />
+            <li>
+              <b>Meteor:</b> Meteor es un framework de desarrollo completo que
+              permite construir aplicaciones web y móviles en tiempo real.
+              Incluye un conjunto de herramientas integradas que simplifican el
+              desarrollo y la implementación.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="nodejs">
+        <div class="content">
+          <h2>Node.js: El Entorno de Ejecución de JavaScript en el Back-End</h2>
+          <p>
+            Node.js es el entorno de ejecución de JavaScript más popular para el
+            desarrollo en el lado del servidor. Fue creado por Ryan Dahl y
+            lanzado en 2009. Algunas características clave de Node.js incluyen:
+          </p>
+          <ul>
+            <li>
+              <b>Motor V8:</b> Node.js utiliza el motor V8 de Google para
+              ejecutar código JavaScript de manera eficiente.
+            </li>
+            <br />
+            <li>
+              <b>Event-Driven:</b> Node.js utiliza un modelo de programación
+              orientado a eventos y un bucle de eventos para manejar múltiples
+              conexiones de manera eficiente. Esto lo hace ideal para
+              aplicaciones en tiempo real.
+            </li>
+            <br />
+            <img src="node.png" alt="" />
+            <br />
+            <li>
+              <b>Amplia Comunidad y Bibliotecas:</b> Node.js cuenta con una
+              comunidad activa y una amplia gama de bibliotecas y módulos
+              disponibles a través del sistema de gestión de paquetes npm.
+            </li>
+            <br />
+            <li>
+              <b>Asíncrono:</b> Node.js cuenta con una comunidad activa y una
+              amplia gama de bibliotecas y módulos disponibles a través del
+              sistema de gestión de paquetes npm.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="seguridad">
+        <div class="content">
+          <h2>Seguridad en el Back-End con JavaScript</h2>
+          <p>
+            La seguridad es una preocupación crítica en el desarrollo del
+            back-end. JavaScript en el servidor no es inmune a las
+            vulnerabilidades. Algunos de los problemas de seguridad comunes a
+            los que se enfrenta el desarrollo en el lado del servidor incluyen:
+          </p>
+          <ul>
+            <li>
+              <b>Inyección de SQL:</b> Los atacantes pueden intentar inyectar
+              código SQL malicioso en las consultas a la base de datos.
+            </li>
+            <br />
+            <li>
+              <b>Cross-Site Scripting (XSS):</b> Similar al XSS en el front-end,
+              los atacantes pueden intentar inyectar scripts maliciosos que se
+              ejecutan en el servidor.
+            </li>
+            <br />
+            <img src="virus.webp" alt="" />
+            <br />
+            <li>
+              <b>Autenticación y Autorización:</b> La gestión incorrecta de la
+              autenticación y la autorización puede dar lugar a
+              vulnerabilidades.
+            </li>
+          </ul>
+          <p>
+            Para abordar estos problemas, los desarrolladores deben seguir
+            buenas prácticas de seguridad, validar la entrada de datos, utilizar
+            bibliotecas de seguridad y seguir las directrices recomendadas para
+            la autenticación y autorización.
+          </p>
+        </div>
+      </section>
+      <section class="consejos-seguridad">
+        <div class="content">
+          <h2>Consejos de Seguridad</h2>
+          <p>
+            Para garantizar la seguridad al utilizar JavaScript en el back-end,
+            considera estos consejos:
+          </p>
+          <ul>
+            <li>
+              <b>Validación de Datos de Entrada:</b> Siempre valida y filtra los
+              datos de entrada para prevenir ataques de inyección de código
+              malicioso, como la inyección de SQL.
+            </li>
+            <br />
+            <li>
+              <b>Actualizaciones Regulares:</b> Mantén actualizados todos los
+              componentes, módulos y bibliotecas que utilizas para asegurarte de
+              que estén protegidos contra las vulnerabilidades conocidas.
+            </li>
+            <br />
+            <img src="seguridad.png" alt="" />
+            <br />
+            <li>
+              <b>Autenticación y Autorización Seguras:</b> Implementa sistemas
+              de autenticación y autorización robustos para garantizar que solo
+              los usuarios autorizados tengan acceso a ciertas partes de tu
+              aplicación.
+            </li>
+            <br />
+            <li>
+              <b>Auditoría de Seguridad:</b> Realiza auditorías regulares de
+              seguridad para identificar posibles debilidades en tu aplicación y
+              corregirlas de manera proactiva.
+            </li>
+            <br />
+            <li>
+              <b>Utiliza Herramientas de Seguridad:</b> Emplea herramientas y
+              bibliotecas de seguridad específicas para JavaScript en el
+              back-end, como Helmet.js, para proteger tu aplicación.
+            </li>
+          </ul>
+          <p>
+            Estos consejos de seguridad te ayudarán a desarrollar aplicaciones
+            más seguras y confiables en el lado del back-end utilizando
+            JavaScript.
+          </p>
+        </div>
+      </section>
+      <section class="ventajas">
+        <div class="content">
+          <h2>Ventajas de JavaScript en el Back-End</h2>
+          <p>
+            JavaScript en el back-end ofrece varias ventajas en comparación con
+            otros lenguajes aptos para back-end:
+          </p>
+          <ul>
+            <li>
+              <b>Unificación del Lenguaje:</b> NUtilizar JavaScript tanto en el
+              front-end como en el back-end simplifica el desarrollo y la
+              depuración, ya que los desarrolladores pueden trabajar con un solo
+              lenguaje en toda la aplicación.
+            </li>
+            <br />
+            <li>
+              <b>Tiempo Real:</b> JavaScript es eficaz para aplicaciones que
+              requieren comunicación en tiempo real, como aplicaciones de chat o
+              sistemas de seguimiento en tiempo real. Frameworks como Node.js
+              son ideales para gestionar conexiones simultáneas y eventos en
+              tiempo real.
+            </li>
+            <br />
+            <li>
+              <b>Amplia Comunidad y Bibliotecas:</b> La comunidad activa y el
+              sistema de gestión de paquetes npm ofrecen una amplia gama de
+              bibliotecas y módulos que aceleran el desarrollo y amplían la
+              funcionalidad de las aplicaciones.
+            </li>
+            <br />
+            <li>
+              <b>Velocidad de Ejecución:</b> JavaScript, impulsado por el motor
+              V8 de Google, es conocido por su velocidad, lo que lo hace
+              adecuado para aplicaciones que requieren un alto rendimiento en el
+              servidor.
+            </li>
+          </ul>
+        </div>
+        <img src="si.png" alt="" />
+      </section>
+      <section class="desventajas">
+        <div class="content">
+          <h2>Desventajas de JavaScript en el Back-End</h2>
+          <p>
+            A pesar de sus ventajas, JavaScript en el back-end también tiene
+            algunas desventajas:
+          </p>
+          <ul>
+            <li>
+              <b>Diferencias en la Interpretación entre Navegadores:</b> Aunque
+              JavaScript en el back-end no está sujeto a diferencias de
+              interpretación de navegadores como en el front-end, las
+              diferencias pueden surgir entre las implementaciones de Node.js y
+              otros entornos de ejecución.
+            </li>
+            <br />
+            <li>
+              <b>Posibles Problemas de Rendimiento:</b> El uso excesivo de
+              JavaScript en el back-end puede afectar el rendimiento de las
+              aplicaciones, ya que la ejecución de scripts puede consumir
+              recursos y ralentizar la carga de la página.
+            </li>
+            <br />
+            <li>
+              <b>Seguridad:</b> Como se ejecuta en el servidor, los errores de
+              seguridad pueden tener consecuencias graves. Es importante seguir
+              las mejores prácticas de seguridad y utilizar bibliotecas de
+              seguridad para mitigar riesgos.
+            </li>
+          </ul>
+        </div>
+        <img src="noo.jpg" alt="" />
+      </section>
+      <section class="conclusion">
+        <div class="content">
+          <h2>Conclusión</h2>
+          <p>
+            JavaScript ha evolucionado más allá de ser simplemente un lenguaje
+            para mejorar la interactividad en el front-end. Ahora desempeña un
+            papel fundamental en el desarrollo de aplicaciones web en el lado
+            del servidor, proporcionando un entorno eficiente y coherente para
+            crear aplicaciones web modernas y escalables. Al aprender y
+            comprender JavaScript tanto en el front-end como en el back-end, los
+            desarrolladores pueden construir aplicaciones web completas y
+            poderosas.
+          </p>
+        </div>
+        <img src="backend.png" alt="" />
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <ul class="social-links">
+          <li>
+            <img src="github.png" alt="" />
+            <a href="https://github.com/diegotutor21" target="_blank"
+              ><i class="fab fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <img src="instagram.png" alt="" />
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <img src="facebook.png" alt="" />
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i>Facebook</a
+            >
+          </li>
+        </ul>
+        <p>&copy; CodeStart.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
