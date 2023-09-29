@@ -1,0 +1,121 @@
+*{
+
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+	background-color: #F4FEFD;
+
+}
+
+.seccion1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 23px;
+
+
+}
+
+.seccion2{
+
+	display: flex;
+	font-size: 23px;
+
+}
+
+.seccion3{
+
+	display: flex;
+
+}
+
+.img1{
+
+	width: 350px;
+	height: auto;
+	margin-left: 10px;
+}
+
+.img2{
+
+	width: 900px;
+	height: auto;
+	margin-right: 10px;
+
+}
+
+.img3{
+
+	margin-left: 10px;
+
+}
+
+.subtitulo{
+
+	display: flex;
+	justify-content: center;
+	font-size: 35px;
+	padding: 10px;
+
+}
+
+.titulo{
+
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	margin: 10px;
+
+}
+
+.ventydesv{
+
+	margin-left: 25px;
+
+}
+
+.parrafo{
+
+	font-size: 23px;
+	margin: 10px;
+
+}
+
+.subtitulo3{
+
+	display: flex;
+	justify-content: center;
+	font-size: 28px;
+
+}
+
+.footer{
+
+	background-color: #3A4F50;
+
+}
+
+.redes{
+
+	display: flex;
+	justify-content: flex-end;
+	width: auto;
+	height: 35px;
+
+
+}
+
+.logo{
+
+	display: flex;
+	justify-content: left;
+	width: auto;
+	height: 100px;
+
+}
+
