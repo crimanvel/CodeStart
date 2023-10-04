@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programación para Dispositivos Móviles</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      .intro {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .left-box {
+        margin-bottom: 20px;
+      }
+      .right-box {
+        width: 100%;
+        max-width: 600px;
+      }
+      .introTitle {
+        color: #333;
+        font-size: 24px;
+        margin-top: 0;
+      }
+      .introText {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+      }
+      .info-container {
+        display: flex;
+        flex-wrap: wrap; /* Para que las secciones estén una al lado de la otra y se envuelvan automáticamente si no caben en la pantalla */
+      }
+      .info-section {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 15px; /* Espacio entre las secciones */
+        margin-bottom: 15px;
+        flex: 1; /* Para que ocupen un espacio igual */
+        min-width: calc(
+          33.33% - 15px
+        ); /* Para que cada sección ocupe aproximadamente 1/3 del espacio */
+      }
+      .info-section h2 {
+        font-size: 18px;
+        margin-top: 0;
+      }
+      ol {
+        list-style: none; /* Quita la numeración de la lista */
+        padding-left: 0;
+      }
+      li {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 10px;
+      }
+      .intro img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="left-box">
+        <img
+          src="https://dannx5.files.wordpress.com/2012/01/android-desarrollo.png"
+        />
+      </div>
+      <div class="right-box">
+        <h1 class="introTitle">Programación para Dispositivos Móviles</h1>
+        <p class="introText">
+          En este espacio, exploraremos el fascinante mundo del desarrollo de
+          aplicaciones para dispositivos Android. Desde los conceptos básicos
+          hasta las últimas tendencias, nuestro objetivo es proporcionarte una
+          guía clara y accesible para que puedas comenzar tu viaje en el
+          emocionante campo de la programación móvil. Ya sea que seas un
+          principiante absoluto o un desarrollador experimentado en busca de
+          recursos y consejos adicionales, estás en el lugar correcto.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-container">
+      <div class="info-section">
+        <img
+          src="https://www.lavanguardia.com/andro4all/hero/2018/01/Los-mejores-cursos-de-programacin-Android-online-para-2018.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+          style="max-width: 100%; height: auto"
+        />
+        <h2>Aprender lenguajes de programación</h2>
+        <p>
+          Aprende lenguajes de programación como Java, Kotlin, Swift o
+          Objective-C para crear aplicaciones móviles.
+        </p>
+      </div>
+
+      <div class="info-section">
+        <img
+          src="https://www.amarinfotech.com/wp-content/uploads/2018/04/Android_studio.jpg"
+          style="max-width: 100%; height: auto"
+        />
+        <h2>Usar un IDE</h2>
+        <p>
+          Utiliza un Entorno de Desarrollo Integrado (IDE) como Android Studio o
+          Xcode para desarrollar tus aplicaciones de manera eficiente.
+        </p>
+      </div>
+
+      <div class="info-section">
+        <img
+          src="https://blog.movical.net/wp-content/uploads/2017/07/Qu%C3%A9-es-el-Android-SDK-c%C3%B3mo-instalarlo-y-para-qu%C3%A9-sirve.jpg   
+  "
+          style="max-width: 100%; height: auto"
+        />
+        <h2>Utilizar un SDK específico</h2>
+        <p>
+          Explora el uso de un Software Development Kit (SDK) específico, como
+          Android SDK o iOS SDK, para aprovechar las capacidades de la
+          plataforma.
+        </p>
+      </div>
+
+      <div class="info-section">
+        <img
+          src="https://vanadis.es/wp-content/uploads/2014/06/evolucion-android-vanadis-desarrollo-aplicaciones-smartphone.jpg"
+          style="max-width: 100%; height: auto"
+        />
+        <h2>Diseñar la interfaz de usuario (UI)</h2>
+        <p>
+          Diseña la interfaz de usuario (UI) de tus aplicaciones con elementos
+          visuales atractivos y funcionales.
+        </p>
+      </div>
+
+      <div class="info-section">
+        <img
+          src="https://academiaandroid.com/wp-content/uploads/2016/10/SQLite_Android.jpg"
+          style="max-width: 100%; height: auto"
+        />
+        <h2>Trabajar con bases de datos</h2>
+        <p>
+          Aprende a trabajar con bases de datos, ya sea SQL o NoSQL, para
+          almacenar y recuperar datos de manera eficiente.
+        </p>
+      </div>
+
+      <div class="info-section">
+        <img
+          src="https://4.bp.blogspot.com/-wVSij9rfStg/XG7iQvHUqpI/AAAAAAAAGwI/Eol6oonV49k6QgizI6nquU373QVBhxGigCLcBGAs/s1600/image1.png"
+          style="max-width: 100%; height: auto"
+        />
+        <h2>Acceder a servicios externos</h2>
+        <p>
+          Integra servicios externos a través de APIs para ampliar las
+          capacidades de tus aplicaciones y brindar experiencias únicas a los
+          usuarios.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
