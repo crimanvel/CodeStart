@@ -155,13 +155,77 @@
         border-radius: 6px;
     }
 
-    footer {
-    width: 100%;
-    height: 80px;
-    background-color: #265457 ; /* Cambia el color de fondo del footer */
-    color: #FFFFFF; /* Cambia el color del texto del footer */
-    text-align: center; /* Centra el contenido del footer */
-    padding: 20px; /* Añade espacio alrededor del contenido del footer */
+    .footer {
+    background-color: #265457;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #9fc9cd;
+}
+
+.footer-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    align-items: end;
+    
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #0300FF;
+}
+.footer-links a{
+    color:#f5f5f8;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.footer-links a:hover{
+    color: #0300FF;
+}
+
+/* Estilos para iconos de redes sociales */
+.icon{
+    margin-left: 40px;
+    width: 23px;
+    height: 23px;
+}
+#logoface{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+#logox{
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-top: -5px;
+}
+#logoig{
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-top: -5px;
 }
 
 </style>
@@ -177,13 +241,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a  id="a1" class="nav-link" href="#">Inicio</a>
+                        <a  id="a1" class="nav-link" href="indexnico.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a  id="a2" class="nav-link" href="#">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a  id="a3"  class="nav-link" href="#">Contacto</a>
+                        <a  id="a3"  class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -408,9 +472,32 @@
     </div>
 
 
-    <footer>
-        <div class="container2">
-            <p id="pfoo" class="pfo">&copy; 2023 Tu Nombre</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
+            
+            <div class="footer-social" id="Contacto">
+                <a href="#" target="_blank"><img id="logoface" src="/assets/images/nico/facebook.png" alt="logoface" class="icon">Facebook</a>
+                
+                <a href="#" target="_blank"><img id="logox" src="/assets/images/nico/logodeX.jpeg" alt="logotwitter" class="icon"> X </a>
+                
+                <a href="#" target="_blank"><img id="logoig" src="/assets/images/nico/igfinal.png" alt="logoinst" class="icon"> Instagram</a>
+            </div>
+            
+            <div class="footer-subscribe">
+                <h2>Suscríbete a nuestro sitio Web</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="button" value="Suscribirse">
+                </form>
+            </div>
+            <br>
+            <div class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="footer-text">© 2023 Todos los derechos reservados</div>
         </div>
     </footer>
 </body> 
