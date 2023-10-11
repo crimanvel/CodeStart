@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calidad - Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0EF6CC;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1B2223;
+            color: #ffffff;
+            text-align: center;
+            padding: 1px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*----- Estilos Navbar -----*/
+
+        nav ul {
+            list-style-type: none;
+            padding: 19px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            font-family: serif;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3A4F50;
+            font-weight: bold;
+            font-size: 22px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        /*----- Estilos para el main ----- */
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        h1{
+            font-family: sans-serif;
+            font-size: 45px;
+            padding-left: 10px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 25px;
+        }
+        #quees{
+            padding-bottom: 40px;
+            font-size: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        aside a{
+            text-decoration: none;
+        }
+        .article-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+
+        .article-image img {
+            flex: 1;
+            padding: 0 20px;
+            width: 525px;
+            height: 325px;
+        }
+
+        .article-image img:hover{
+            transition: 0.8s;
+            filter: blur(5px);
+        }
+
+        .article-text {
+            flex: 2;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /*----- Estilos Footer -----*/
+
+        footer {
+            clear: both;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Control de Calidad</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="contenido">
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2 id="quees">Que es un control de Calidad de Software</h2>
+                <p>El Control de Calidad es un conjunto de actividades que verifican si el producto desarrollado cumple con los requisitos mínimos de calidad, identificando cualquier problema.</p>
+                <h2>¿Cuáles son los componentes de la gestión de calidad de software?</h2>
+                <p>
+                    <ol>
+                        <li>Control de Calidad (CC): 
+                            <p>
+                                El objetivo principal del control de calidad es verificar que un software cumpla con los requisitos previamente planteados y evitar que surjan errores importantes una vez se haya lanzado al mercado.
+                            </p>
+                        </li>
+                        <li>Garantia de Calidad (QA): 
+                            <p>
+                                Este componente está más orientado a los procesos y debe incorporarse en la etapa de planificación del proyecto. Busca prevenir defectos en lugar de identificarlos a través de pruebas. 
+                            </p>
+                        </li>
+                        <li>Planificación de Calidad (QP): 
+                            <p>
+                                En la planificacion de calidad se busca establecer cuales seran las funciones y responsabilidades de cada parte interesada en la gestion de control de calidada. Asi como tambien se contemplaran que tipo de pruebas se realizaran, los requisitos del software y cuales son los objetivos que estos deben cumplir.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-control-calidad_53876-17826.jpg" alt="Imagen 1">
+                <br>
+                <img src="https://www.3digits.es/wp-content/uploads/2023/03/Gestion-de-la-calidad-del-software-thegem-blog-timeline-large.jpg" alt="Imagen 1.1">
+            </div>
+        </article>
+        
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2>¿Por qué es importante la gestión de control de calidad de software?</h2>
+                <p>
+                    Tener acceso a un software de alta calidad con la capacidad de satisfacer las demandas de los clientes es relevante debido a una serie de factores importantes que afectan tanto a las empresas como a los usuarios mismos, entre ellos, los siguientes: 
+                </p>
+                <ul>
+                    <li>
+                        Previsibilidad: 
+                        <p>un software de alta calidad es considerado como un sistema predecible en su rendimiento y resultados, lo que aporta un mayor sentido de confianza y estabilidad para los usuarios al momento de trabajar con el programa. </p>
+                    </li>
+
+                    <li>
+                        Reputación: 
+                        <p>las empresas que ofrecen softwares de alta calidad son reconocidas y preferidas no solo por usuarios individuales, sino por otras empresas e instituciones importantes que respaldan sus acciones.  Además, es importante destacar que un software de baja calidad puede ser altamente costoso para las empresas que lo ofrecen y para aquellas que lo utilizan.</p> 
+                    </li>
+                </ul>
+            </div>
+            <div class="article-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BgbnEPOddSLVCH8yKLihkh8vxSBu6NQLgg&usqp=CAU" alt="Imagen 2">
+                <br>
+                <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\reputacion-online-plan.jpg" alt="Imagen 2">
+            </div>
+        </article>
+
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2>Beneficios del control de calidad</h2>
+                <p>Ahora bien, tomando en cuenta todas las ventajas que proporciona el control de calidad ejecutado correctamente en una organización, vale la pena mencionar aquellos beneficios inherentes que se obtienen de este proceso.
+                    <br>
+                    <br>
+                    Los principales son que:</p>
+                <ul>
+                    <li>Refuerza la cultura de calidad en el equipo
+                        <p>
+                            Extendiendo en todas las áreas de la organización metodologías, filosofías y culturas centradas en la calidad y en cumplimiento de requisitos indispensables.
+                            <br>
+                            Esto no solo beneficia al producto final, sino que lleva el ambiente laboral hacia un estado en donde la excelencia y la entrega de los mejores resultados queda impuesto como la norma.
+                        </p>
+                    </li>
+
+                    <li>Permite el uso efectivo de los recursos
+                        <p>
+                            La optimización de los recursos es otro beneficio que proviene del control de calidad, dado que se establece desde el propio diseño del proceso el uso más rentable posible a los recursos disponibles con el objetivo de generar mayor eficiencia general.
+                            <br>
+                            Se trata de un hecho que no solo afecta positivamente la cadena de producción y el flujo de trabajo al reducir el desperdicio y las interrupciones, sino que se refleja directamente en el presupuesto y las ganancias del negocio.
+                        </p>
+                    </li>
+
+                    <li>Reduce costos
+                        <p>
+                            Obteniendo el mayor beneficio de la maquinaria, la materia prima y el talento humano disponible, asegurando que cada elemento, proceso y sistema cumpla su propósito con el menor esfuerzo.
+                        </p>
+                    </li>
+
+                    <li>Mejora los métodos de producción
+                        <p>
+                            Generando procesos de producción y manufactura optimizados, apoyándose en los más altos estándares de calidad y las iniciativas con mayor rendimiento del mercado.
+                        </p>
+                    </li>
+
+                    <li>Estandariza productos y servicios
+                        <p>
+                            La estandarización permite garantizar el cumplimiento de la calidad esperada y, al mismo tiempo, asegura que la organización estará siguiendo el camino marcado por años de estudio y análisis científico, dando como resultado productos y servicios de alto nivel.
+                        </p>
+                    </li>
+
+                    <li>Incrementa las ventas y la rentabilidad de la empresa
+                        <p>
+                            Una empresa que es capaz de brindar consistencia y congruencia en los productos y servicios que ofrece al mercado es una organización que será capaz de atraer una gran porción de los clientes potenciales con necesidades.
+                            <br>
+                            De esta forma tu negocio obtendrá mayores ventas al ofrecer productos ajustados a las expectativas de la industria y rentabilidad al diseñar procesos continuos y consistentes de producción que aprovechen las oportunidades de negocios latentes en el mercado.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="article-image">
+                <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\Beneficios1.jpg" alt="Imagen 3">
+            </div>
+        </article>
+
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2>Artículo 4</h2>
+                <p>Texto de tu segundo artículo.</p>
+            </div>
+            <div class="article-image">
+                <img src="imagen4.jpg" alt="Imagen 4">
+            </div>
+        </article>
+    </section>
+    
+    <aside>
+        <h3>Fuentes de Información y Consulta</h3>
+        <ul>
+            <li><a href="https://www.sydle.com/es/blog/control-de-calidad-cual-es-su-funcion-descubre-como-hacerlo-635692df4037f135695fbd75#:~:text=El%20control%20de%20calidad%20se,que%20puedan%20afectar%20la%20productividad.">Control de calidad - SYDLE</a></li>
+            <li><a href="https://www.avenuglobal.com/noticias/que-es-la-gestion-de-control-de-calidad-de-software#:~:text=La%20gesti%C3%B3n%20de%20control%20de%20la%20calidad%20de%20software%20se,Standards%20Institute%20(ANSI)%2C%20Institute">Gestion control de calidad - AvenuLearning</a></li>
+            <li><a href="#">Enlace 3</a></li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <p>CodeStart © 2023 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
