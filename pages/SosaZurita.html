@@ -1,78 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Descubre todo sobre los lenguajes C, C# y C++ en el entorno .NET. Aprende desde los conceptos básicos hasta conceptos avanzados y accede a recursos de aprendizaje, historias de éxito y comunidad de programadores."
+    <title>Pagina Instituto</title>
+    <!-- Enlaza los archivos CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <meta
-      name="keywords"
-      content="C, C#, C++, .NET, programación, desarrollo de software, programadores, aprendizaje, recursos, tutoriales, comunidades, historias de éxito."
-    />
-    <title>SeccionC/C# y C++ en entorno .NET</title>
+    <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/SosaZurita.css" />
+    <!-- Link de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="a">
-      <img
-        src="../assets/images/SosaZurita img/logo.png"
-        alt="soy el logo principal"
-        class="logo_principal"
-      />
-
-      <!-- No olvidar que uso esta clasificaicon para dar lugar otro selectores ul.b en el estilo -->
-      <ul class="a">
-        <li>Texto1</li>
-        <li>Texto2</li>
-        <li>Texto3</li>
-      </ul>
+    <!-- Sección 1: Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="../assets/images/SosaZurita img/logocode.png"
+          alt="Logo"
+          class="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <header class="header">
-      <div class="introduccion">
-        <h2>Sitio Web | Lectura de 30 min</h2>
-        <h1><span> Guía acerca de C/C++ y C# en entorno .NET </span></h1>
-        <h3>Ultima actualizacion 19/09/23</h3>
+
+    <!-- Sección 2: Encabezado -->
+    <header class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Tiempo de lectura: 23 minutos</p>
+          <h1>Introduccion a C/C# y C++ en entorno .net</h1>
+          <p>Autor: Cristhian Sosa</p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="../assets/images/SosaZurita img/imagen inicio.png"
+            alt="Imagen Principal"
+            class="img-fluid imagen-inicio"
+          />
+        </div>
       </div>
-<<<<<<< HEAD:Seccion_net.html
-      <img
-        src="./assets/images/imagen inicio.png"
-        alt="soy una imagen"
-        class="imagen-principal"
-      />
-=======
-      <div class="imagen-principal">
-        <img
-          src="../assets/images/SosaZurita img/imagen inicio.png"
-          alt="soy una imagen"
-          width="400"
-        />
-      </div>
->>>>>>> e5f570f10887cfb52e72d9adcbf888c63cd148ed:pages/SosaZurita.html
     </header>
-        <div class="seccion introduccion">
-      <p>intro de ayuda</p>
-      <p>intro de ayuda</p>
-      <p>intro de ayuda</p>
-    </div>
-    <ul>
-      <il>1</il>
-      <il>2</il>
-      <il>3</il>
-      <il>4</il>
-      <il>5</il>
-      <il>6</il>
-      <il>7</il>
-      <il>8</il>
-      <il>9</il>
-      <il>10</il>
-    </ul>
-    <section class="contenedor de las secciones">
-      <div>
-        <img src="../assets/images/SosaZurita img/logo.png" alt="soy el logo" width="100" />
-      </div>
-      <article></article>
+
+    <!-- Sección 3: Introducción -->
+    <section
+      class="container col-md-9 mt-4 font-weight-bold contendor-introduccion"
+    >
+      <p>
+        Desarrollar competencias en programación es una de las habilidades más
+        valiosas que puedes adquirir. Si te encuentras en la búsqueda de cómo
+        iniciarte en el mundo de la codificación y programación, es probable que
+        estés a punto de dar un gran paso en tu trayectoria.
+      </p>
+      <p>
+        Ya sea que tengas en mente la creación de software, aplicaciones o
+        incluso juegos, aprender los lenguajes de programación como C/C# y C++
+        en el entorno .NET puede marcar una diferencia significativa en tu
+        crecimiento tanto profesional como personal.
+      </p>
+      <p>
+        En este camino, estamos aquí para ayudarte a explorar este emocionante
+        universo y facilitar tu aprendizaje.
+      </p>
     </section>
+
+    <!-- Sección 4: Botones de Navegación -->
+    <section class="container mt-4">
+      <div class="row">
+        <div class="col-md-12 botones">
+          <h2>Secciones de la pagina</h2>
+          <a href="#seccion1" class="btn btn-info"
+            >Importancia de Aprender C, C# y C++ en .NET:</a
+          >
+          <a href="#seccion2" class="btn btn-info">Ventajas de .NET</a>
+          <a href="#seccion3" class="btn btn-info"
+            >Descripción de C, C# y C++:</a
+          >
+          <a href="#seccion4" class="btn btn-info">Configuración del entorno</a>
+          <a href="#seccion5" class="btn btn-info"
+            >Primeros pasos programando
+          </a>
+          <a href="#seccion6" class="btn btn-info">Conceptos avanzados</a>
+          <a href="#seccion7" class="btn btn-info">Proyectos Prácticos</a>
+          <a href="#seccion8" class="btn btn-info">Resolucion de problemas</a>
+          <a href="#seccion9" class="btn btn-info">Recursos de aprendizaje</a>
+          <a href="#seccion10" class="btn btn-info">Comunidad y apollo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 5: Sección 1 -->
+    <section class="container mt-4" id="seccion1">
+      <div class="row">
+        <div class="col-md-2">
+          <img
+            src="../assets/images/SosaZurita img/logocode.png"
+            alt="Logo de la Categoría 1"
+            width="150px"
+            class="logo"
+          />
+        </div>
+        <div class="col-md-10">
+          <h3>Importancia de Aprender C, C# y C++ en .NET:</h3>
+          <br />
+          <h3><strong>C en .NET:</strong></h3>
+          <ul>
+            <li>
+              <strong>Relevancia:</strong> Aunque C en .NET puede no ser el
+              lenguaje más comúnmente utilizado, sigue siendo importante en el
+              desarrollo de aplicaciones de bajo nivel y en la creación de
+              bibliotecas de interoperabilidad con código externo.
+            </li>
+            <li>
+              <strong>Tendencias Actuales:</strong> La demanda de C en .NET se
+              mantiene relativamente estable. Aunque su popularidad puede no ser
+              tan alta como la de otros lenguajes, su utilidad en tareas de bajo
+              nivel y optimización lo hace valioso en ciertos proyectos.
+            </li>
+            <li>
+              <strong>Demanda Laboral:</strong> La demanda laboral específica de
+              C en el contexto de .NET puede variar según la industria y el tipo
+              de proyecto. A menudo, se encuentra en puestos especializados
+              donde se requiere un control de bajo nivel.
+            </li>
+          </ul>
+          <br />
+          <h3><strong>C# en .NET:</strong></h3>
+          <ul>
+            <li>
+              <strong>Relevancia:</strong> C# es uno de los lenguajes de
+              programación más importantes en el ecosistema .NET. Se utiliza en
+              una variedad de aplicaciones, desde aplicaciones de escritorio
+              hasta aplicaciones web y móviles, y es especialmente relevante en
+              el desarrollo empresarial.
+            </li>
+            <li>
+              <strong>Tendencias Actuales:</strong> C# sigue siendo muy popular
+              y su adopción ha crecido con el tiempo debido a la expansión de
+              .NET Core y .NET 5 y posteriores, que permiten el desarrollo
+              multiplataforma.
+            </li>
+
+            <li>
+              <strong>Demanda Laboral:</strong> La demanda laboral de
+              desarrolladores que dominan C# en el contexto de .NET es sólida y
+              se pueden encontrar numerosas ofertas de trabajo que requieren
+              experiencia en este lenguaje. La programación en C# es un camino
+              sólido para ingresar a la industria del desarrollo de software.
+            </li>
+          </ul>
+          <br />
+          <h3><strong>C++ en .NET:</strong></h3>
+          <ul>
+            <li>
+              <strong>Relevancia:</strong> Aunque C++ no es el lenguaje
+              principal en .NET, sigue siendo relevante en aplicaciones de alto
+              rendimiento, como juegos, software de gráficos y aplicaciones de
+              ingeniería.
+            </li>
+            <li>
+              <strong>Tendencias Actuales:</strong> La popularidad de C++ se
+              mantiene en industrias específicas donde se requiere un
+              rendimiento extremadamente rápido. Su uso en el desarrollo de
+              juegos, por ejemplo, sigue siendo sólido.
+            </li>
+            <li>
+              <strong>Demanda Laboral:</strong> En industrias como la de los
+              juegos y el software de alto rendimiento, la demanda de
+              desarrolladores con experiencia en C++ en el contexto de .NET es
+              alta. Esto se debe a la necesidad de optimización y rendimiento en
+              estas aplicaciones.
+            </li>
+          </ul>
+          <h3><strong>Demanda Laboral:</strong></h3>
+          <h4>
+            La demanda laboral de programadores que dominan estos lenguajes en
+            el contexto de .NET sigue siendo fuerte en la industria. Los
+            empleadores buscan candidatos que tengan experiencia en:
+          </h4>
+          <ul>
+            <li>
+              <strong>C#:</strong> Es uno de los lenguajes más solicitados,
+              especialmente en el desarrollo de aplicaciones web y móviles.
+            </li>
+            <li>
+              <strong>Tendencias Actuales:</strong> La demanda de C en .NET se
+              mantiene relativamente estable. Aunque su popularidad puede no ser
+              tan alta como la de otros lenguajes, su utilidad en tareas de bajo
+              nivel y optimización lo hace valioso en ciertos proyectos.
+            </li>
+            <li>
+              <strong>Demanda Laboral:</strong> La demanda laboral específica de
+              C en el contexto de .NET puede variar según la industria y el tipo
+              de proyecto. A menudo, se encuentra en puestos especializados
+              donde se requiere un control de bajo nivel.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 6: Footer -->
+    <footer class="container mt-4">
+      <p>
+        Derechos de autor &copy; 2023 Tu Página. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!-- Enlaza los archivos JavaScript de Bootstrap (jQuery y Popper.js son requeridos) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
