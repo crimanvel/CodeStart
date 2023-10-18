@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Calidad - Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Forum&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        *{
+            font-family: 'Forum';
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #0EF6CC;
@@ -62,9 +68,9 @@
             padding-bottom: 20px;
         }
         h1{
-            font-family: sans-serif;
             font-size: 45px;
             padding-left: 10px;
+
         }
 
         h2 {
@@ -74,7 +80,7 @@
         #quees{
             padding-bottom: 40px;
             font-size: 50px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
            
 
         }
@@ -94,6 +100,10 @@
         }
         aside a{
             text-decoration: none;
+            color: #0300FF;
+        }
+        aside a:hover{
+            color: #333;
         }
         .article-wrapper {
             display: flex;
@@ -135,16 +145,101 @@
         li {
             margin-bottom: 10px;
         }
+        #imgdes{
+            width: 550px;
+            height: max-content;
+        }
+        #conclusion{
+            font-size: 50px;
+            text-align: center;
+        }
+        #concp{
+            font-size: 30px;
+            font-style: italic;
+        }
 
         /*----- Estilos Footer -----*/
 
-        footer {
-            clear: both;
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+        .footer {
+          background-color: #265457;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+          padding-bottom: 0px;
+          margin-top: 200px;
         }
+
+        .footer-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer-logo {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          color: #9fc9cd;
+        }
+
+        .footer-text {
+          font-size: 18px;
+          margin-bottom: 20px;
+          margin-top: 50px;
+          align-items: end;
+        }
+
+        .footer-social a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 20px;
+          font-size: 24px;
+        }
+
+        .footer-social a:hover {
+          color: #0300FF;
+        }
+
+        .footer-links a{
+          color:#f5f5f8;
+          text-decoration: none;
+          margin-right: 20px;
+        }
+
+        .footer-links a:hover{
+          color: #0300FF;
+        }
+
+        #subs{
+            color: #9fc9cd;
+            padding-top: 10px;
+        }
+
+        /* Estilos para iconos de redes sociales */
+        .icon{
+            margin-left: 40px;
+            width: 23px;
+            height: 23px;
+        }
+        #logoface{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: -5px;
+        }
+        #logox{
+            margin-left: 10px;
+            margin-right: 8px;
+            margin-top: -5px;
+        }
+        #logoig{
+            margin-left: 10px;
+            margin-right: 8px;
+            margin-top: -5px;
+        }
+        
 
     </style>
 </head>
@@ -164,7 +259,7 @@
     <section id="contenido">
         <article class="article-wrapper">
             <div class="article-text">
-                <h2 id="quees">Que es un control de Calidad de Software</h2>
+                <h2 id="quees">Que es un control de Calidad de Software?</h2>
                 <p>El Control de Calidad es un conjunto de actividades que verifican si el producto desarrollado cumple con los requisitos mínimos de calidad, identificando cualquier problema.</p>
                 <h2>¿Cuáles son los componentes de la gestión de calidad de software?</h2>
                 <p>
@@ -315,7 +410,7 @@
                 </p>
             </div>
             <div class="article-image">
-                <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\errores.jpg" alt="Imagen 4">
+                <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\errores.jpg" alt="Imagen 4" id="imgdes">
                 <br>
                 <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\calidad.jpg" alt="Imagen 4.1">
             </div>
@@ -323,11 +418,14 @@
 
         <article class="article-wrapper">
             <div class="article-text">
-                <h2>Artículo 5</h2>
-                <p>Texto de tu segundo artículo.</p>
+                <h2 id="conclusion">Conclusión</h2>
+                <p id="concp">El objetivo de este articulo es el de brindar el conocimiento basico que puede dar un control de calidad a la hora de desarrollar el software, tanto para el comienzo del desarrollo, durante el proceso, y al finalizar el mismo.
+                <br>
+                El control de calidad en definitiva es fundamental para brindar al cliente un producto acorde a las necesidades que desea satisfacer, asi como tambien brinda credibilidad y seguridad a la imagen de nuestra empresa y a futuros clientes que puedan llegar a ver nuestros productos y comprarnoslo o contratarnos.
+                </p>
             </div>
             <div class="article-image">
-                <img src="imagen5.jpg" alt="Imagen 5">
+                <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\conclusion.jpg" alt="Imagen 5">
             </div>
         </article>
     </section>
@@ -341,8 +439,33 @@
         </ul>
     </aside>
     
-    <footer>
-        <p>CodeStart © 2023 Todos los derechos reservados</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
+            
+            <div class="footer-social">
+                <a href="#" target="_blank"><img id="logoface" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\facebook.png" alt="logoface" class="icon">Facebook</a>
+                
+                <a href="#" target="_blank"><img id="logox" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\logodeX.jpeg" alt="logotwitter" class="icon"> X </a>
+                
+                <a href="#" target="_blank"><img id="logoig" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\igfinal.png" alt="logoinst" class="icon"> Instagram</a>
+            </div>
+            
+            <div class="footer-subscribe">
+                <h3 id="subs">Suscríbete a nuestro sitio Web</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <br>
+            <div class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="footer-text">© 2023 Todos los derechos reservados</div>
+        </div>
     </footer>
 </body>
 </html>
