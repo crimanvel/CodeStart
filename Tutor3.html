@@ -1,280 +1,441 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Informativa de TypeScript</title>
-    <style>
-      /* Estilo para el cuerpo de la página */
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f8f8f8;
-        color: #333;
-      }
-
-      /* Encabezado de la página */
-      header {
-        background-color: #007bff;
-        color: #fff;
-        padding: 20px 0px;
-        text-align: center;
-      }
-
-      /* Título principal */
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      /* Estilo para los subtítulos */
-      h2 {
-        font-size: 28px;
-        color: #007bff;
-        margin-top: 30px;
-      }
-
-      /* Contenedor principal */
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-        border-radius: 10px;
-      }
-
-      /* Estilo para los párrafos de texto */
-      p {
-        font-size: 18px;
-        line-height: 1.6;
-      }
-
-      /* Estilo para enlaces */
-      a {
-        color: #007bff;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      /* Estilo para enlaces al pasar el ratón por encima */
-      a:hover {
-        color: #0056b3;
-      }
-
-      .cambio {
-        text-align: center;
-      }
-
-      /* Pie de página */
-      footer {
-        position: relative;
-        background-color: #1b2223;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap-reverse; /* Invierte el orden de los elementos en pantallas pequeñas */
-      }
-
-      .social-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 15px;
-      }
-
-      .social-links li {
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-      }
-
-      .social-links a {
-        text-decoration: none;
-        color: #fff;
-      }
-
-      .social-links a:hover {
-        color: #0ef6cc;
-      }
-
-      /* Estilo para las imágenes de las redes sociales */
-      .social-links img {
-        max-width: 25px; /* Tamaño máximo de las imágenes */
-        height: auto;
-      }
-
-      /* Estilo para el símbolo de copyright */
-      .footer-content p {
-        order: 100; /* Cambia el orden del párrafo */
-        margin: 0; /* Elimina el margen del párrafo */
-      }
-      /* Termina el CSS del Footer */
-
-      /* Estilo para listas no ordenadas */
-      ul {
-        list-style-type: disc;
-        padding-left: 20px;
-      }
-
-      /* Estilo para elementos de lista */
-      li {
-        font-size: 16px;
-        line-height: 1.5;
-      }
-
-      
-      /* Media query para dispositivos pequeños */
-      @media (max-width: 768px) {
-        /* Ajustar el tamaño del encabezado y el título principal */
-        header {
-          padding: 15px 0;
-        }
-        h1 {
-          font-size: 28px;
-        }
-        /* Ajustar el tamaño de los subtítulos y el texto */
-        h2 {
-          font-size: 24px;
-        }
-        p {
-          font-size: 16px;
-        }
-        /* Ajustar el tamaño del pie de página */
-        footer {
-          padding: 8px 0;
-        }
-        /* Hacer el contenedor principal más ancho */
-        .container {
-          max-width: 90%;
-        }
-        /* Ajustar el espacio entre los íconos de redes sociales */
-        .social-links li {
-          margin-right: 10px;
-        }
-      }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <title>TypeScript</title>
   </head>
+  <style>
+    body {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      text-align: center;
+      background-color: #f0f0f0; /* Código de color gris claro */
+    }
+
+    nav {
+      background-color: #d3e1e2;
+    }
+    .navbar {
+      background-color: #265457; /* Cambia el color de fondo del navbar */
+      color: #fae5d3;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 20px;
+      color: #fae5d3; /* Cambia el color del texto de los botones */
+    }
+
+    main {
+      padding: 20px;
+      background-color: #f4fefd;
+      width: 70%; /* Tamaño para PC */
+      margin: 0 auto; /* Centrar el contenido */
+    }
+
+    hr {
+      border: 2px solid #000; /* Cambia "2px" al grosor que desees y "#000" al color que prefieras */
+    }
+
+    ol {
+      text-align: left;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    .v {
+      color: green;
+    }
+    .d {
+      color: red;
+    }
+
+    h1 {
+      color: #0077b6; /* Color azul oscuro de TypeScript */
+      font-size: 36px; /* Tamaño de fuente grande */
+      font-weight: bold; /* Texto en negrita */
+      text-transform: uppercase; /* Texto en mayúsculas */
+      position: relative;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    h1,
+    h2 {
+      display: inline;
+      position: relative;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px; /* Grosor del subrayado */
+      bottom: 0;
+      left: 0;
+      background-color: #0077b6; /* Color del subrayado */
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out; /* Duración y efecto de la animación */
+    }
+
+    h2:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    /* Estilos para tabletas (tamaño menor de 768px) y teléfonos */
+    @media screen and (max-width: 768px) {
+      main {
+        width: 100%; /* Ocupar el ancho completo en tabletas y teléfonos */
+      }
+    }
+
+    /* Estilos para imágenes (ajusta según tus necesidades) */
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .img-container img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    /*Estilos del Footer*/
+    .footer {
+      background-color: #265457;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      padding-bottom: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: #f4fefd;
+    }
+
+    .footer-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+      margin-top: 50px;
+      align-items: end;
+    }
+
+    .footer-social a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      display: inline-flex; /* Alinea los elementos en la misma fila */
+      align-items: center; /* Centra verticalmente el contenido */
+      margin-right: 20px;
+      margin-bottom: 10px; /* Añade un espacio entre las redes sociales */
+    }
+
+    .footer-social a:hover {
+      color: #0ef4ee;
+    }
+    .footer-links a {
+      color: #f5f5f8;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .footer-links a:hover {
+      color: #0ef4ee;
+    }
+
+    /* Estilos para iconos de redes sociales */
+    .icon {
+      width: 35px;
+    }
+    /* Termina el CSS del Footer */
+  </style>
   <body>
     <header>
-      <h1>TypeScript</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <!-- Logotipo de HTML -->
+          <img class="imglogo" src="assets/images/diego/logocode.png" alt="" width="150" height="60" class="d-inline-block align-top" />
+        </a>
+        <!-- Botones de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="a1" class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a id="a3" class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <div class="container">
-      <h2>¿Que es TypeScript?</h2>
-      <p>
-        TypeScript es un lenguaje de programación desarrollado por Microsoft que
-        se basa en JavaScript. Lo que hace especial a TypeScript es que agrega
-        características de tipado estático opcional al JavaScript, lo que
-        significa que puedes declarar tipos para tus variables y objetos en el
-        código. Esto ayuda a detectar errores en tiempo de compilación en lugar
-        de en tiempo de ejecución, lo que conduce a un código más robusto y
-        fácil de mantener.
-      </p>
+    <main>
+      <section>
+        <h1><b>TypeScript, una extension de JavaScript</b></h1>
+        <p>
+          <br />
+          TypeScript es un lenguaje de programación que se ha vuelto cada vez
+          más popular en el mundo del desarrollo de software. Es conocido por
+          ser un superset (un conjunto más amplio) de JavaScript, lo que
+          significa que está basado en JavaScript pero agrega características
+          adicionales que hacen que el desarrollo de aplicaciones sea más sólido
+          y menos propenso a errores.
+        </p>
+        <br />
+        <div class="img-container">
+          <img src="assets/images/diego/type.png" class="img" />
+        </div>
+        <p>
+          <br />
+          TypeScript se centra en la seguridad y robustez del código, lo que lo
+          hace especialmente atractivo para aplicaciones de gran envergadura y
+          proyectos complejos. Este informe proporcionará una visión general de
+          TypeScript, incluyendo su origen, sintaxis, ventajas, desventajas y
+          las tendencias futuras.
+        </p>
+      </section>
       <hr />
-      <h2>Contexto</h2>
-      <p>
-        TypeScript surgió como respuesta a la necesidad de mejorar la calidad y
-        la escalabilidad del código JavaScript en proyectos grandes y complejos.
-        A medida que las aplicaciones web y las bases de código se volvieron más
-        grandes y sofisticadas, los errores en tiempo de ejecución y la falta de
-        herramientas de desarrollo sólidas se convirtieron en desafíos
-        significativos.
-      </p>
-      <p>
-        Microsoft presentó TypeScript en 2012 como una solución a estos
-        problemas. Desde entonces, TypeScript ha ganado una amplia adopción en
-        la industria del desarrollo web y se ha convertido en un lenguaje de
-        programación popular tanto en el desarrollo frontend como en el backend.
-      </p>
+      <section>
+        <h2><b>Origen de TypeScript</b></h2>
+        <p>
+          <br />
+          TypeScript fue creado por Microsoft y lanzado en 2012. El proyecto fue
+          liderado por Anders Hejlsberg, un ingeniero de software conocido por
+          su trabajo en Turbo Pascal, Delphi y C#. Hejlsberg vio la necesidad de
+          una herramienta que permitiera a los desarrolladores escribir código
+          JavaScript más robusto y escalable, especialmente para proyectos de
+          gran tamaño.
+        </p>
+      </section>
       <hr />
-      <h2>En el Front-End</h2>
-      <p>
-        El frontend se refiere a la parte de una aplicación web que los usuarios
-        ven y con la que interactúan directamente. TypeScript es un lenguaje de
-        programación que se utiliza en el frontend para mejorar la calidad y la
-        eficiencia del código JavaScript, que es el lenguaje principal de la
-        web.
-      </p>
+      <section>
+        <h2><b>Sintaxis</b></h2>
+        <p>
+          <br />
+          TypeScript mantiene la sintaxis fundamental de JavaScript, lo que lo
+          hace familiar para los desarrolladores de JavaScript. Sin embargo,
+          agrega tipado estático opcional. Esto significa que puedes declarar el
+          tipo de una variable, y el sistema de tipos de TypeScript verifica si
+          se están utilizando las variables correctamente. A continuación, un
+          ejemplo simple:
+        </p>
+        <div class="img-container">
+          <img src="assets/images/diego/chat.openai.com.png" class="img" />
+        </div>
+      </section>
       <hr />
-      <h2>Importancia en el Front-End</h2>
-      <p>
-        El desarrollo frontend implica la creación de la interfaz de usuario de
-        una aplicación web. Aquí, TypeScript desempeña un papel crucial:
-      </p>
-      <ul>
-        <li>
-          <b>Mejora la Calidad del Código:</b> El tipado estático de TypeScript
-          permite detectar errores de manera temprana, lo que significa que
-          puedes encontrar y corregir problemas antes de que lleguen a la etapa
-          de producción. Esto resulta en un código más confiable y menos
-          propenso a errores.
-        </li>
-        <li>
-          <b>Facilita el Mantenimiento:</b> A medida que un proyecto frontend
-          crece, mantener y refactorizar el código se vuelve esencial.
-          TypeScript, con su tipado estático y documentación mejorada, hace que
-          el mantenimiento sea más sencillo y menos propenso a errores.
-        </li>
-        <li>
-          <b>Aprovecha las Características Modernas:</b> TypeScript admite las
-          últimas características de JavaScript, lo que te permite utilizar
-          funcionalidades modernas como las funciones de flecha, las clases y el
-          desestructuración de manera segura.
-        </li>
-      </ul>
-      <h2>Aprendiendo TypeScript</h2>
-      <b>Sintaxis basica</b>
-      <p>
-        Comenzar con TypeScript no es difícil, ya que comparte una sintaxis
-        similar a JavaScript. Puedes aprender lo básico de TypeScript
-        escribiendo variables, funciones y objetos.
-      </p>
-      <b>Declaración de Tipos</b>
-      <p>
-        Una de las características más importantes de TypeScript es la
-        declaración de tipos. Aquí tienes un ejemplo simple:
-      </p>
-      <pre><code>
-    <b class="cambio">let mensaje: string = "Hola, mundo";
-    let numero: number = 42;</b>
-    </code></pre>
-      <p>
-        Estas declaraciones indican que mensaje debe ser una cadena y numero
-        debe ser un número. Si intentas asignar un valor de un tipo incorrecto,
-        TypeScript mostrará un error.
-      </p>
-    </div>
-    <footer>
-      <div class="footer-content">
-        <ul class="social-links">
+      <section>
+        <h2><b class="v">Ventajas de TypeScript</b></h2>
+        <ol>
+          <br />
           <li>
-            <img src="github.png" alt="" />
-            <a href="https://github.com/diegotutor21" target="_blank"
-              ><i class="fab fa-github"></i>Github</a
-            >
+            <b>Tipado estatico: </b>Reduce errores de tiempo de ejecución al
+            atrapar problemas en tiempo de compilación.
           </li>
+          <br />
           <li>
-            <img src="instagram.png" alt="" />
-            <a href="https://www.instagram.com" target="_blank"
-              ><i class="fab fa-instagram"></i>Instagram</a
-            >
+            <b>Mejora el soporte para IDE: </b>Los entornos de desarrollo
+            integrados como Visual Studio Code ofrecen una gran experiencia para
+            escribir y depurar código TypeScript.
           </li>
+          <br />
           <li>
-            <img src="facebook.png" alt="" />
-            <a href="https://facebook.com" target="_blank"
-              ><i class="fab fa-facebook"></i>Facebook</a
-            >
+            <b>Código más legible: </b>Los tipos ayudan a entender mejor el
+            código, lo que facilita el mantenimiento.
+          </li>
+          <br />
+          <li>
+            <b>Escalabilidad: </b>Es ideal para proyectos grandes y complejos.
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section>
+        <h2><b class="d">Desventajas de TypeScript</b></h2>
+        <br />
+        <ol>
+          <br />
+          <li>
+            <b>Curva de aprendizaje: </b>Para los desarrolladores nuevos en el
+            lenguaje, el sistema de tipos puede ser un desafío.
+          </li>
+          <br />
+          <li>
+            <b>Compilación adicional: </b>Debes compilar TypeScript a JavaScript
+            antes de que se pueda ejecutar en un navegador.
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section>
+        <h2><b>Comunidad y recursos</b></h2>
+        <ul>
+          <br />
+          <li>
+            <b>Comunidad activas: </b>TypeScript cuenta con una comunidad activa
+            y comprometida de desarrolladores en todo el mundo. Puedes unirte a
+            comunidades en línea como el foro oficial de TypeScript en GitHub o
+            el subreddit de TypeScript en r/typescript. Estos lugares son
+            ideales para hacer preguntas, compartir conocimientos y aprender de
+            otros desarrolladores.
+          </li>
+          <br />
+          <li>
+            <b>Documentacion oficial: </b>La documentación oficial de TypeScript
+            es una fuente valiosa de información. Puedes encontrarla en el sitio
+            web oficial de TypeScript, que ofrece guías, tutoriales y ejemplos
+            para ayudarte a comprender el lenguaje y sus características.
+          </li>
+          <br />
+          <div class="img-container">
+            <img src="assets/images/diego/script.webp" class="img" />
+          </div>
+          <br />
+          <li>
+            <b>Herramientas de desarrollo: </b>TypeScript se integra
+            perfectamente con una variedad de herramientas de desarrollo
+            populares. Un ejemplo destacado es Visual Studio Code, un IDE
+            ampliamente utilizado que ofrece soporte excepcional para
+            TypeScript. Además, las extensiones de TypeScript para Visual Studio
+            Code facilitan la escritura y depuración de código.
+          </li>
+          <br />
+          <li>
+            <b>Comunidad en linea: </b>Diversas comunidades en línea, como Stack
+            Overflow, cuentan con una gran cantidad de preguntas y respuestas
+            relacionadas con TypeScript. Si te enfrentas a un problema
+            específico, es probable que alguien haya tenido una experiencia
+            similar y haya compartido una solución.
           </li>
         </ul>
-        <p>&copy; CodeStart.com</p>
+      </section>
+      <hr />
+      <section>
+        <h2><b>Comparacion con JavaScript</b></h2>
+        <ul>
+          <br />
+          <li>
+            <b>Tipado Estático: </b>Una de las diferencias más notables entre
+            TypeScript y JavaScript es el tipado estático. En TypeScript, puedes
+            declarar explícitamente los tipos de tus variables, lo que significa
+            que el sistema de tipos puede detectar posibles errores en tiempo de
+            compilación. Esto ayuda a prevenir errores comunes que podrían pasar
+            desapercibidos en JavaScript.
+          </li>
+          <br />
+          <li>
+            <b>IDE y Herramientas: </b>TypeScript ofrece un gran soporte en los
+            Entornos de Desarrollo Integrados (IDE). IDEs como Visual Studio
+            Code proporcionan funciones de autocompletado, refactoring y
+            detección de errores más eficientes gracias a la información de
+            tipos de TypeScript.
+          </li>
+          <br />
+          <li>
+            <b>Legibilidad del Código: </b>La introducción de tipado en
+            TypeScript puede hacer que el código sea más legible y
+            autodocumentado. Los tipos proporcionan información clara sobre qué
+            se espera de una función y qué tipo de datos puede devolver, lo que
+            facilita la comprensión del código, especialmente en proyectos
+            grandes.
+          </li>
+          <br />
+          <div class="img-container">
+            <img src="assets/images/diego/javascript-vs-typescript.jpg" class="img" />
+          </div>
+          <br />
+          <li>
+            <b>Compilacion: </b>Mientras que JavaScript se ejecuta directamente
+            en los navegadores, TypeScript debe compilarse a JavaScript antes de
+            la ejecución. Aunque esto puede agregar un paso adicional, la
+            ventaja es que TypeScript permite utilizar las características más
+            recientes de JavaScript y compilarlo para versiones anteriores.
+          </li>
+          <br />
+          <li>
+            <b>Curva de aprendizaje: </b>Para los desarrolladores nuevos, la
+            introducción de tipado puede representar una curva de aprendizaje.
+            Sin embargo, una vez superada esta etapa, muchos desarrolladores
+            encuentran que TypeScript les ayuda a escribir código más seguro y
+            mantenible. Estas diferencias y similitudes entre TypeScript y
+            JavaScript te ayudarán a comprender por qué TypeScript se ha
+            convertido en una elección popular en el desarrollo web,
+            especialmente en proyectos grandes y complejos.
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2><b>Tendencias Futuras</b></h2>
+        <p>
+          <br />
+          TypeScript sigue ganando popularidad y se ha convertido en un estándar
+          de facto en la industria del desarrollo web. Microsoft continúa
+          invirtiendo en su desarrollo, y muchas empresas lo han adoptado en sus
+          proyectos. Se espera que TypeScript siga evolucionando, proporcionando
+          aún más herramientas para simplificar el desarrollo de aplicaciones
+          web.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2><b>Conclusion</b></h2>
+        <p>
+          <br />
+          TypeScript es una herramienta poderosa para escribir código JavaScript
+          más robusto y escalable. Aunque tiene una curva de aprendizaje, las
+          ventajas de la seguridad del tipo y la legibilidad del código son
+          notables. A medida que TypeScript continúa evolucionando, es probable
+          que siga siendo una elección popular para desarrolladores y empresas
+          que buscan un desarrollo web sólido y seguro.
+        </p>
+        <div class="img-container">
+          <img src="assets/images/diego/321.png" class="img" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">Mi plataforma de Lanzamiento</div>
+
+        <div class="footer-social">
+          <ul>
+            <a href="#" target="_blank"><img src="assets/images/diego/facebook.png" alt="logoface" class="icon" />Facebook</a>
+
+            <a href="#" target="_blank"><img src="assets/images/diego/gorjeo.png" alt="logotwitter" class="icon" />Twitter</a>
+
+            <a href="#" target="_blank"><img src="assets/images/diego/instagram.png" alt="logoinst" class="icon" />Instagram</a>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="footer-text">© 2023 Todos los derechos reservados</div>
       </div>
     </footer>
   </body>
