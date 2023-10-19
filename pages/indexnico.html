@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
     
     <title>CodeStart - Home</title>
 </head>
 <style>
-    
+
     *{
         margin: 0;
         padding: 0;
-        font-family: averta;
+        font-family: 'Forum', serif;
         box-sizing: border-box;
     }
 
     nav{
-        background-color: #D3e1e2 ;
+        background-color: #335356 ;
     }
+    .nav-item #a1{
+        margin-right: 30px;
+        font-size: 25px;
+     }
+
     h1{
         text-align: center;
+        font-family: 'Forum', serif;
     }
     
    
@@ -114,7 +126,7 @@
     }
    
     .navbar {
-        background-color: #265457; /* Cambia el color de fondo del navbar */
+        background-color: #335356; /* Cambia el color de fondo del navbar */
         color: #FAE5D3;
     }
     
@@ -147,79 +159,72 @@
         text-align: center;
 
     }
-    .footer {
-    background-color: #265457;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    padding-bottom: 0px;
-}
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .container-foo {
+        background-color: #335356;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    .logo-footer{
+        font-family: 'Open Sans', sans-serif;
 
-.footer-logo {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #9fc9cd;
-}
+    }
 
-.footer-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    align-items: end;
-    
-}
+    .logo-footer{
+        margin-left: 0;
+    }
+    .logo-footer img{
+        margin-top: 40px;
+    }
 
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 24px;
-}
+    .sobre {
+        margin-left: 20%;
+    }
+    .sobre h3 {
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.footer-social a:hover {
-    color: #0300FF;
-}
-.footer-links a{
-    color:#f5f5f8;
-    text-decoration: none;
-    margin-right: 20px;
-}
-.footer-links a:hover{
-    color: #0300FF;
-}
+    .redes{
+        margin-left: 20%;
+    }
 
+    .redes img{
+        margin-right: 10px;
+    }
+    .redes h3{
+        font-family: 'Open Sans', sans-serif;
+    }
 
+    .seguridad{
+       display: flex;
+        background-color: #335356;
+    }
+    .seguridad p{
+        margin-top: 50px;
+        margin-left: 510px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .grupo-2{
+        background-color: #335356;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+}
+    .grupo-2 small{
+        background-color: #335356;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
 /* Estilos para iconos de redes sociales */
-.icon{
-    margin-left: 40px;
-    width: 23px;
-    height: 23px;
-}
-#logoface{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -5px;
-}
-#logox{
-    margin-left: 10px;
-    margin-right: 8px;
-    margin-top: -5px;
-}
-#logoig{
-    margin-left: 10px;
-    margin-right: 8px;
-    margin-top: -5px;
-}
+
+
 </style>
 <body>
     <header>
@@ -234,12 +239,6 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a  id="a1" class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  id="a2" class="nav-link" href="#">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  id="a3"  class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -262,6 +261,7 @@
                     <P> Html es un lenguaje para crear páginas web, usando etiquetas 
                         para organizar texto e imágenes. Se combina con CSS y JavaScript 
                         para el diseño y la interactividad.</P>
+                        <br>
                         <a href="cutone.html">Acceder</a>
                 </div>
             </div>
@@ -282,6 +282,8 @@
                 <div class="contenido">
                     <h3> JavaScript </h3>
                     <P> JavaScript es un lenguaje de programación utilizado para agregar interactividad y dinamismo a las páginas web. </P>
+                    <br>
+                    <br>
                         <a href="HTML.html">Acceder</a>
                 </div>
             </div>
@@ -311,6 +313,7 @@
                 <div class="contenido">
                     <h3> Sql </h3>
                     <P> SQL es un lenguaje para administrar y consultar bases de datos relacionales.</P>
+                    <br>
                         <a href="HTML.html">Acceder</a>
                 </div>
             </div>
@@ -348,6 +351,8 @@
                 <div class="contenido">
                     <H3> CiberSeguridad </H3>
                     <P> La ciberseguridad en programación protege aplicaciones y datos de ataques, evitando robos y daños. </P>
+                    <br>
+                    <br>
                         <a href="HTML.html">Acceder</a>
                 </div>
             </div>
@@ -368,6 +373,8 @@
                 <div class="contenido">
                     <h3> Soft Skills Y Metodología Ágil </h3>
                     <P> Las soft skills son habilidades sociales y la metodología ágil es un enfoque de gestión de proyectos. Ambos son clave para el éxito en el trabajo.  </P>
+                    <br>
+                    <br>
                         <a href="HTML.html">Acceder</a>
                 </div>
             </div>
@@ -382,6 +389,8 @@
                 <div class="contenido">
                     <h3> Java </h3>
                     <P> Java es un lenguaje de programación versátil conocido por su portabilidad y seguridad. Se ejecuta en una máquina virtual y se utiliza en una amplia gama de aplicaciones, como aplicaciones empresariales y móviles.</P>
+                    <br>
+
                         <a href="cutonejava.html">Acceder</a>
                 </div>
             </div>
@@ -392,7 +401,6 @@
                 <div class="contenido">
                     <H3> TypeScript </H3>
                     <P> TypeScript es una extensión de JavaScript que proporciona tipos estáticos y otras características para mejorar el desarrollo de aplicaciones web y aplicaciones en general. </P>
-                
                     <br>
                         <a href="Cutone.html">Acceder</a>
                 </div>
@@ -424,32 +432,33 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
-            
-            <div class="footer-social">
-                <a href="#" target="_blank"><img id="logoface" src="/assets/images/nico/facebook.png" alt="logoface" class="icon">Facebook</a>
+        <div class="container-foo">
+            <div logo-footer>
+                <img id="logofooter" src="/assets/images/nico/logocode.png" alt="" width="200" height="100">
+            </div>
+            <div class="sobre">
+                <h3> SOBRE NOSOTROS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    perspiciatis maiores ducimus nam sit.</p>
+            </div>
+            <div class="redes">
+                <h3> SÍGUENOS</h3>
+                <a href="https://es-la.facebook.com/">
+                    <img src="/assets/images/nico/facebook.png" alt="" width="40" height="40">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="/assets/images/nico/instagramf.jpg" alt="" width="40" height="40">
+                </a>
+                <a href="https://twitter.com/?lang=es">
+                    <img src="/assets/images/nico/logodeX.jpeg" alt="" width="40" height="40">
+                </a>
                 
-                <a href="#" target="_blank"><img id="logox" src="/assets/images/nico/logodeX.jpeg" alt="logotwitter" class="icon"> X </a>
-                
-                <a href="#" target="_blank"><img id="logoig" src="/assets/images/nico/igfinal.png" alt="logoinst" class="icon"> Instagram</a>
             </div>
-            
-            <div class="footer-subscribe">
-                <h3>Suscríbete a nuestro sitio Web</h3>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </div>
-            <br>
-            <div class="footer-links">
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Preguntas frecuentes</a>
-            </div>
-            <div class="footer-text">© 2023 Todos los derechos reservados</div>
-        </div>
+         </div>
+         <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+         </div>
+    </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

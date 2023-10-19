@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Code-Start / HTML</title>
 </head>
 <style>
     *{
-        font-family: Forum;
+        font-family: 'Forum', serif;
         
     }
     .navbar {
-        background-color: #265457; /* Cambia el color de fondo del navbar */
+        background-color: #335356; /* Cambia el color de fondo del navbar */
         color: #FAE5D3;                                                                                   
     }
     
@@ -155,79 +162,78 @@
         border-radius: 6px;
     }
 
-    .footer {
-    background-color: #265457;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    padding-bottom: 0px;
-}
+    .container-foo {
+        background-color: #335356;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    .logo-footer{
+        font-family: 'Open Sans', sans-serif;
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    }
 
-.footer-logo {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #9fc9cd;
-}
+    .logo-footer{
+        margin-left: 0;
+    }
+    .logo-footer img{
+        margin-top: 40px;
+    }
 
-.footer-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    align-items: end;
-    
-}
+    .sobre {
+        margin-left: 20%;
+    }
+    .sobre h3 {
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 24px;
-}
+    .redes{
+        margin-left: 20%;
+    }
 
-.footer-social a:hover {
-    color: #0300FF;
-}
-.footer-links a{
-    color:#f5f5f8;
-    text-decoration: none;
-    margin-right: 20px;
-}
-.footer-links a:hover{
-    color: #0300FF;
-}
+    .redes img{
+        margin-right: 10px;
+    }
 
-/* Estilos para iconos de redes sociales */
-.icon{
-    margin-left: 40px;
-    width: 23px;
-    height: 23px;
-}
-#logoface{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -5px;
-}
-#logox{
-    margin-left: 10px;
-    margin-right: 8px;
-    margin-top: -5px;
-}
-#logoig{
-    margin-left: 10px;
-    margin-right: 8px;
-    margin-top: -5px;
-}
+    .h4-foo{
+        font-family: 'Open Sans', sans-serif;
 
+    }
+
+    .seguridad{
+       display: flex;
+        background-color: #335356;
+    }
+    .seguridad p{
+        margin-top: 50px;
+        margin-left: 510px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .grupo-2{
+        background-color: #335356;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+}
+    .grupo-2 small{
+        background-color: #335356;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        
+    }
+    .parrafo  h5{
+        font-size: 25px;
+        color: #1a9679;
+    }
+     .nav-item #a1{
+        margin-right: 30px;
+        font-size: 25px;
+     }
 </style>
 <body>
     <header>
@@ -243,12 +249,7 @@
                     <li class="nav-item">
                         <a  id="a1" class="nav-link" href="indexnico.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a  id="a2" class="nav-link" href="#">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a  id="a3"  class="nav-link" href="#contacto">Contacto</a>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -308,6 +309,10 @@
             <br>
        
             <li class="li1"> <a href="#id5"> Características de java </a> </li>
+            
+            <br>
+       
+            <li class="li1"> <a href="#id7"> frameworks que se utilizan </a> </li>
          
         </ol>
      </div>
@@ -466,39 +471,71 @@
             <li class="li2">  Independencia </li>
         </ol>
     </div>
+    <div class="parrafo" id="id7">
+        <h3>Frameworks que se utilizan</h3>
+        <p> 
+            <h5>Spring Framework:</h5> Spring es uno de los frameworks más populares en el desarrollo <br>
+            de aplicaciones empresariales en Java. Ofrece un conjunto amplio de módulos y  <br>
+            características, incluyendo Spring Boot, Spring MVC, Spring Security, Spring Data, y muchos más. <br>
+            <br>
+            <h5>Hibernate:</h5> Hibernate es un framework de mapeo objeto-relacional (ORM) que simplifica <br>
+            la interacción con bases de datos relacionales. Permite a los desarrolladores trabajar <br>
+            con objetos Java en lugar de escribir SQL directamente. <br>
+            <br>
+            <h5>Struts:</h5> Apache Struts es un framework de desarrollo web basado en el patrón de diseño <br>
+            Modelo-Vista-Controlador (MVC). Ayuda a estructurar aplicaciones web de manera organizada <br>
+            y escalable. <br>
+            <br>
+            <h5>JavaServer Faces (JSF):</h5> JSF es un framework de componentes de interfaz de usuario para <br>
+            construir aplicaciones web en Java. Proporciona una forma de desarrollar aplicaciones webbr <br>
+            con una interfaz de usuario rica y reutilizable. <br>
+            <br>
+            <h5>Apache Wicket:</h5> Wicket es un framework de desarrollo web centrado en componentes que simplifica <br>
+            la creación de aplicaciones web con Java. Se enfoca en la reutilización de componentes y en la <br>
+            escritura de código limpio. <br>
+            <br>
+            <h5>Grails:</h5> Grails es un framework de aplicación web basado en Groovy, que se ejecuta en la máquina <br>
+            virtual de Java (JVM). Combina características de Spring y Hibernate y se centra en la productividad <br>
+            del desarrollador. <br>
+            <br>
+            <h5>Vaadin:</h5> Vaadin es un framework de desarrollo de aplicaciones web de Java que permite crear aplicaciones <br>
+            de usuario ricas (RIA) en Java. Se basa en componentes y ofrece una interfaz de usuario atractiva. <br>
+            <br>
+         
+        </p>
+     </div>
 
     <div class="conteinerfinal">
 
     </div>
 
-
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
-            
-            <div class="footer-social" id="Contacto">
-                <a href="#" target="_blank"><img id="logoface" src="/assets/images/nico/facebook.png" alt="logoface" class="icon">Facebook</a>
-                
-                <a href="#" target="_blank"><img id="logox" src="/assets/images/nico/logodeX.jpeg" alt="logotwitter" class="icon"> X </a>
-                
-                <a href="#" target="_blank"><img id="logoig" src="/assets/images/nico/igfinal.png" alt="logoinst" class="icon"> Instagram</a>
+        <div class="container-foo">
+            <div logo-footer>
+                <img id="logofooter" src="/assets/images/nico/logocode.png" alt="" width="200" height="100">
             </div>
-            
-            <div class="footer-subscribe">
-                <h2>Suscríbete a nuestro sitio Web</h2>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <input type="button" value="Suscribirse">
-                </form>
+            <div class="sobre">
+                <h4 class="h4-foo"> SOBRE NOSOTROS </h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    perspiciatis maiores ducimus nam sit.</p>
             </div>
-            <br>
-            <div class="footer-links">
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Preguntas frecuentes</a>
+            <div class="redes">
+                <h4 class="h4-foo"> SÍGUENOS </h4>
+                <a href="https://es-la.facebook.com/">
+                    <img src="/assets/images/nico/facebook.png" alt="" width="40" height="40">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="/assets/images/nico/instagramf.jpg" alt="" width="40" height="40">
+                </a>
+                <a href="https://twitter.com/?lang=es">
+                    <img src="/assets/images/nico/logodeX.jpeg" alt="" width="40" height="40">
+                </a>
             </div>
-            <div class="footer-text">© 2023 Todos los derechos reservados</div>
-        </div>
+         </div>
+         <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+         </div>
+    </div>
     </footer>
 </body> 
 </html>
