@@ -55,6 +55,10 @@
         font-size: 20px;
         color: #FAE5D3 ; /* Cambia el color del texto de los botones */
     }
+    .nav-item #a1{
+        margin-right: 30px;
+        font-size: 25px;
+     }
     
   
     
@@ -110,83 +114,85 @@
         #ul1{
             text-align: left;
         }
-        .footer {
-            background-color: #265457;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            padding-bottom: 0px;
-            margin-top: 15px;
-        }
+        .container-foo {
+        background-color: #335356;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    .logo-footer{
+        font-family: 'Open Sans', sans-serif;
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    }
 
-        .footer-logo {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: #9fc9cd;
-        }
+    .logo-footer{
+        margin-left: 0;
+    }
+    .logo-footer img{
+        margin-top: 40px;
+    }
 
-        .footer-text {
-            font-size: 18px;
-            margin-bottom: 20px;
-            margin-top: 50px;
-            align-items: end;
+    .sobre {
+        margin-left: 20%;
+    }
+    .sobre h4 {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .redes{
+        margin-left: 160px;
+    }
     
-        }
+    .redes .h4-foo{
+        margin-right: 80px
+    }
 
-        .footer-social a {         
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 24px;
-        }
+    .redes img{
+        margin-right: 25px;
+    }
 
-        .footer-social a:hover {           
-            color: #0300FF;
-        }
-        .footer-links a{           
-            color:#f5f5f8;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        .footer-links a:hover{         
-            color: #0300FF;
-        }
-
-/* Estilos para iconos de redes sociales */
-        .icon{
-            margin-left: 40px;
-            width: 23px;
-            height: 23px;
-        }
-        #logoface{
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: -5px;
-        }
-        #logox{
-            margin-left: 10px;
-            margin-right: 8px;
-            margin-top: -5px;
-        }
-        #logoig{
-            margin-left: 10px;
-            margin-right: 8px;
-            margin-top: -5px;
-        }
-        .nav-item #a1{
-        margin-right: 30px;
+    .h4-foo{
+        font-family: 'Open Sans', sans-serif;
         font-size: 25px;
+        margin-top: 18px;
+    }
+
+    #sobre{
+        font-size: 15px;
+        color: #ffff;
+    }
+    .seguridad{
+       display: flex;
+        background-color: #335356;
+    }
+    .seguridad p{
+        margin-top: 50px;
+        margin-left: 510px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .grupo-2{
+        background-color: #335356;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+}
+    .grupo-2 small{
+        background-color: #335356;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        
+    }
+     
+     #siguenos{
+        margin-left: 60px;
+        margin-bottom: 15px;
      }
+       
         
     </style>
 </head>
@@ -373,32 +379,33 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
-            
-            <div class="footer-social" id="Contacto">
-                <a href="#" target="_blank"><img id="logoface" src="/assets/images/nico/facebook.png" alt="logoface" class="icon">Facebook</a>
-                
-                <a href="#" target="_blank"><img id="logox" src="/assets/images/nico/logodeX.jpeg" alt="logotwitter" class="icon"> Twitter </a>
-                
-                <a href="#" target="_blank"><img id="logoig" src="/assets/images/nico/igfinal.png" alt="logoinst" class="icon"> Instagram</a>
+        <div class="container-foo">
+            <div logo-footer>
+                <img id="logofooter" src="/assets/images/nico/logocode.png" alt="" width="200" height="100">
             </div>
-            
-            <div class="footer-subscribe">
-                <h3>Suscríbete a nuestro sitio Web</h3>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <button type="submit">Suscribirse</button>
-                </form>
+            <div class="sobre">
+                <h4 class="h4-foo" > SOBRE NOSOTROS </h4>
+                <p id="sobre">Este proyecto fue realizado con el fin de brindar información a las personas<br>
+                que esten interesadas en la industria de la programación/informática.
+            </p>
             </div>
-            <br>
-            <div class="footer-links">
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Preguntas frecuentes</a>
+            <div class="redes">
+                <h4 class="h4-foo" id="siguenos"> SÍGUENOS </h4>
+                <a href="https://es-la.facebook.com/">
+                    <img src="/assets/images/nico/facebook.png" alt="" width="45" height="40">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="/assets/images/nico/instagramf.jpg" alt="" width="45" height="40">
+                </a>
+                <a href="https://twitter.com/?lang=es">
+                    <img src="/assets/images/nico/logodeX.jpeg" alt="" width="45" height="40">
+                </a>
             </div>
-            <div class="footer-text">© 2023 Todos los derechos reservados</div>
-        </div>
+         </div>
+         <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+         </div>
+    </div>
     </footer>
     
    
