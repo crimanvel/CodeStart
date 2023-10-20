@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industria del Videojuego y Desarrollo</title>
+    <style>
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    background-color: #111111; /* Color de fondo */
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-image: url('https://www.fundaciontelefonica.com/wp-content/uploads/2022/08/pro-gamer-playing-space-shooter-online-championship-with-modern-graphics-using-wireless-controller.jpg'); /* Cambia 'portada.jpg' por la URL de tu imagen de portada */
+    position: relative; /* Establece la posición relativa para el elemento header */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-background {
+    position: absolute; /* Establece la posición absoluta para el div de fondo */
+    top: 0;
+    left: 0;
+    width: 90%; /* Asegura que la imagen de fondo cubra todo el header */
+    height: 90%;
+    background-image: url('https://www.fundaciontelefonica.com/wp-content/uploads/2022/08/pro-gamer-playing-space-shooter-online-championship-with-modern-graphics-using-wireless-controller.jpg'); /* Ruta de la imagen de fondo */
+    background-size: 500px; /* Ajusta el tamaño de la imagen de fondo para cubrir el área */
+    z-index: -1; /* Coloca la imagen de fondo detrás del contenido del header */
+}
+
+/* Estilos para el título principal (h1) en el encabezado */
+h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 60px;
+    color: hsl(210, 27%, 48%);
+    text-shadow: 0px 0px 9px #508AD3;
+    -webkit-text-stroke: 2px black; /* Prefijo específico de WebKit para navegadores como Chrome */
+}
+
+/* Estilos para las secciones */
+section {
+    background-color: hsl(199, 61%, 24%);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 85%;
+}
+
+/* Estilos para las imágenes de los motores de juego */
+.motorPortada {
+    width: 700px;
+    height: 500px;
+    margin-left: 20%;
+}
+
+/* Estilos para los títulos de secciones (h2) */
+h2 {
+    text-align: center;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc; /* Estilo de sombra de texto */
+}
+
+/* Estilos para títulos de subsecciones (h3) */
+h3 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    color: #79c6fd;
+    text-shadow: 0px 0px 9px #ffffff;
+}
+
+/* Estilos para listas desordenadas (ul) */
+ul {
+    list-style-type: square;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos para listas no ordenadas (ul) */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para elementos de lista (li) */
+li {
+    display: inline;
+    margin: 0 10px; /* Espacio entre elementos de navegación */
+    text-decoration: none;
+}
+
+/* Estilos para la lista de juegos (gameList) */
+.gameList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para elementos de la lista de juegos (li) */
+.gameList li {
+    flex: 1;
+    margin-right: 10px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilos para las imágenes de muestra de juegos (muestraJuego) */
+.muestraJuego {
+    width: 250px;
+    height: 250px;
+}
+
+/* Estilos para la imagen de lenguajes de programación */
+.codeImg {
+    width: 750px;
+    height: 500px;
+    margin-left: 250px;
+}
+
+/* Estilos para el botón */
+button {
+    width: 200px;
+    height: 70px;
+    background: linear-gradient(to left top, #0b81db 50%, #5ba5ca 50%);
+    border-style: none;
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para efectos de botón en hover */
+button:hover {
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para las partes animadas del botón (span) */
+button span {
+    position: absolute;
+    display: block;
+}
+
+/* Estilos para la animación de la primera parte del botón (span1) */
+button span:nth-child(1) {
+    height: 3px;
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+/* Estilos para la animación de la segunda parte del botón (span2) */
+button span:nth-child(2) {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+
+/* Estilos para la animación de la tercera parte del botón (span3) */
+button span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+
+/* Estilos para la animación de la cuarta parte del botón (span4) */
+button span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+
+/* Estilos para los elementos de lista de motores de juego (motorList) */
+ul.index {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li.motorList {
+    margin: 10px 0;
+}
+
+li.motorList a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F0F0F0;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+li.motorList a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Estilos generales para párrafos (p) */
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+/* Estilos para encabezados (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos de fuente personalizada para el cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://s0.smartresize.com/wallpaper/594/492/HD-wallpaper-neon-2020-vip3r-abstract-animation-best-black-dark-gold-light-lighting-nice-popular-video.jpg');
+    background-repeat: repeat-x; /* Para que la imagen se repita horizontalmente durante la animación */
+    background-size: cover;
+    background-attachment: fixed; /* Esto asegura que el fondo no se desplace con el contenido de la página */
+}
+strong{
+    color: #fff;
+}
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-background"></div> <!-- Este div contendrá la imagen de fondo -->
+        <h1>Industria del Videojuego <br> Cómo Empezar</h1>
+    </header>
+    
+    <section>
+        <h2>Introducción a la Industria del Videojuego</h2>
+        <p>La industria del videojuego es un campo emocionante y en constante crecimiento. Se ha convertido en una forma de entretenimiento popular en todo el mundo, y el desarrollo de videojuegos es una carrera apasionante.</p>
+    </section>
+    <section>
+        <h2>Comenzando con el Desarrollo de Videojuegos</h2>
+        <p>Para empezar en el desarrollo de videojuegos, es importante aprender sobre diferentes motores y herramientas. Algunos de los motores más importantes incluyen:</p>
+        <ul class="index">
+            <li class="motorList"><a href="#godot">Godot Engine</a></li><br>
+            <li class="motorList"><a href="#unreal">Unreal Engine</a></li><br>
+            <li class="motorList"><a href="#unity">Unity</a></li><br>
+            <li class="motorList"><a href="#construct3">Construct 3</a></li>
+        </ul>
+    </section>
+    
+    <!-- Secciones para motores de juego -->
+    <section id="godot">
+        <h2>Godot Engine</h2>
+        <img class="motorPortada" src="https://godotengine.org/assets/share-image.jpg" alt="Godot Engine">
+        <br>
+        <button class="botonMotor" onclick="window.location.href='https://godotengine.org/';">Pagina oficial: Godot</button>
+        <p>Godot Engine es un motor de juegos libre y de código abierto, multiplataforma, que funciona para el diseño de juegos en 2D y 3D y fue liberado bajo licencia del MIT. Juan Linietsky y Ariel Manzur lo desarrollaron para varias empresas hasta que se liberó para su uso público</p>
+        <h3>Videojuegos destacados en Godot Engine:</h3>
+        <ul class="gameList">
+            <li><strong>Sonic colours: ultimate</strong> <br> - <img class="muestraJuego" src="https://image.api.playstation.com/vulcan/ap/rnd/202105/1823/74nqAuCLKTzcNQuhYEffodtr.png" alt="Sonic colours: ultimate"></li>
+            <li><strong>Ex Zodiac</strong> <br> - <img class="muestraJuego" src="https://i.ytimg.com/vi/fOjdmVCSLyw/maxresdefault.jpg" alt="Ex Zodiac"></li>
+            <li><strong>City Game Studio</strong> <br> - <img class="muestraJuego" src="https://images.gog-statics.com/17d3e279f5fb8a3b4c5dde773467ab63a786435083bc49f0f30fa0927d961b44.jpg" alt="City Game Studio"></li>
+        </ul>
+    </section>
+    
+    <section id="unreal">
+        <h2>Unreal Engine</h2>
+        <img class="motorPortada" src="https://www.razzem.com/wp-content/uploads/2023/05/Unreal-Engine-5-System-requirements.jpg" alt="Unreal Engine">
+        <br>
+        <button class="botonMotor" onclick="window.location.href='https:https://www.unrealengine.com/es-ES';">Pagina oficial: Unreal Engine</button>
+        <p>Unreal Engine 4 es una herramienta que te permite comenzar a desarrollar juegos de realidad virtual y aplicaciones virtuales. Variedad de Plataformas. Si quieres programar con Unreal Engine 4, podrás crear juegos para una plataforma y puertos para consolas o tablets Android con gran facilidad.</p>
+        <h3>Videojuegos destacados en Unreal Engine:</h3>
+        <ul class="gameList">
+            <li><strong>Star Wars: Jedi Fallen Order</strong> <br> - <img class="muestraJuego" src="https://i.blogs.es/e3864d/starwars/1366_521.jpeg" alt="Star wars: Jedi Fallen Order"></li>
+            <li><strong>Final Fantasy 7: Remake</strong> <br> - <img class="muestraJuego" src="https://culturageek.com.ar/wp-content/uploads/2022/06/ff.jpg" alt="Final Fantasy 7: Remake"></li>
+            <li><strong>Ender Lilies: Quietus of the Knights</strong> <br> - <img class="muestraJuego" src="https://image.api.playstation.com/vulcan/ap/rnd/202105/2006/UQ0eSe7Rx4K0sXkO1nR7Iq9k.png" alt="Ender Lilies"></li>
+        </ul>
+    </section>
+    
+    <section id="unity">
+        <h2>Unity</h2>
+        <img class="motorPortada" src="https://dotnet.microsoft.com/static/images/games/unity/unity-engine-landscape-swimlane.png?v=qXuAEuTmn1teWmBipAskcg5IpW6Tn2fEunOIqAYui20" alt="Unity">
+        <br>
+        <button class="botonMotor" onclick="window.location.href='https://unity.com/es';">Pagina oficial: Unity</button>
+        <p>Unity es más que un motor: es la plataforma líder en el mundo para crear y operar contenido interactivo 3D en tiempo real (RT3D). Programadores de juegos, artistas, arquitectos, diseñadores automotrices y cineastas, entre otros, usan Unity para darle vida a los productos de su imaginación.</p>
+        <h3>Videojuegos destacados en Unity:</h3>
+        <ul class="gameList">
+            <li><strong>Pokemon Go</strong> <br> - <img class="muestraJuego" src="https://lh3.googleusercontent.com/RGShDyVofSODXIJ0eQ9umAID8tCw9KdqBFrtgCEdrxjJijG1qZBryfECP9IRV1MOJhCk4Za4VYB34DE-hnPesZNNVYMwgHKs9KrNue3LNJRJuw=e365-w1920" alt="Pokemon Go"></li>
+            <li><strong>CupHead</strong> <br> - <img class="muestraJuego" src="https://cdn.akamai.steamstatic.com/steam/apps/268910/capsule_616x353.jpg?t=1666882803" alt="CupHead"></li>
+            <li><strong>Genshin Impact</strong> <br> - <img class="muestraJuego" src="https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc" alt="Genshin Impact"></li>
+        </ul>
+    </section>
+    
+    <section id="construct3">
+        <h2>Construct 3</h2>
+        <br>
+        <img class="motorPortada" src="https://i.ytimg.com/vi/VE753h09N80/maxresdefault.jpg" alt="Construct 3">
+        <br>
+        <button class="botonMotor" onclick="window.location.href='https:https://www.construct.net/en';">Pagina oficial: Construct3</button>
+        <p>Construct 3 es un software de desarrollo de juegos que se ejecuta en el navegador y es utilizado por instituciones escolares, desarrolladores independientes y empresas de desarrollo de juegos de todo el mundo para el desarrollo de sus videojuegos, pero limitado únicamente al 2D.</p>
+        <h3>Videojuegos destacados en Construct 3:</h3>
+        <ul class="gameList">
+            <li><strong>Creature Keeper</strong> <br> - <img class="muestraJuego" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1826710/capsule_616x353.jpg?t=1671206036" alt="Creature Keeper"></li>
+            <li><strong>Small Saga</strong> <br> - <img class="muestraJuego" src="https://ksr-ugc.imgix.net/assets/025/693/622/efa3915e5a2637d77d16ff69fabc999a_original.jpg?ixlib=rb-4.1.0&crop=faces&w=1024&h=576&fit=crop&v=1562173523&auto=format&frame=1&q=92&s=3012fa82c28985df0f1834b0222bd460" alt="Small Saga"></li>
+            <li><strong>Last Moon</strong> <br> - <img class="muestraJuego" src="https://static.actugaming.net/media/2022/04/Last_Moon_KeyArt2_Logo-889x500.png" alt="Last Moon"></li>
+        </ul>
+    </section>
+    
+    <section id="programming-languages">
+        <h2>Lenguajes de Programación en Motores de Juego</h2>
+        <img class="codeImg" src="https://www.gameit.es/wp-content/uploads/2022/01/25C13A4B-4DCB-4C46-941B-0966ED7BC1DA.jpeg" alt="Construct 3">
+        <p>Cada motor de juego utiliza un lenguaje de programación diferente para el desarrollo de juegos. Aquí hay una descripción de los lenguajes utilizados en los motores mencionados:</p>
+        <h3>Godot Engine - GDScript</h3>
+        <p>Godot Engine utiliza principalmente GDScript, un lenguaje de programación similar a Python. También admite C# y visual scripting, lo que lo hace versátil para diferentes necesidades de desarrollo.</p>
+        <h3>Unreal Engine - C++</h3>
+        <p>Unreal Engine utiliza principalmente C++ para la programación. También ofrece Blueprints, un sistema de secuencias visuales que facilita el diseño de juegos sin necesidad de programar en código.</p>
+        <h3>Unity - C#</h3>
+        <p>Unity utiliza C# como lenguaje de programación principal. C# es conocido por su facilidad de uso y versatilidad, lo que lo hace adecuado tanto para principiantes como para desarrolladores experimentados.</p>
+        <h3>Construct 3 - Programación visual</h3>
+        <p>Construct 3 utiliza programación visual en lugar de código. Los usuarios pueden crear juegos utilizando una interfaz de arrastrar y soltar, lo que lo hace ideal para aquellos que no tienen experiencia en programación.</p>
+    </section>
+
+    <footer>
+        <p>&copy; Romano Jhonatan</p>
+    </footer>
+</body>
+</html>

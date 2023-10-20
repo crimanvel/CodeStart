@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación para Dispositivos Móviles</title>
+
+<style>
+      /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para la sección de introducción */
+.intro {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+    flex: 1;
+    padding-right: 40px; /* Espacio entre la imagen y el texto */
+}
+
+.right-box {
+    flex: 2; /* Ajusta el valor según tu preferencia para el ancho del texto */
+}
+
+#imgIntro {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus preferencias */
+    height: auto;
+    margin-left: 100px;
+}
+
+.introTitle {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.introText {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Estilos para la sección de información */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    min-width: calc(33.33% - 15px);
+}
+
+.info-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Estilos para cuando el cuadro está expandido */
+.info-section.expanded {
+    width: 100%;
+    margin-right: 0;
+    height: auto; /* Permite que el cuadro crezca verticalmente */
+}
+
+/* Estilo para el texto adicional dentro de cuadros expandidos */
+.info-section.expanded .hidden-text {
+    display: block;
+}
+
+/* Estilos para cuando el cuadro está expandido */
+.info-section.expanded {
+    width: 100%;
+    margin-right: 0;
+}
+
+/* Estilo para el texto adicional dentro de cuadros expandidos */
+.info-section.expanded .hidden-text {
+    display: block;
+}
+
+/* Define la animación para mostrar el texto */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplica la animación a los elementos de texto oculto */
+.hidden-text {
+    animation: fade-in 0.5s ease-in-out; /* Duración de 0.5 segundos y función de aceleración */
+    display: none; /* Mantén oculto inicialmente */
+}
+
+/* Estilos para todas las imágenes */
+ .cuadroText {
+    max-width: 100%;
+    height: auto;
+    width: 500px; /* Define el ancho deseado */
+    height: 500px; /* Define la altura deseada */
+}
+
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Sección de introducción */
+        .intro {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-box {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .right-box {
+            flex: 2;
+        }
+
+        #imgIntro {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .introTitle {
+            font-size: 24px;
+        }
+
+        .introText {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Estilo para los cuadros de información */
+        .info-section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-section h2 {
+            font-size: 24px;
+        }
+
+        /* Enlaces para expandir */
+        .info-section a {
+            color: #007BFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Texto adicional dentro de cuadros expandidos */
+        .hidden-text {
+            display: none;
+        }
+
+        /* Define la animación para mostrar el texto */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilos para cuando el cuadro está expandido */
+        .info-section.expanded {
+            border: 1px solid #007BFF;
+        }
+
+        /* Estilo para el texto adicional dentro de cuadros expandidos */
+        .info-section.expanded .hidden-text {
+            display: block;
+            animation: fade-in 0.5s ease-in-out;
+        }
+
+        /* Estilos para todas las imágenes */
+        .cuadroText {
+            max-width: 100%;
+            height: auto;
+            width: 100%; /* Ajustado para que las imágenes se ajusten al ancho del contenedor */
+        }
+    </style>
+
+    </style>    
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1>Programación para Dispositivos Móviles</h1>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <div class="left-box">
+                <img id="imgIntro" src="https://dannx5.files.wordpress.com/2012/01/android-desarrollo.png">
+            </div>
+            <div class="right-box">
+                <h1 class="introTitle">¡Bienvenido a nuestro sitio web!</h1>
+                <p class="introText">Explora el fascinante mundo del desarrollo de aplicaciones para dispositivos Android. Desde los conceptos básicos hasta las últimas tendencias, nuestro objetivo es proporcionarte una guía clara y accesible para que puedas comenzar tu viaje en el emocionante campo de la programación móvil. Ya sea que seas un principiante absoluto o un desarrollador experimentado en busca de recursos y consejos adicionales, estás en el lugar correcto.</p>
+            </div>
+        </div>
+    
+      <!------------LOS CUADROS----------->
+<div class="info-container" id="section1">
+    <div class="info-section">
+  <div class="hidden-text">
+      <!-- Texto adicional que se mostrará al expandir -->  
+         <h1>Lenguajes de programacion:</h1>
+         <h3>Android admite varios lenguajes de programación, pero los dos principales son Java y Android.Kotlin</h3> 
+         <p> Java ha sido durante mucho tiempo el lenguaje de programación principal para Android. Es un lenguaje orientado a objetos y ofrece una gran cantidad de bibliotecas y herramientas para el desarrollo de aplicaciones Android.Kotlin: Kotlin es un lenguaje de programación moderno que se ha vuelto cada vez más popular para el desarrollo de aplicaciones Android. Ofrece una sintaxis más concisa y segura que Java y está respaldado oficialmente por Google. </p>  
+  </div>         
+     
+        <img class = "cuadroText" src="https://www.lavanguardia.com/andro4all/hero/2018/01/Los-mejores-cursos-de-programacin-Android-online-para-2018.jpg?width=768&aspect_ratio=16:9&format=nowebp" style="max-width: 100%; height: auto;">        
+        <h2>Aprender lenguajes de programación</h2>
+        <p>Aprende lenguajes de programación como Java, Kotlin, Swift o Objective-C para crear aplicaciones móviles.</p>
+    </div>
+
+
+
+
+    <div class="info-section" id="section2">  
+      <div class="hidden-text">
+      <!-- Texto adicional que se mostrará al expandir -->  
+         <h1>IDE (Entorno de Desarrollo Integrado):</h1>
+         <h3>los IDE (Entornos de Desarrollo Integrado) en Android son software que proporciona un conjunto completo de herramientas para desarrollar aplicaciones para dispositivos Android.</h3> 
+         <p>Algunos ejemolos de IDE Puedemn ser. Android Studio: Android Studio es el IDE oficial de Android desarrollado por Google. Ofrece un conjunto completo de herramientas que incluye un editor de código, emuladores de dispositivos Android, depurador, generadores de interfaces de usuario, administradores de proyectos y muchas más características específicas para el desarrollo de aplicaciones Android. <br><br>Eclipse con el complemento ADT: Antes de la llegada de Android Studio, Eclipse era un IDE popular para el desarrollo de aplicaciones Android. Los desarrolladores podían instalar el complemento ADT (Android Development Tools) en Eclipse para habilitar el desarrollo de aplicaciones Android. Sin embargo, Google dejó de ofrecer soporte oficial para esta combinación, y se recomienda encarecidamente migrar a Android Studio. <br><br> IntelliJ IDEA: Android Studio se basa en el IDE IntelliJ IDEA, que es otro IDE de desarrollo de aplicaciones muy popular. Si bien Android Studio es la elección preferida para el desarrollo de aplicaciones Android, algunos desarrolladores pueden preferir usar IntelliJ IDEA y agregar complementos para el desarrollo de Android.</p>  
+      </div>   
+        <img class = "cuadroText" src="https://www.amarinfotech.com/wp-content/uploads/2018/04/Android_studio.jpg" style="max-width: 100%; height: auto;">
+        <h2>Usar un IDE</h2>
+        <p>Utiliza un Entorno de Desarrollo Integrado (IDE) como Android Studio o Xcode para desarrollar tus aplicaciones de manera eficiente.</p>
+    </div>
+
+
+
+
+    <div class="info-section" id="section3">  
+        <div class="hidden-text">
+        <!-- Texto adicional que se mostrará al expandir -->  
+           <h1>SDK (Software Development Kits):</h1>
+           <h3>los SDK son conjuntos de herramientas y recursos que permiten a los desarrolladores de software crear aplicaciones y programas para plataformas específicas.</h3> 
+           <p>Librerías de software: Incluyen un conjunto de funciones y rutinas predefinidas que facilitan la programación de tareas comunes. Esto permite a los desarrolladores evitar tener que crear código desde cero, acelerando el proceso de desarrollo.
+            <br><br>
+            Compiladores y herramientas de desarrollo: Los SDK suelen contener un compilador que traduce el código fuente escrito por el programador en un lenguaje de programación a un formato que la plataforma objetivo pueda entender. También pueden proporcionar herramientas de depuración, perfiles y análisis de rendimiento.
+            <br><br>
+            Documentación: Los SDK suelen incluir documentación detallada, tutoriales y ejemplos que ayudan a los desarrolladores a comprender cómo usar las herramientas y recursos disponibles.
+            <br><br>
+            Emuladores y simuladores: En algunos casos, se proporcionan emuladores o simuladores que permiten a los desarrolladores probar sus aplicaciones en un entorno virtual antes de implementarlas en hardware real.
+            <br><br>
+            API (Interfaz de Programación de Aplicaciones): Las SDK suelen proporcionar un conjunto de API que permite a las aplicaciones interactuar con el sistema operativo subyacente y otros componentes del hardware. Esto incluye el acceso a funciones como la cámara, el almacenamiento, la red y otros servicios.</p>  
+        </div>   
+        <img class = "cuadroText" src="https://blog.movical.net/wp-content/uploads/2017/07/Qu%C3%A9-es-el-Android-SDK-c%C3%B3mo-instalarlo-y-para-qu%C3%A9-sirve.jpg   
+  " style="max-width: 100%; height: auto;">
+          <h2>Utilizar un SDK especifico</h2>
+          <p>Explora el uso de un Software Development Kit (SDK) específico, como Android SDK o iOS SDK, para aprovechar las capacidades de la plataforma.</p>
+        </div>
+
+
+
+
+
+    <div class="info-section" id="section4">
+        <div class="hidden-text">
+            <!-- Texto adicional que se mostrará al expandir -->  
+            <h1>La interfaz de Usuario</h1>
+            <h3>la interfaz de usuario (UI, por sus siglas en inglés de User Interface) se refiere a la forma en que los usuarios interactúan con un sistema informático, una aplicación o un dispositivo. Es la capa visual y funcional que permite a los usuarios comunicarse con una máquina o programa. La interfaz de usuario tiene como objetivo principal hacer que esta comunicación sea lo más intuitiva, eficiente y amigable posible.</h3> 
+            <p>La interfaz de usuario puede incluir elementos visuales como botones, menús, formularios, iconos y ventanas, además de elementos interactivos que permiten a los usuarios realizar acciones, como hacer clic en un botón, deslizar, arrastrar y soltar, escribir en un campo de texto, y mucho más.</p>
+        </div>
+        <img class = "cuadroText" src="https://vanadis.es/wp-content/uploads/2014/06/evolucion-android-vanadis-desarrollo-aplicaciones-smartphone.jpg" style="max-width: 100%; height: auto;">      
+        <h2>Diseñar la interfaz de usuario (UI)</h2>
+        <p>Diseña la interfaz de usuario (UI) de tus aplicaciones con elementos visuales atractivos y funcionales.</p>
+    </div>
+
+
+
+
+
+    <div class="info-section" id="section5">
+        <div class="hidden-text">
+            <!-- Texto adicional que se mostrará al expandir -->  
+            <h1>Bases de datos Android</h1>
+            <h3>Trabajar con bases de datos en la programación de Android es una parte fundamental, ya que la mayoría de las aplicaciones móviles requieren almacenar y recuperar datos en algún momento. En Android, se utiliza SQLite como el sistema de gestión de bases de datos incorporado. Aquí tienes una explicación básica de cómo es trabajar con bases de datos en la programación de Android:</h3> 
+            <p>Creación de una base de datos: Lo primero que debes hacer es crear una base de datos si aún no existe. Puedes utilizar la clase SQLiteOpenHelper para gestionar la creación y actualización de la base de datos. Esto generalmente se hace en el método onCreate de la clase SQLiteOpenHelper.
+                Definición de tablas:
+                <br><br>
+                En Android, los Content Providers son una forma de compartir datos entre aplicaciones. Si deseas que tus datos estén disponibles para otras aplicaciones, puedes implementar un Content Provider.
+                <br><br>
+                Realización de transacciones: Las transacciones aseguran la integridad de los datos. Puedes agrupar varias operaciones en una única transacción para garantizar que todas se completen con éxito o ninguna se complete si hay algún error.
+                <br><br>
+                Gestión de actualizaciones de la base de datos: A medida que tu aplicación evoluciona, es posible que necesites realizar cambios en la estructura de la base de datos. Puedes usar la clase SQLiteOpenHelper para gestionar actualizaciones de esquema.
+                <br><br>
+                Uso de hilos y AsyncTask: Es importante recordar que las operaciones de base de datos pueden ser intensivas en recursos, por lo que debes realizarlas en un hilo diferente al hilo principal de la aplicación para evitar bloquear la interfaz de usuario. Puedes utilizar AsyncTask, hilos o bibliotecas modernas como Coroutines.
+                <br><br>
+                Pruebas unitarias: Es una buena práctica escribir pruebas unitarias para tus operaciones de base de datos para garantizar que funcionen correctamente.</p>
+        </div>
+        <img class = "cuadroText" src="https://academiaandroid.com/wp-content/uploads/2016/10/SQLite_Android.jpg" style="max-width: 100%; height: auto;">
+        <h2>Trabajar con bases de datos</h2>
+        <p>Aprende a trabajar con bases de datos, ya sea SQL o NoSQL, para almacenar y recuperar datos de manera eficiente.</p>
+    </div>
+
+    <div class="info-section" id="section6">
+        <div class="hidden-text">
+            <!-- Texto adicional que se mostrará al expandir -->  
+            <h1>Integración de Servicios Externos a través de APIs</h1>
+            <h3>En la era actual de la tecnología, las aplicaciones móviles y web a menudo requieren más que simplemente procesar datos internos o locales. La integración de servicios externos desempeña un papel crucial al permitir que las aplicaciones accedan a recursos y datos de otras fuentes en tiempo real.</h3> 
+            <p>La integración de servicios externos mediante APIs es esencial para ampliar las capacidades de tus aplicaciones. Esto se traduce en una mayor versatilidad y funcionalidad, lo que a su vez brinda a los usuarios experiencias más enriquecedoras. Por ejemplo, puedes permitir que tus usuarios accedan a datos en tiempo real, realicen transacciones financieras, compartan contenido en redes sociales, utilicen mapas interactivos, traduzcan idiomas y mucho más, todo dentro de tu aplicación. Estas integraciones mejoran significativamente el valor y la utilidad de tus aplicaciones.</p>
+        </div>
+        
+
+        <img class = "cuadroText" src="https://4.bp.blogspot.com/-wVSij9rfStg/XG7iQvHUqpI/AAAAAAAAGwI/Eol6oonV49k6QgizI6nquU373QVBhxGigCLcBGAs/s1600/image1.png" style="max-width: 100%; height: auto;">
+        <h2>Acceder a servicios externos</h2>
+        <p>Integra servicios externos a través de APIs para ampliar las capacidades de tus aplicaciones y brindar experiencias únicas a los usuarios.</p>
+    </div>
+</div>  
+</body>
+
+
+
+
+
+<script>
+// Obtén una lista de todos los elementos .info-section
+var sections = document.querySelectorAll(".info-section");
+
+
+sections.forEach(function(section) {
+    section.addEventListener("click", function() {
+        var isExpanded = section.classList.contains("expanded");
+
+        if (isExpanded) {
+            section.classList.remove("expanded");
+        } else {
+            section.classList.add("expanded");
+        }
+    });
+});
+</script>
+</html>
