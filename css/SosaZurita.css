@@ -5,6 +5,10 @@
 .navbar {
   background-color: #0b1819;
 }
+pre{
+  background-color:rgb(84, 171, 166) ;
+  margin: 10px 0px 10px 0px;
+}
 .nav-link {
   color: #83ece3;
   margin: 2px;
