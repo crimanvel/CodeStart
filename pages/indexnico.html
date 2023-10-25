@@ -194,12 +194,17 @@
     }
 
     .redes{
-        margin-left: 220px;
+        margin-left: 150px;
     }
 
     .redes img{
-        margin-right: 25px;
+        margin-right: 20px;
+        
+    }
 
+    #flecha{
+        margin-top: 5px;
+        margin-left: 60px;
     }
     .redes h3{
         font-family: 'Open Sans', sans-serif;
@@ -239,7 +244,7 @@
         margin-bottom: 15px;
      }
 
-    @media screen and (max-width:880px){
+    @media screen and (max-width:900px){
       
     nav #a1{
         margin-top: -60px;
@@ -297,7 +302,7 @@
 </style>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
             
                 <!-- Logotipo de HTML -->
                 <img class="imglogo" src="/assets/images/nico/logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
@@ -507,21 +512,24 @@
             </div>
             <div class="redes">
                 <h3 id="siguenos"> SÍGUENOS</h3>
-                <a href="https://es-la.facebook.com/">
-                    <img src="/assets/images/nico/facebook.png" alt="" width="45" height="40">
+                <a  href="https://es-la.facebook.com/">
+                    <img src="/assets/images/nico/face.png" alt="" width="45" height="40" style="border-radius: 50%;" >
                 </a>
                 <a href="https://www.instagram.com/">
-                    <img src="/assets/images/nico/instagramf.jpg" alt="" width="45" height="40">
+                    <img src="/assets/images/nico/ig.png" alt="" width="40" height="40" style="border-radius: 30%">
                 </a>
                 <a href="https://twitter.com/?lang=es">
-                    <img src="/assets/images/nico/logodeX.jpeg" alt="" width="45" height="40">
+                    <img src="/assets/images/nico/tw.png" alt="" width="45" height="40" style="border-radius: 50%;">
                 </a>
                 
             </div>
-         </div>
-         <div class="grupo-2">
+            <a href="#nav">
+                <img id="flecha" src="/assets/images/nico/flecha.png" alt="" width="50" height="50">
+            </a>
+        </div>
+        <div class="grupo-2">
             <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
-         </div>
+        </div>
     </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
