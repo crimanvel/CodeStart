@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
     <title>CodeStart - Home</title>
 </head>
@@ -21,13 +20,20 @@
         font-family: 'Forum', serif;
         box-sizing: border-box;
     }
+    header{
+        display: flex;
+    }
 
     nav{
         background-color: #335356 ;
+        width: 100%;
+        height: 80px;
+        display: flex;
     }
-    .nav-item #a1{
+    nav #a1{
         margin-right: 30px;
         font-size: 25px;
+        margin-left: 1150px;
      }
 
     h1{
@@ -129,6 +135,7 @@
     .navbar-nav .nav-link {
         font-size: 20px;
         color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+        margin-left: 1130px;
     }
     #frontend{
         text-align: center;
@@ -231,6 +238,59 @@
         margin-left: -20px;
         margin-bottom: 15px;
      }
+
+    @media screen and (max-width:880px){
+      
+    nav #a1{
+        margin-top: -60px;
+        font-size: 15px;
+        margin-left: 700px;
+     }
+    
+     .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2;
+        gap: 4em;
+        margin-top: auto;
+        margin-left: -60px;
+
+    }
+    .redes img{
+        margin-left: 0px;
+        width: 25;
+        height: 15;
+    }
+    }
+    @media screen and (max-width:500px){
+       
+        nav #a1 {
+            margin-left: 700px;
+            background-color: #335356;
+            width: 550px;
+        }
+        .container{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 1;
+        gap: 0.5em;
+        margin-top: auto;
+        margin-left: 180px;
+        
+    }
+    h1{
+        margin-left: 40%;
+        font-size: 35px;
+    }
+   #frontend{
+    margin-left: 250px;
+    font-size: 40px;
+   }
+    .info{
+        margin-left: 200px;
+        font-size: 30px;
+    }
+    }
 /* Estilos para iconos de redes sociales */
 
 
@@ -238,28 +298,23 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">
+            
                 <!-- Logotipo de HTML -->
                 <img class="imglogo" src="/assets/images/nico/logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
                 
-            </a>
             <!-- Botones de navegación -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a  id="a1" class="nav-link" href="#">Inicio</a>
-                    </li>
-                </ul>
-            </div>
+                <a  id="a1" class="nav-link" href="#">Inicio</a>
+                  
         </nav>
              
     </header>
+
    <h1>INTRODUCCIÓN A LA INDUSTRIA DE LA PROGRAMACIÓN</h1>
    <hr>  
    <h3 id="frontend">FRONTEND</h3>
    <p class="info">→ El frontend es la parte de una aplicación web que los usuarios ven y con la que interactúan en su navegador. ←</p>
+
     <main>
-       
         <div class="container">
             <div class="card">
                 <figure>
