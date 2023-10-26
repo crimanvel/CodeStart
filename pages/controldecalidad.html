@@ -18,38 +18,46 @@
         }
 
         header {
-            background-color: #1B2223;
-            color: #ffffff;
-            text-align: center;
-            padding: 1px 0;
+            
             display: flex;
-            justify-content: space-between;
+            
         }
 
         /*----- Estilos Navbar -----*/
 
-        nav ul {
-            list-style-type: none;
-            padding: 19px;
+        nav{
+           background-color: #335356 ;
+           width: 100%;
+           height: 80px;
+           display: flex;
         }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-            font-family: serif;
+        .navbar {
+           background-color: #335356; /* Cambia el color de fondo del navbar */
+           color: #FAE5D3;
         }
-
-        nav ul li a {
+        #a1{
+            color: #FAE5D3;
             text-decoration: none;
-            color: #3A4F50;
-            font-weight: bold;
-            font-size: 22px;
-            transition: color 0.3s;
+            margin-right: 30px;
+            font-size: 25px;
+            margin-left: 1050px;
+            margin-top: 23px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
-
-        nav ul li a:hover {
-            color: white;
+        #a1:hover{
+            color: #9fc9cd;
         }
+        
+        .navbar-nav .navbar-nav {
+           font-size: 20px;
+           color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+           margin-left: 1130px;
+        }
+        .imglogo{
+            margin-top: 10px;
+            width: 1600px;
+        }
+        
 
         /*----- Estilos para el main ----- */
 
@@ -245,15 +253,15 @@
 </head>
 <body>
     <header>
-        <h1>Control de Calidad</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+            
+            <!-- Logotipo de HTML -->
+            <img class="imglogo" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
+            
+        <!-- Botones de navegación -->
+            <a  id="a1" class="nav-link" href="#">Inicio</a>
+              
+    </nav>
     </header>
     
     <section id="contenido">
