@@ -14,12 +14,37 @@
             
         }
 
-        header {
-            background-color: #407C87;
-            color: #fff;
-            text-align: center;
-            padding: 2px;
-            display: block;
+        nav{
+           background-color: #335356 ;
+           width: 100%;
+           height: 80px;
+           display: flex;
+        }
+        .navbar {
+           background-color: #335356; /* Cambia el color de fondo del navbar */
+           color: #FAE5D3;
+        }
+        #a1{
+            color: #FAE5D3;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 25px;
+            margin-left: 1050px;
+            margin-top: 23px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #a1:hover{
+            color: #9fc9cd;
+        }
+        
+        .navbar-nav .navbar-nav {
+           font-size: 20px;
+           color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+           margin-left: 1130px;
+        }
+        .imglogo{
+            margin-top: 10px;
+            width: 1600px;
         }
 
         h1 {
@@ -89,11 +114,98 @@
         .css-info a:hover {
             text-decoration: underline;
         }
+        .footer {
+          background-color: #265457;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+          padding-bottom: 0px;
+          
+        }
+
+        .footer-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer-logo {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          color: #9fc9cd;
+        }
+
+        .footer-text {
+          font-size: 18px;
+          margin-bottom: 20px;
+          margin-top: 50px;
+          align-items: end;
+        }
+
+        .footer-social a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 20px;
+          font-size: 24px;
+        }
+
+        .footer-social a:hover {
+          color: #0300FF;
+        }
+
+        .footer-links a{
+          color:#f5f5f8;
+          text-decoration: none;
+          margin-right: 20px;
+        }
+
+        .footer-links a:hover{
+          color: #0300FF;
+        }
+
+        #subs{
+            color: #9fc9cd;
+            padding-top: 10px;
+        }
+
+        /* Estilos para iconos de redes sociales */
+        .icon{
+            margin-left: 40px;
+            width: 23px;
+            height: 23px;
+        }
+        #logoface{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: -5px;
+        }
+        #logox{
+            margin-left: 10px;
+            margin-right: 8px;
+            margin-top: -5px;
+        }
+        #logoig{
+            margin-left: 10px;
+            margin-right: 8px;
+            margin-top: -5px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Website CSS</h1>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+            
+            <!-- Logotipo de HTML -->
+            <img class="imglogo" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
+            
+        <!-- Botones de navegación -->
+            <a  id="a1" class="nav-link" href="#">Inicio</a>
+              
+    </nav>
     </header>
     <div class="container">
         <h2>Bienvenidos al apartado Sobre CSS</h2>
@@ -172,10 +284,39 @@
                 <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Documentación de CSS en MDN Web Docs</a></li>
                 <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - Tutorial de CSS</a></li>
             </ul>
+
+
+            
         </div>
     </div>
-    <footer>
-        &copy; 2023 CSS - Archive
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
+            
+            <div class="footer-social">
+                <a href="#" target="_blank"><img id="logoface" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\facebook.png" alt="logoface" class="icon">Facebook</a>
+                
+                <a href="#" target="_blank"><img id="logox" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\logodeX.jpeg" alt="logotwitter" class="icon"> X </a>
+                
+                <a href="#" target="_blank"><img id="logoig" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\igfinal.png" alt="logoinst" class="icon"> Instagram</a>
+            </div>
+            
+            <div class="footer-subscribe">
+                <h3 id="subs">Suscríbete a nuestro sitio Web</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <br>
+            <div class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="footer-text">© 2023 Todos los derechos reservados</div>
+        </div>
     </footer>
 </body>
 </html>
