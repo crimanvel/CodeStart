@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <style>
         /* Estilos CSS */
         body {
@@ -114,84 +115,81 @@
         .css-info a:hover {
             text-decoration: underline;
         }
-        .footer {
-          background-color: #265457;
-          color: #fff;
-          padding: 10px 0;
-          text-align: center;
-          padding-bottom: 0px;
-          
-        }
+       /*----- Estilos Footer -----*/
 
-        .footer-content {
+       .pie-pagina {
+           width: 100%;
+           background-color: #2f5554;
+           
+        }
+        .pie-pagina .grupo-1 {
+          width: 100%;
           max-width: 1200px;
-          margin: 0 auto;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 50px;
+          padding: 45px 0px;
+        }
+        .pie-pagina .grupo-1 .box figure {
+          width: 100%;
+          height: 100%;
           display: flex;
-          flex-direction: column;
+          justify-content: center;
           align-items: center;
         }
-
-        .footer-logo {
-          font-size: 36px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-          color: #9fc9cd;
+        .pie-pagina .grupo-1 .box figure img {
+          width: 280px;
         }
-
-        .footer-text {
-          font-size: 18px;
-          margin-bottom: 20px;
-          margin-top: 50px;
-          align-items: end;
-        }
-
-        .footer-social a {
+        .pie-pagina .grupo-1 .box h2 {
           color: #fff;
+          margin-bottom: 25px;
+          font-size: 20px;
+        }
+        .pie-pagina .grupo-1 .box p {
+          color: #efefef;
+          margin-bottom: 10px;
+        }
+        .pie-pagina .grupo-1 .red-social a {
+          display: inline-block;
           text-decoration: none;
-          margin: 0 20px;
-          font-size: 24px;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          color: #fff;
+          margin-right: 10px;
+          background-color: #0d2033;
+          text-align: center;
+          transition: all 300ms ease;
         }
-
-        .footer-social a:hover {
-          color: #0300FF;
+        .pie-pagina .grupo-1 .red-social a:hover {
+          color: aqua;
         }
-
-        .footer-links a{
-          color:#f5f5f8;
-          text-decoration: none;
-          margin-right: 20px;
+        .pie-pagina .grupo-2 {
+          background-color: #0a1a2a;
+          padding: 15px 10px;
+          text-align: center;
+          color: #fff;
         }
-
-        .footer-links a:hover{
-          color: #0300FF;
+        .pie-pagina .grupo-2 small {
+          font-size: 15px;
         }
-
-        #subs{
-            color: #9fc9cd;
-            padding-top: 10px;
-        }
-
-        /* Estilos para iconos de redes sociales */
-        .icon{
-            margin-left: 40px;
-            width: 23px;
-            height: 23px;
-        }
-        #logoface{
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: -5px;
-        }
-        #logox{
-            margin-left: 10px;
-            margin-right: 8px;
-            margin-top: -5px;
-        }
-        #logoig{
-            margin-left: 10px;
-            margin-right: 8px;
-            margin-top: -5px;
+        @media screen and (max-width: 800px) {
+          .pie-pagina .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+          }
+          .img-container {
+            text-align: center;
+            margin: 20px 0;
+          }
+        
+          .img-container img {
+            max-width: 50%;
+            height: auto;
+          }
         }
     </style>
 </head>
@@ -290,32 +288,33 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">Mi plataforma de Lanzamiento</div>
-            
-            <div class="footer-social">
-                <a href="#" target="_blank"><img id="logoface" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\facebook.png" alt="logoface" class="icon">Facebook</a>
-                
-                <a href="#" target="_blank"><img id="logox" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\logodeX.jpeg" alt="logotwitter" class="icon"> X </a>
-                
-                <a href="#" target="_blank"><img id="logoig" src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\igfinal.png" alt="logoinst" class="icon"> Instagram</a>
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="C:\Users\Joel\Desktop\Proyectos\Proyecto individual\img\logocode.png" alt="Logo de CodeStart">
+                    </a>
+                </figure>
             </div>
-            
-            <div class="footer-subscribe">
-                <h3 id="subs">Suscríbete a nuestro sitio Web</h3>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <button type="submit">Suscribirse</button>
-                </form>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
+                <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
             </div>
-            <br>
-            <div class="footer-links">
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Preguntas frecuentes</a>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+                </div>
             </div>
-            <div class="footer-text">© 2023 Todos los derechos reservados</div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
 </body>
