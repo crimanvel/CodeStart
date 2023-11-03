@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <title>JavaScript</title>
+    <title>Front-End</title>
     <style>
       * {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -483,6 +483,38 @@
           </li>
         </ul>
       </div>
+      <div class="content">
+        <h2 class="title"><b>Seguridad en el Desarrollo Front-End</b></h2>
+        <ul>
+          <li>
+            <b>XSS (Cross-Site Scripting): </b>XSS es una vulnerabilidad común
+            en la que un atacante inyecta código malicioso (generalmente
+            JavaScript) en una página web. Este código puede ejecutarse en el
+            navegador de un usuario, lo que podría resultar en el robo de
+            información sensible o la toma de control de la sesión del usuario.
+            Para prevenir XSS, se deben validar y escapar adecuadamente los
+            datos de entrada y utilizar encabezados de seguridad como Content
+            Security Policy (CSP) para limitar la ejecución de scripts.
+          </li>
+          <br />
+          <li>
+            <b>CSRF (Cross-Site Request Forgery): </b>En un ataque CSRF, un
+            sitio web malicioso puede realizar acciones en otro sitio web en
+            nombre de un usuario autenticado sin su consentimiento. Para
+            prevenir CSRF, se deben utilizar tokens CSRF y asegurarse de que las
+            acciones críticas, como las solicitudes de cambio de estado,
+            requieran confirmación explícita del usuario.
+          </li>
+          <br />
+          <li>
+            <b>Manejo Seguro de Cookies y Sesiones: </b>Las cookies y las
+            sesiones son vulnerables a ataques si no se manejan correctamente.
+            Es importante utilizar cookies seguras y configurar encabezados de
+            seguridad adecuados para proteger las sesiones del usuario.
+          </li>
+        </ul>
+      </div>
+      <img src="assets/images/diego/seguridad.png" class="img">
       <div class="content">
         <h2 class="title"><b>Consejos para Aprender JavaScript</b></h2>
         <br />
