@@ -4,133 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación para Dispositivos Móviles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
 
 <style>
-      /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-/* Estilos para la sección de introducción */
-.intro {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.left-box {
-    flex: 1;
-    padding-right: 40px; /* Espacio entre la imagen y el texto */
-}
-
-.right-box {
-    flex: 2; /* Ajusta el valor según tu preferencia para el ancho del texto */
-}
-
-#imgIntro {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus preferencias */
-    height: auto;
-    margin-left: 100px;
-}
-
-.introTitle {
-    color: #333;
-    font-size: 24px;
-    margin-top: 0;
-}
-
-.introText {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
-}
-
-/* Estilos para la sección de información */
-.info-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.info-section {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    flex: 1;
-    min-width: calc(33.33% - 15px);
-}
-
-.info-section h2 {
-    font-size: 18px;
-    margin-top: 0;
-}
-
-ol {
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    font-size: 14px;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-/* Estilos para cuando el cuadro está expandido */
-.info-section.expanded {
-    width: 100%;
-    margin-right: 0;
-    height: auto; /* Permite que el cuadro crezca verticalmente */
-}
-
-/* Estilo para el texto adicional dentro de cuadros expandidos */
-.info-section.expanded .hidden-text {
-    display: block;
-}
-
-/* Estilos para cuando el cuadro está expandido */
-.info-section.expanded {
-    width: 100%;
-    margin-right: 0;
-}
-
-/* Estilo para el texto adicional dentro de cuadros expandidos */
-.info-section.expanded .hidden-text {
-    display: block;
-}
-
-/* Define la animación para mostrar el texto */
-@keyframes fade-in {
-    from {
-        opacity: 0;
+        /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #5a45d1;
     }
-    to {
-        opacity: 1;
+
+    /* Estilos para la sección de introducción */
+    .intro {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-}
 
-/* Aplica la animación a los elementos de texto oculto */
-.hidden-text {
-    animation: fade-in 0.5s ease-in-out; /* Duración de 0.5 segundos y función de aceleración */
-    display: none; /* Mantén oculto inicialmente */
-}
+    .navbar {
+        background-color: #265457; /* Cambia el color de fondo del navbar */
+        color: #FAE5D3;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+    }
+    .nav-item #a1{
+        margin-right: 30px;
+        font-size: 25px;
+     }
+    
+    .left-box {
+        flex: 1;
+        padding-right: 40px; /* Espacio entre la imagen y el texto */
+    }
 
-/* Estilos para todas las imágenes */
- .cuadroText {
-    max-width: 100%;
-    height: auto;
-    width: 500px; /* Define el ancho deseado */
-    height: 500px; /* Define la altura deseada */
-}
+    .right-box {
+        flex: 2; /* Ajusta el valor según tu preferencia para el ancho del texto */
+    }
 
-<style>
+    #imgIntro {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus preferencias */
+        height: auto;
+        margin-left: 100px;
+    }
+
+    .introTitle {
+        color: #333;
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .introText {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+    }
+
+    /* Estilos para la sección de información */
+    .info-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-section {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        flex: 1;
+        min-width: calc(33.33% - 15px);
+    }
+
+    .info-section h2 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    ol {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para cuando el cuadro está expandido */
+    .info-section.expanded {
+        width: 100%;
+        margin-right: 0;
+        height: auto; /* Permite que el cuadro crezca verticalmente */
+    }
+
+    /* Estilo para el texto adicional dentro de cuadros expandidos */
+    .info-section.expanded .hidden-text {
+        display: block;
+    }
+
+    /* Estilos para cuando el cuadro está expandido */
+    .info-section.expanded {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Estilo para el texto adicional dentro de cuadros expandidos */
+    .info-section.expanded .hidden-text {
+        display: block;
+    }
+
+    /* Define la animación para mostrar el texto */
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Aplica la animación a los elementos de texto oculto */
+    .hidden-text {
+        animation: fade-in 0.5s ease-in-out; /* Duración de 0.5 segundos y función de aceleración */
+        display: none; /* Mantén oculto inicialmente */
+    }
+
+    /* Estilos para todas las imágenes */
+    .cuadroText {
+        max-width: 100%;
+        height: auto;
+        width: 500px; /* Define el ancho deseado */
+        height: 500px; /* Define la altura deseada */
+    }
+
         /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
@@ -239,7 +263,89 @@ li {
             height: auto;
             width: 100%; /* Ajustado para que las imágenes se ajusten al ancho del contenedor */
         }
-    </style>
+        /*footer */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #2f5554;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 280px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .img-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .img-container img {
+    max-width: 50%;
+    height: auto;
+  }
+}
 
     </style>    
 </head>
@@ -247,6 +353,23 @@ li {
 
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <!-- Logotipo de HTML -->
+            <img class="imglogo" src="C:\Users\Jhon\Desktop\Jhonatan Proyecto\assets\images\logocode.png" alt="Logo de HTML" width="150" height="60" class="d-inline-block align-top">
+            
+        </a>
+        <!-- Botones de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a  id="a1" class="nav-link" href="indexnico.html">Inicio</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
 
     <header>
         <h1>Programación para Dispositivos Móviles</h1>
@@ -262,6 +385,7 @@ li {
                 <p class="introText">Explora el fascinante mundo del desarrollo de aplicaciones para dispositivos Android. Desde los conceptos básicos hasta las últimas tendencias, nuestro objetivo es proporcionarte una guía clara y accesible para que puedas comenzar tu viaje en el emocionante campo de la programación móvil. Ya sea que seas un principiante absoluto o un desarrollador experimentado en busca de recursos y consejos adicionales, estás en el lugar correcto.</p>
             </div>
         </div>
+        <br>
     
       <!------------LOS CUADROS----------->
 <div class="info-container" id="section1">
@@ -374,12 +498,37 @@ li {
         <p>Integra servicios externos a través de APIs para ampliar las capacidades de tus aplicaciones y brindar experiencias únicas a los usuarios.</p>
     </div>
 </div>  
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="index.html">
+                    <img src="C:\Users\Jhon\Desktop\Jhonatan Proyecto\assets\images\logocode.png" alt="Logo de CodeStart">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
+            <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
 </body>
-
-
-
-
-
 <script>
 // Obtén una lista de todos los elementos .info-section
 var sections = document.querySelectorAll(".info-section");
