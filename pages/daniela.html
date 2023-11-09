@@ -5,88 +5,302 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Big Data</title>
+
+    <!-- Estilos -->
+    <style>
+      body{
+        font-family: 'Roboto', sans-serif;
+        color: aliceblue;
+        font-size: 1rem;
+        background-color: #6E6F71;
+      }
+      .list-group-item {
+        background-color: #1b2223;
+
+      }
+      .navbar {
+        background-image: url('../assets/images/nico/background-BigDAta.jpg');
+        height: 100px;
+        
+      }
+      .container-footer {
+        max-width: 2500px;
+        max-height: 2500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        background-color: #063AA9;
+}
+      
+      .title {
+        text-align: center;
+        color: #063AA9;
+      }
+      .marco {
+        margin: 20px;
+      }
+     
+    </style>
 </head>
 <body>
     <!-- Navbar de Bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          
+        </a>
+      </div>
+    </nav>
       <!-- Pergamino de Bootstrap -->
-      <h1 class="textCenter">Big Data</h1>
+      <h1 class="title"><b> BIG DATA </b></h1>
       <div class="row">
         <div class="col-4">
           <div id="list-example" class="list-group">
             <a class="list-group-item list-group-item-action" href="#list-item-1">Introduccion</a>
             <a class="list-group-item list-group-item-action" href="#list-item-2">¿Que es Big Data?</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-5">Item 5</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-6">Item 6</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">¿Para que nos sirve Big Data?</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Para que se usa y sus aplicaciones</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Beneficio del Big Data</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-6">Tecnologias de Big Data</a>
         </div>
         </div>
         <div class="col-8">
           <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-            <h4 id="list-item-1">Introduccion a Big Data</h4>
-            <p>En este seccion vamos a ver una pequeña introduccion y conceptos de Big Data.<br>
+            <h4 id="list-item-1" ><b>Introduccion a Big Data</b></h4>
+            <p class="marco">En este seccion vamos a ver una pequeña introduccion y conceptos de Big Data.<br>
                 La introducción al Big Data implica comprender los conceptos fundamentales, 
                 los desafíos y las oportunidades que presenta este campo de estudio y aplicación.
                  El Big Data se refiere a conjuntos de datos extremadamente grandes y complejos que superan la capacidad 
                  de las herramientas tradicionales de procesamiento y análisis de dato.
             </p>
-            <h4 id="list-item-2">¿Que es Big Data?</h4>
-            <p>El Big Data se refiere a conjuntos de datos masivos 
+            <h4 id="list-item-2"><b>¿Que es Big Data?</b></h4>
+            <p  class="marco">El Big Data se refiere a conjuntos de datos masivos 
                 y complejos que superan la capacidad de las herramientas y enfoques 
                 tradicionales de gestión y análisis de datos.
                  Estos conjuntos de datos son tan grandes y variados que requieren tecnologías y 
                  enfoques especiales para su procesamiento y aprovechamiento.
-                  El concepto de Big Data en se caracteriza por las "tres V's":
-                   Volumen, Variedad y Velocidad,
-                   y a menudo se incluyen otras V's como "Veracidad" y "Valor".
-                    Aquí están las tres V's principales:<br>
-                <b>1.Volumen:</b> Se refiere a la cantidad masiva de datos que se generan y recopilan. Esto puede incluir datos de transacciones comerciales, registros de redes
+                El concepto de Big Data en se caracteriza por las "tres V's":
+                Volumen, Variedad y Velocidad,
+                y a menudo se incluyen otras V's como "Veracidad" y "Valor".
+                Aquí están las tres V's principales:<br><br>
+                <b>Volumen:</b> Se refiere a la cantidad masiva de datos que se generan y recopilan.
+                 Esto puede incluir datos de transacciones comerciales, registros de redes
                  sociales, registros de servidores, información de sensores, registros de aplicaciones,
                   y mucho más. El volumen de datos puede ser tan grande que supera la capacidad de los 
-                  sistemas tradicionales para su almacenamiento y procesamiento.<br>
-               <b>2.Variedad:</b> Los datos en informática pueden presentarse en una amplia variedad
+                  sistemas tradicionales para su almacenamiento y procesamiento.<br><br>
+               <b>Variedad:</b> Los datos pueden presentarse en una amplia variedad
                 de tipos y formatos. Esto incluye datos estructurados (como bases de datos SQL), 
                 datos semiestructurados (como documentos XML o JSON) y datos no estructurados 
                 (como texto, imágenes, videos, registros de redes sociales y más). La variedad de 
-                datos agrega complejidad al manejo y análisis de Big Data.<br>
-                <b>3.Velocidad:</b> Los datos en informática a menudo se generan a una velocidad impresionante. Algunos datos se generan en tiempo real, como transmisiones de redes sociales, registros de sensores IoT o transacciones financieras. La capacidad de procesar y analizar datos a medida que se generan es esencial en muchas aplicaciones de Big Data.
-                Además de las tres V's principales, las "Veracidad" se refiere a la confiabilidad y precisión de los datos, y la "Valor" se refiere a la capacidad de extraer información valiosa y conocimiento de los datos.
+                datos agrega complejidad al manejo y análisis de Big Data.<br><br>
+                <b>Velocidad:</b> Los datos se generan a una velocidad impresionante. 
+                Algunos datos se generan en tiempo real, como transmisiones de redes
+                 sociales, registros de sensores IoT o transacciones financieras. La capacidad de 
+                 procesar y analizar datos a medida que se generan es esencial en muchas 
+                 aplicaciones de Big Data.<br><br>
+                Además de las tres V's principales, las "Veracidad" se refiere a la confiabilidad 
+                y precisión de los datos, y la "Valor" se refiere a la capacidad de extraer 
+                información valiosa y conocimiento de los datos.
                 </p>
-            <h4 id="list-item-3">¿Para que nos sirve Big Data?</h4>
-            <p>...</p>
-            <h4 id="list-item-4">Item 4</h4>
-            <p>...</p>
-            <h4 id="list-item-5">Item 5</h4>
-            <p>...</p>
-            <h4 id="list-item-6">Item 6</h4>
-            <p>...</p>
+            <h4 id="list-item-3"><b>¿Para que nos sirve Big Data?</b></h4>
+            <p  class="marco">Aquí te presento algunas formas en que el Big Data sirve en el ámbito de la 
+              informática:<br><br>
+              <b>Gestión y Análisis de Datos:</b> Las empresas e instituciones utilizan
+               tecnologías de Big Data para almacenar, gestionar y analizar grandes cantidades de
+                información, lo que les permite tomar decisiones más informadas.<br><br>
+              <b>Optimización de la Infraestructura:</b> En el ámbito de la gestión de TI, el Big
+               Data se utiliza para optimizar la infraestructura de TI. Permite un monitoreo en 
+               tiempo real de servidores y redes, lo que facilita la identificación de problemas y 
+               la adopción de medidas para evitar interrupciones.<br><br>
+              <b>Seguridad Informática:</b> Permite identificar patrones de comportamiento 
+               sospechoso y ataques de seguridad de manera más eficiente, lo que mejora la 
+               seguridad de los sistemas de información.<br><br>
+              <b>Análisis de Datos de Registro:</b> En la administración de sistemas, el Big Data se
+               utiliza para analizar datos de registro (logs) generados por servidores, aplicaciones
+                y dispositivos. Estos análisis ayudan a identificar problemas, errores y 
+                comportamientos anómalos, lo que facilita la solución de problemas y la mejor eficiencia.<br>
+              <b>	Virtualización y Cloud Computing:</b> Ayuda a asignar recursos de manera 
+               eficiente, escalando y desescalando en función de la demanda.<br><br>
+              <b> Optimización de Bases de Datos:</b> En la administración de bases de datos, 
+              el Big Data se utiliza para optimizar el rendimiento, mejorar la disponibilidad y 
+              prevenir problemas de bases de datos. Esto es crucial en aplicaciones de alto 
+              rendimiento y disponibilidad, como sistemas financieros y comercio electrónico.<br><br>
+              <b>	Desarrollo de Software:</b> Los datos de usuario y los datos de rendimiento de
+               aplicaciones se pueden utilizar para mejorar el desarrollo de software. El Big Data
+                permite realizar pruebas y análisis más efectivos, lo que lleva a una mejor calidad
+                 del software y una experiencia del usuario más satisfactoria.<br><br>
+              <b>Automatización de Tareas:</b> El análisis de Big Data se utiliza para la 
+              automatización de tareas en la administración de sistemas. Esto incluye la resolución 
+              automática de problemas, la asignación de recursos y la toma de decisiones basada en 
+              datos en tiempo real.<br><br>
+              <b>	Gestión de Redes:</b> En la administración de redes, el Big Data se aplica para 
+              monitorear el rendimiento de la red, analizar flujos de tráfico y optimizar la 
+              conectividad, lo que es crítico para la eficiencia y la seguridad de las redes 
+              informáticas.<br><br>
+              <b>Inteligencia Empresarial:</b> El Big Data se utiliza para la generación de 
+              informes y análisis de inteligencia empresarial, proporcionando información valiosa 
+              para la toma de decisiones estratégicas en las organizaciones.<br><br>
+              El Big Data es esencial en el campo de la informática para gestionar
+              grandes volúmenes de datos, optimizar sistemas, mejorar la seguridad, automatizar
+              tareas y respaldar el desarrollo de software y la toma de decisiones basada en 
+              datos en diversos aspectos de la informática y la tecnología de la información.
+              </p>
+            <h4 id="list-item-4"><b>Para que se usa y sus aplicaciones</b></h4>
+            <p  class="marco"> Aquí tienes algunas de las principales formas en que se utiliza el Big Data en
+              informática:<br><br>
+              <b>Toma de Decisiones Informadas:</b> El análisis de Big Data ayuda a las
+               organizaciones y a los individuos a tomar decisiones más informadas y
+                basadas en datos en diversos contextos, desde decisiones estratégicas 
+                hasta operativas.<br><br>
+              <b>Análisis de Comportamiento del Usuario:</b> Las empresas utilizan el Big
+                 Data para entender y predecir el comportamiento de los usuarios en 
+                 aplicaciones, sitios web y plataformas en línea. Esto permite personalizar 
+                 experiencias y recomendaciones.<br><br>
+              <b>Gestión de Redes y Rendimiento:</b> En el campo de las redes y sistemas, el Big
+               Data se emplea para monitorear y gestionar la infraestructura informática, 
+               identificando problemas y mejorando el rendimiento de servidores, 
+               aplicaciones y redes.<br><br>
+              <b>Seguridad Cibernética:</b> La detección de amenazas y la prevención de 
+              ataques cibernéticos son áreas clave donde el Big Data se utiliza para 
+              analizar patrones y comportamientos maliciosos en tiempo real.<br><br>
+              <b>Optimización de Recursos:</b> El Big Data es esencial para optimizar 
+               uso de recursos en la nube y en entornos virtualizados, asignando recursos 
+               según la demanda y reduciendo costos.<br><br>
+              <b>Análisis de Logs y Registros:</b> En la administración de sistemas, el 
+              Big Data se aplica para analizar logs y registros de servidores y 
+              aplicaciones, ayudando a identificar problemas y tendencias.<br><br>           
+              <b>Desarrollo de Software:</b> Los datos de usuarios y de rendimiento de
+               aplicaciones se utilizan para mejorar el desarrollo de software, realizar 
+               pruebas efectivas y mejorar la calidad del producto.<br><br>              
+              <b>Inteligencia Empresarial (BI):</b> Las empresas utilizan el Big Data 
+              para el análisis de datos de negocio, generación de informes y análisis de 
+              inteligencia empresarial, lo que ayuda a tomar decisiones estratégicas.<br><br>             
+              <b>Automatización de Tareas:</b> Se utiliza para automatizar tareas como la resolución de problemas, 
+               la asignación de recursos y la toma de decisiones basada en datos en 
+               tiempo real.<br><br>           
+              <b>Modelado Predictivo:</b> El análisis de Big Data se aplica en la 
+               de modelos predictivos que pueden anticipar tendencias, comportamientos y 
+               eventos futuros.<br><br>             
+              <b>Gestión de Datos:</b> El Big Data también se usa para la gestión de datos, 
+              incluyendo la limpieza, integración y almacenamiento eficiente de grandes
+               volúmenes de información. <br><br>           
+              <b>Análisis de Rendimiento de Aplicaciones:</b> En el desarrollo y operación 
+              de aplicaciones, el Big Data se utiliza para medir y mejorar el rendimiento de 
+              las aplicaciones, identificando cuellos de botella y oportunidades de 
+              optimización.<br><br>
+              El Big Data se utiliza en informática para abordar una variedad
+              de desafíos y aprovechar oportunidades relacionadas con la gestión y el 
+              análisis de datos a gran escala.</p>
+            <h4 id="list-item-5"><b>Tecnologias del Big Data </b></h4>
+            <p class="marco">
+               Aquí están algunos de los beneficios clave de utilizar Big Data en 
+               informática: <br><br>     
+              <b>Toma de Decisiones Informadas:</b> El análisis de Big Data permite tomar
+               decisiones más precisas y fundamentadas, ya que se basan en evidencia y datos
+                concretos en lugar de suposiciones o intuiciones.<br><br>     
+              <b>Optimización de Recursos:</b> El Big Data ayuda a asignar recursos de manera
+               más eficiente, lo que puede conducir a ahorros de costos significativos al evitar
+                el desperdicio de recursos innecesarios. <br><br>              
+              <b>Detección Temprana de Problemas:</b> El monitoreo en tiempo real de sistemas y redes
+               a través del Big Data permite la detección temprana de problemas y la toma de medidas
+                correctivas antes de que afecten gravemente las operaciones.<br><br>             
+              <b>Personalización y Experiencia del Usuario:</b> Las empresas utilizan
+               el Big Data para personalizar productos, servicios y experiencias de 
+               usuario, lo que mejora la satisfacción del cliente y aumenta la retención.<br><br>             
+              <b>Mejora de la Seguridad:</b> En el ámbito de la ciberseguridad, el Big Data 
+              se utiliza para identificar y prevenir amenazas cibernéticas, lo que contribuye
+               a proteger la integridad de los sistemas y datos.<br><br>          
+              <b>Eficiencia en el Desarrollo de Software:</b> El Big Data se utiliza en
+               el desarrollo de software para pruebas y análisis más efectivos, lo que 
+               resulta en productos de mejor calidad y menores tiempos de desarrollo.<br><br>            
+              <b>Inteligencia Empresarial:</b> Ayuda a las organizaciones a obtener una
+              comprensión más profunda de sus operaciones y sus clientes, lo que les 
+              permite tomar decisiones estratégicas más acertadas.<br><br>             
+              <b>Modelado Predictivo:</b> El Big Data facilita la creación de modelos 
+              predictivos que pueden anticipar tendencias y eventos futuros, lo que es 
+              valioso en una variedad de aplicaciones, desde ventas hasta mantenimiento
+               predictivo.<br><br>            
+              <b>Análisis de Datos en Tiempo Real:</b> El Big Data permite analizar y
+               actuar sobre datos en tiempo real, lo como es crítico en aplicaciones como
+                publicidad en línea, sistemas de monitoreo, y sistemas de tráfico.<br><br>            
+              <b>Innovación y Desarrollo de Productos:</b> El análisis de Big Data ayuda
+               a las organizaciones a identificar oportunidades de mercado, comprender las
+              necesidades de los consumidores y desarrollar productos y servicios innovadores.<br><br>              
+              <b>Cumplimiento de Normativas:</b> El Big Data facilita el cumplimiento de 
+              regulaciones y normativas al permitir la gestión y auditoría eficiente de datos.<br><br>             
+              <b>Investigación y Descubrimiento Científico:</b> En la investigación científica,
+               el Big Data se utiliza para descubrir patrones y conocimientos ocultos en grandes 
+               conjuntos de datos, lo que avanza en áreas como la medicina, la biología y la 
+               climatología.<br><br>
+              Estos son solo algunos de los beneficios clave del uso del Big data. En resumen,
+              el Big Data permite una toma de decisiones más precisa, la optimización de recursos,
+               la mejora de la eficiencia y la seguridad, la personalización de experiencias, y 
+               la capacidad de descubrir conocimientos y patrones ocultos en datos a gran escala.  
+              </p>
+            <h4 id="list-item-6">Aplicaciones de Big Data</h4>
+            <p class="marco">Existen varias tecnologías y herramientas que se utilizan en el ámbito del Big Data en 
+              informática para el almacenamiento, procesamiento, análisis y visualización de 
+              grandes conjuntos de datos. Estas tecnologías han evolucionado con el tiempo y se
+              adaptan a las necesidades cambiantes. A continuación, se mencionan algunas de las 
+              tecnologías clave de Big Data en informática:<br><br>
+              <b>Hadoop:</b> Hadoop es uno de los frameworks de código abierto más 
+              ampliamente utilizados para el almacenamiento y procesamiento de Big Data.
+              Incluye el sistema de archivos distribuido HDFS (Hadoop Distributed File 
+              System) y el marco de procesamiento MapReduce. También se han desarrollado
+              proyectos adicionales, como Apache Pig y Apache Hive, para facilitar el
+              procesamiento y análisis de datos en Hadoop.<br><br>             
+              <b>Apache Spark:</b> Spark es otro framework de código abierto diseñado 
+              para el procesamiento de datos en clústeres. Es conocido por su velocidad
+              y versatilidad, y es una opción popular para análisis de datos en tiempo
+              real, aprendizaje automático y procesamiento por lotes.<br><br>            
+              <b>Bases de Datos NoSQL:</b> Las bases de datos NoSQL, como MongoDB,
+              Cassandra y HBase, se utilizan para gestionar datos no estructurados y
+              semiestructurados, lo que es común en aplicaciones de Big Data.<br><br>             
+              <b>Sistemas de Almacenamiento Distribuido:</b> Tecnologías como Apache 
+              HBase, Amazon S3, Google Cloud Storage y Microsoft Azure Data Lake Storage 
+              se utilizan para almacenar grandes volúmenes de datos de manera eficiente y
+              escalable.<br> <br>            
+              <b>Apache Kafka:</b> Kafka es una plataforma de streaming de eventos que
+              se utiliza para la ingestión y el procesamiento en tiempo real de datos.
+              Es especialmente útil en aplicaciones que requieren el procesamiento de 
+              flujos de datos continuos.<br><br>              
+              <b>Bases de Datos Columnares:</b> Soluciones como Apache Cassandra y 
+              Apache HBase son bases de datos columnares que se utilizan para el análisis 
+              y el almacenamiento eficiente de datos de columnas, lo que es útil en 
+              aplicaciones de análisis.<br><br>             
+              <b>Sistemas de Almacenamiento en la Nube:</b> Plataformas de almacenamiento
+              en la nube como Amazon S3, Google Cloud Storage y Microsoft Azure Blob Storage son 
+              utilizadas para el almacenamiento y la gestión de datos de Big Data en la nube.<br>             
+              <b>8.Bases de Datos en Memoria:</b> Tecnologías como Redis y Apache Ignite permiten 
+              el almacenamiento en memoria y el acceso rápido a datos, lo que es importante para 
+              aplicaciones que requieren baja latencia.<br><br>  
+              <b>Plataformas de Aprendizaje Automático:</b> Herramientas y frameworks de
+              aprendizaje automático como TensorFlow, PyTorch y scikit-learn se utilizan 
+              para construir modelos de aprendizaje automático y realizar análisis 
+              avanzados de datos de Big Data.<br><br>             
+              <b>Plataformas de Análisis de Datos:</b> Soluciones como Tableau, Power 
+              BI, QlikView y Apache Zeppelin se utilizan para la visualización y el 
+              análisis de datos, lo que facilita la interpretación de los resultados.<br><br>  
+              <b>Plataformas de Almacenamiento en Memoria Distribuida:</b> Soluciones como
+              Apache Flink y Apache Beam permiten el procesamiento de datos en tiempo real y la
+              capacidad de escalar horizontalmente.<br><br>
+              <b>Herramientas de Programación y Lenguajes:</b> Lenguajes de programación
+              como Python, R y Java, así como bibliotecas como pandas y NumPy, se utilizan 
+              en el análisis y procesamiento de datos de Big Data.<br><br>          
+              Estas tecnologías pueden ser utilizadas de forma independiente o en 
+              combinación, dependiendo de las necesidades específicas de un proyecto de 
+              Big Data. La elección de la tecnología adecuada depende de factores como el 
+              volumen, la variedad y la velocidad de los datos, así como de los objetivos 
+              y las restricciones del proyecto.
+              </p>
           </div>
         </div>
       </div>
+      <footer class="container-footer">
+        
+        <p >&copy; 2023 Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
