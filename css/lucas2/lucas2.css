@@ -1,0 +1,41 @@
+ /* Estilos CSS para personalizar la apariencia de la página */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #0074c2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Agregar estilos para las imágenes */
+img {
+    max-width: 80%;
+    height: auto;
+    
+}
