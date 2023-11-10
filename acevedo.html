@@ -1,351 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>metodologia</title>
-	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstsrKZlkSXXB214AkYYMDjLJYASHyE8hKdg&usqp=CAU">
-</head>
-<style>
-
-	body {
-    font-family:  American Typewriter ,serif;
-    margin: 0;
-    letter-spacing:5px;
-   	padding: 0;
-	cursor: pointer;
-}
-
-header {
-
-    background-color: #7cd7cf;
-    color: white;
-    
-   
-text-align: center;
-    padding: 1em 0;
-
-   letter-spacing:5px;
-}
-
-
-main {
-    padding: 2em;
-    background-color: #e1ecd6;
-}
-
-ul {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+       h1 {
+      color: #26545a; /* Color azul oscuro de TypeScript */
+      font-size: 46px; /* Tamaño de fuente grande */
+      font-weight: bold; /* Texto en negrita */
+      text-transform: uppercase; /* Texto en mayúsculas */
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      text-align: center;
+      text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+      -webkit-text-stroke: 1px black;
+      padding: auto;
+    }
+    main {
+      padding: 30px;
+      background-color: #26545a ;
+      width: 80%; /* Tamaño para PC */
+      margin: 0 auto; /* Centrar el contenido */
+    }
+    ul {
     list-style: disc;
     padding-left: 1em;
     letter-spacing:5px;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #08af64;
-}
-body {color:black; }
-
-h1
- {
-	color:black; 
-   font-size:50px;
-   font-family:American Typewriter ,serif;
-      font-style:italic;
+    text-align: center;}
+    h2{
+  	color:white; 
+   font-size:35px;
+   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
    line-height:30px;
-   letter-spacing:5px;
-   
-
-   text-align:center;
-   
-  }
-  img {
-  	float: left;
-     width:650px;  
-     height:350px;
-     padding: 50px;
-     margin: 10;
-
-     }
-
-
-.cuadro {
-    width: 700px;
-   text-align: left;
-    height: 250px;
-    border: 3px #157f0d;
-    
-  }
-  h2{
-  	color:black; 
-   font-size:40px;
-   font-family:American Typewriter ,serif;
-      font-style:italic;
-   line-height:30px;
-   letter-spacing:5px;
-   text-align:center;
-   
-
-  }
+   letter-spacing:9px;
+   text-align:center;}
   h3{
-  	color:black; 
-   font-size:30px;
-   font-family:American Typewriter ,serifs;
-      font-style:italic;
-   line-height:30px;
-   letter-spacing:5px;
-   
-
-   text-align:center;
-   
-
-  }
+  	color:white; 
+   font-size:35px;
+   font-style:italic;
+   line-height:20px;
+   letter-spacing:6px;
+   text-align:center;}
   .texto-izquierda {
     text-align: right;
-    margin: 100px;
+    margin: 100px;}
+
+  fieldset{
+    border: 4px solid #25494e;
+    padding: 10px;
+    width: 950px;
+    box-shadow: 0 0 10px #377180;
+    
+    background-color: white;
+    margin: 50px;
+
+}
+section {
+    margin-bottom: 20px;
+}
+img {
+      display: block;
+      margin: 0 auto; /* Centrar la imagen horizontalmente */
+      max-width: 60%; /* Ajustar la imagen al ancho del contenedor */
+  
+}
+    
+#btn {
+
+  display: inline-block; /* Convierte el botón en un elemento en línea con bloque de ancho específico */
+      margin-top: 20px; /* Añade un margen superior para separar el botón del borde superior del contenedor */
+      padding: 10px 20px; /* Ajusta el relleno del botón según sea necesario */
+      font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+    align-content: center;
+    text-align: center;
+box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+
+  
+
+        html
+        {
+            overflow-x: hidden;
+        }
+       .navbar {
+        background-color: #265457; /* Cambia el color de fondo del navbar */
+        color: #FAE5D3;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+    }
+    .nav-item #a1{
+        margin-left: 1090px;
+        font-size: 25px;
+     }
+     @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #2f5554;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 280px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .img-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .img-container img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+#encabezado{
+  color: #26545a; /* Color azul oscuro de TypeScript */
+      font-size: 23px; /* Tamaño de fuente grande */
+      
+      text-transform: uppercase; /* Texto en mayúsculas */
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      text-align: center;
+      
+      -webkit-text-stroke: 1px black;
+      padding: auto;
+    
+  }
+  #inicio{
+    color: #26545a; /* Color azul oscuro de TypeScript */
+      font-size: 23px; /* Tamaño de fuente grande */
+      
+      text-transform: uppercase; /* Texto en mayúsculas */
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      text-align: center;
+      
+      -webkit-text-stroke: 1px black;
+      padding: auto;
 
   }
- 
 
-</style>
-
-  
-  
-<body>
-	
-	<header>
-
-		</body>
-        <h1> Soft Skills y  Metodología Ágil</h1>
-    </header>
-    <main>
         
-       <section>
-
-	
-	
-	<br>
-	<h2> ¿Qué es Soft Kills?</h2>
-	
-
-	<img src="https://www.murciadiario.com/media/murciadiario/images/2020/09/29/5477_200929softskills.jpg" width="300" height="200">
-	<p class="texto-izquierda">
-		Se entienden por soft skills a aquellas cualidades personales que se requieren para tener éxito en el trabajo. 
-		Se relacionan directamente con los rasgos de la forma de ser y la mentalidad.
-
-También se les conoce como habilidades o competencias blandas.
-
-Estas cualidades determinan cómo una persona interactúa en sus relaciones con los demás, un aspecto muy valioso en los equipos de trabajo, que debe tomarse en serio.
-
-Cada vez más las empresas quieren fortalecer sus ambientes laborales y garantizar que los mejores talentos se prendan a elegirlas para trabajar, lo que resulta en un mayor esfuerzo por propiciar un clima cálido para todos.
-
-Y naturalmente los profesionales que entran deben ser responsables de preservar estos valores, por eso es que las Soft Skills han sido cada vez más necesarias.
-
-</p>
-
-
-<br>
-<h3>
-Soft skills x hard skills: ¿En qué se distinguen?</h3>
-<img src="https://scontent.fuaq5-1.fna.fbcdn.net/v/t1.6435-9/129874040_3309537989175271_8073688436414932640_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9267fe&_nc_eui2=AeFbyCq0XUUpzp_uH_aH2_QA4dl1wgPBoPTh2XXCA8Gg9JXV2s1jgH_UfoO25mR80aERWBy-kTzXnamsrgPeZkdl&_nc_ohc=dM_IoV6P4qwAX-1Nqq8&_nc_ht=scontent.fuaq5-1.fna&oh=00_AfB0CIobhL-0LQ3W3QAtrs0M9Jx5tDDo35PvUe8p22XC1A&oe=651F0117">
-<br>
-<br>
-<p>
-Hard skills
-Son habilidades enseñables, que se pueden aprender, o un conjunto de habilidades fáciles de cuantificar.
-<br>
-
-Normalmente se aprenden en el aula o trabajo, con la ayuda de materiales de formación.
-<br>
-
-Estas aptitudes suelen describirse en las hojas de vida. Entre los ejemplos tradicionales de hard skills se encuentran los siguientes:
-<br>
-<br>
-
-<li>Dominio de un idioma extranjero;</li><br>
- <li>un título o certificado;</li> <br>
- <li>escribir rápido en el teclado de la computadora;</li> <br>
-<li>manipular maquinaria especializada;</li>  <br>
- <li>programación de computadoras.</li> <br>
-
- <br></p>
- <br>
- <br>
-<h3>¿Cuáles son las soft skills más solicitadas en el siglo XXI?</h3>
-<img src="https://webescuela.com/wp-content/uploads/2022/03/soft-skills-mas-demandadas.png">
-Todas las habilidades son valiosas, aunque normalmente los empleadores toman en cuenta las siguientes al momento de contratar a la persona adecuada:
-<br>
-
-<h4>Creatividad</h4>
-<br>
- Esta habilidad evita que las empresas se estanquen. contar con un empleado que sepa cómo pensar fuera de la caja, que aporte ideas originales y no le tenga miedo a la innovación disruptiva, tiene un valor agregado considerable.
-<br><h4>
-	Comunicación
-</h4>
-<br>
-La capacidad de expresarse con claridad tanto verbalmente como a través de la escritura, es esencial en cualquier lugar de trabajo.
-<br>
-<h4>Liderazgo</h4>
-<br>
-Las empresas de todo tipo necesitan líderes en diferentes departamentos que sepan dirigir a sus respectivos equipos. Todo en función de la consecución de los objetivos institucionales y comerciales.<br>
-<h4>Resolución de problemas</h4>
-<br>
-
-Los individuos tienen que superar los obstáculos de forma efectiva y eficiente, y para ello se necesita de la llamada escucha activa. Estos aspectos contribuyen al crecimiento de la institución.
-<br>
-<h4>Gestión del tiempo</h4>
-<br>
-De todas, posiblemente esta sea la menos popular, especialmente por la complejidad de la vida laboral moderna.<br>
-<h4>Manejo del estrés</h4>
-<br>
-Para mantener un ambiente positivo, cordial y eficiente, es importante que los empleados de la compañía sepan cómo manejar apropiadamente el estrés, actuando de manera serena y bien dispuesta ante los problemas.<br>
-<h4>Fit cultural</h4>
-<br>
-
-Para los empleadores, es importante que los trabajadores encajen con la cultura de la empresa. Esto no solo los harán más felices, sino más productivos.<br>
-<h4>Inteligencia emocional</h4>
-<br>
-Saber manejar las emociones en el espacio de trabajo contribuye a que, junto con otros valores esenciales, se fortalezca la cultura de la empresa. Adicionalmente, se requiere para formar y sostener equipos de alto rendimiento.<br>
-<h4>Productividad personal</h4>
-<br>
-Es importante que los empleados sean capaces de aprovechar al máximo su jornada laboral, sobre todo ante una demanda de resultados cada vez mayor.
-
-La transformación digital ha proporcionado el surgimiento de muchos softwares que estimulan el incremento de la productividad, acompañando la importancia de esta habilidad en el contexto profesional.<br>
-<h4>Pensamiento crítico</h4>
-<br>
-En el entorno laboral es imprescindible que los integrantes del equipo estén en capacidad de efectuar análisis objetivos, evaluar situaciones y contexto. Esto con la finalidad de que formen un juicio propio acerca de un tema específico.
-<br>
-	
-            <h2>¿Qué es la Metodología Ágil?</h2>
-            <br>
-            <img src="https://tdconsulting.es/wp-content/uploads/Metodo-AGILE.jpg">
-            <br>
-            <p class="texto-izquierda2">
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            <p>La metodología Agil se usa en el desarrollo de software y otros proyectos de alto rendimiento; se centra en la implementación rápida de un equipo eficiente y flexible para planear el flujo de trabajo y elegir la mejor opción en cada situación sin comprometer el proyecto.<br>
-
- </p>
-        </section>
-        <section>
-        	<br>
-        	<br>
-        	<br>
-<br>
-            <h3>Principios de la Metodología Ágil</h3>
-            
-            <li>Lograr la satisfacción del cliente a través de la entrega continua de software.</li>
-            <li>No tener miedo de realizar cambios.</li>
-            
-<li>Entregar software funcional en una escala de tiempo menor.</li>
-<li>Desarrolladores y gerencia deben trabajar juntos.</li>
-<li>Desarrollar proyectos en torno a personas motivadas.</li>
-<li>Interactuar cara a cara es el modo de comunicación más eficiente y efectivo.</li>
-<li>Un software que funciona es la medida principal del progreso.</li>
-<li>Los procesos ágiles promueven el desarrollo sostenible.</li>
-<li>La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.</li>
-<li>La simplicidad es esencial.</li>
-<li>Las mejores arquitecturas, requisitos y diseños emergen de equipos autoorganizados.</li>
-<li>Inspeccionar y adaptar.</li>
-
-            <ul>
-           
-                <h4>Colaboración con el cliente</h4>
-                <br>
-                El software no está diseñado por el bien de la empresa creadora del software, sino para ser utilizado por un usuario final, con el fin de realizar mejor tareas que antes estaban fuera de su alcance, resolver un problema, hacer su trabajo mejor o de modo más eficiente, entre otros aspectos. Sin embargo, comúnmente se deja de lado la máxima prioridad del desarrollo de software.
-
-Entonces, ¿cómo alinearte mejor con este principio?
-
-Acorta la distancia entre la recopilación de requisitos y el feedback de los clientes al planificar un menor número de cambios a la vez. Esto te brinda más oportunidades para orientar al software en una dirección satisfactoria para el cliente.
-                <h4>Enfoque de la metodologia</h4>
-                <br>
-                 la metodología Agile se enfoca más en crear software que en solo planificarlo. Esto te proporciona la oportunidad de mejorar la eficiencia y la eficacia del trabajo.
-                
-            </ul>
-        </section>
-        <section>
-            <h4>Beneficios de la Metodología Ágil</h4><br>
-            <li>Identifica tus objetivos comerciales.</li><br>
-         
-Antes de implementar esta metodología es primordial identificar los objetivos de tu negocio. Contar con una visión clara de cómo se espera que la nueva metodología contribuya a alcanzar los objetivos de tu empresa.
-<br>
-<br>
-          <li>Analiza la cultura de la empresa.</li> <br>
+        
+        </style>
+        
           
-Tener cierta apertura dentro de tu empresa es una de las claves para la implementación de una metodología Agile, en donde la comunicación con transparencia y liderazgo juegan un papel vital dentro de tu equipo de trabajo. Tu cultura organizacional debe estar abierta a implementar este tipo de metodologías para que los esfuerzos no sean aislados, sino como parte de la estructura del negocio. 
-<br>
-<br>
-<li>Detecta el impacto potencial en tus clientes.</li><br>
-Formular preguntas como: ¿cuál sería la mejoría en la experiencia de tus clientes? o ¿qué impacto tendrá en la calidad de tus servicios? y ¿cómo mejorará la interacción empresa/cliente? Estas cuestiones serán uno de los puntos cruciales para identificar cómo la implementación de Agile beneficiará a tus usuarios y a tu empresa.
-<br>
-<br>
-<li>Determina los recursos disponibles en tu empresa</li><br>
-Para llevar a cabo este método es indispensable plantear si cuentas con las personas y las tecnologías necesarias que te permitan sacarle el mejor provecho a Agile, al igual que con la infraestructura y los proveedores más convenientes. Aspectos que, en su conjunto, te llevarán a una implementación exitosa.
-<br>
-<br>
-<li>Apóyate en líderes de tu empresa.</li><br>
-Efectuar un nuevo enfoque de gestión de proyectos Agile representa un cambio de paradigma dentro de tu empresa, ya que tendrá un efecto en los procesos, tu personal y la manera en que se utilizará la tecnología. Por ello es importante que, desde el inicio de la transición a esta nueva modalidad, involucres a los líderes y expertos de la empresa. De esta forma podrás efectuar mejor los cambios.
-<br>
-<br>
-<li>Implementa procesos con base en Agile.</li><br>
-Ahora sí es tiempo de implementar procesos ágiles que consideren nuevos flujos, quiénes serán las personas que participarán, así como las acciones y tecnologías que usarán para cumplir con los objetivos.
-            <ul>
-      <br>         
-<h3>Metodologías ágiles más utilizadas</h3>
-<br>
-Existen diferentes opciones pero las más utilizadas son:
-<li> programación extrema (XP)</li>
-<br>
+          
+        <body>
 
-Esta herramienta es muy útil sobre todo para empresas que están en proceso de consolidación, su principal objetivo es ayudar en las relaciones entre los empleados y clientes. La clave  es potenciar las relaciones personales, a través, del trabajo en equipo, fomentando la comunicación y eliminando los tiempos muertos.
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <!-- Logotipo de HTML -->
+                    <img class="imglogo" src="/assets/images/nico/logocode.png" alt="Logo de HTML" width="150" height="60" class="d-inline-block align-top">
+                    
+                </a>
+                <!-- Botones de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a  id="a1" class="nav-link" href="indexnico.html">Inicio</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    
+        <h1> Soft Skills y  Metodología Ágil</h1>
+    </div>
+       <div id="encabezado"> <!--extension-->
 
-Sus principales fases son:
-<br>
-Planificación del proyecto con el cliente
-<br>
-Diseño del proyecto
-Codificación, donde los programadores trabajan en pareja para obtener resultados más eficientes y de calidad
-<br>
-Pruebas para comprobar que funcionan los códigos que se van implementando
-<br>
-<br>
-<li>Scrum </li>  
-<br>
-Se caracteriza por ser la «metodología del caos» que se basa en una estructura de desarrollo incremental, esto es, cualquier ciclo de desarrollo del producto y/o servicio se desgrana en «pequeños proyectos» divididos en distintas etapas: análisis, desarrollo y testing. 
-<br>
-Esta metodología permite abordar proyectos complejos que exigen una flexibilidad y una rapidez esencial a la hora de ejecutar los resultados.  La estrategia irá orientada a gestionar y normalizar los errores que se puedan producir en desarrollos demasiado largos, a través de, reuniones frecuentes para asegurar el cumplimiento de los objetivos establecidos.
-<br>
-<br>
- <li>Kanban</li>
- <br>
- La estrategia Kanban conocida como ‘Tarjeta Visual» muy útil para los responsables de proyectos. Esta consiste en la elaboración de un cuadro o diagrama en el que se reflejan tres columnas de tareas; pendientes, en proceso o terminadas.<br> Este cuadro debe estar al alcance de todos los miembros del equipo, evitando así la repetición de tareas o la posibilidad de que se olvide alguna de ellas. Por tanto, ayuda a mejorar la productividad y eficiencia del equipo de trabajo.
-<br>
-Las ventajas que proporciona esta metodología son:
-<br>
-Planificación de tareas
-Mejora en el rendimiento de trabajo del equipo.
-
-
-<br>
-
-            </ul>
-
+   <nav><!--enlace de navegacion dentro o fuera del documento-->
+     <ul><!--lista no ordenada-->
+       
+       <li><a href="#soft skills">soft skills</a></li>    
+       <li><a href="#metodologia">metodologia Agil</a></li>
+     </ul>
+   </nav>
+       </div>
+        
+            <main>
+                
+               <section id="soft skills">
+        
             
-  
+            
+            <br>
+            <h2> ¿Qué es Soft Skills?</h2>
+            <fieldset>
+        
+            <img src="https://www.murciadiario.com/media/murciadiario/images/2020/09/29/5477_200929softskills.jpg" width="300" height="200">
+            <p class="texto-izquierda">
+                Se entienden por soft skills a aquellas cualidades personales que se requieren para tener éxito en el trabajo. 
+                Se relacionan directamente con los rasgos de la forma de ser y la mentalidad.
+        
+        También se les conoce como habilidades o competencias blandas.
+        
+        Estas cualidades determinan cómo una persona interactúa en sus relaciones con los demás, un aspecto muy valioso en los equipos de trabajo, que debe tomarse en serio.
+        
+        Cada vez más las empresas quieren fortalecer sus ambientes laborales y garantizar que los mejores talentos se prendan a elegirlas para trabajar, lo que resulta en un mayor esfuerzo por propiciar un clima cálido para todos.
+        
+        Y naturalmente los profesionales que entran deben ser responsables de preservar estos valores, por eso es que las Soft Skills han sido cada vez más necesarias.
+        
+        </p>
+        </fieldset>
+        
+        
+        <h3>¿Cuáles son las soft skills más solicitadas en el siglo XXI?</h3>
+        <fieldset>
+        <img src="https://webescuela.com/wp-content/uploads/2022/03/soft-skills-mas-demandadas.png">
+        Todas las habilidades son valiosas, aunque normalmente los empleadores toman en cuenta las siguientes al momento de contratar a la persona adecuada:
+        <br>
+        
+        <h4><u> Creatividad</u></h4>
+        <br>
+         Esta habilidad evita que las empresas se estanquen. contar con un empleado que sepa cómo pensar fuera de la caja, que aporte ideas originales y no le tenga miedo a la innovación disruptiva, tiene un valor agregado considerable.
+        <br><h4>
+            <u> Comunicación</u>
+        </h4>
+        <br>
+        La capacidad de expresarse con claridad tanto verbalmente como a través de la escritura, es esencial en cualquier lugar de trabajo.
+        <br>
+        <h4><u> Liderazgo</u></h4>
+        <br>
+        Las empresas de todo tipo necesitan líderes en diferentes departamentos que sepan dirigir a sus respectivos equipos. Todo en función de la consecución de los objetivos institucionales y comerciales.<br>
+        <h4><u>Resolución de problemas</u></h4>
+        <br>
+        
+        Los individuos tienen que superar los obstáculos de forma efectiva y eficiente, y para ello se necesita de la llamada escucha activa. Estos aspectos contribuyen al crecimiento de la institución.
+        <br>
+        <h4><u> Gestión del tiempo</u></h4>
+        <br>
+        De todas, posiblemente esta sea la menos popular, especialmente por la complejidad de la vida laboral moderna.<br>
+        <h4><u>Manejo del estrés</u></h4>
+        <br>
+        Para mantener un ambiente positivo, cordial y eficiente, es importante que los empleados de la compañía sepan cómo manejar apropiadamente el estrés, actuando de manera serena y bien dispuesta ante los problemas.<br>
+        <h4><u>Fit cultural</u></h4>
+        <br>
+        
+        Para los empleadores, es importante que los trabajadores encajen con la cultura de la empresa. Esto no solo los harán más felices, sino más productivos.<br>
+        <h4><u> Inteligencia emocional</u></h4>
+        <br>
+        Saber manejar las emociones en el espacio de trabajo contribuye a que, junto con otros valores esenciales, se fortalezca la cultura de la empresa. Adicionalmente, se requiere para formar y sostener equipos de alto rendimiento.<br>
+        <h4><u>Productividad personal</u></h4>
+        <br>
+        Es importante que los empleados sean capaces de aprovechar al máximo su jornada laboral, sobre todo ante una demanda de resultados cada vez mayor.
+        
+        La transformación digital ha proporcionado el surgimiento de muchos softwares que estimulan el incremento de la productividad, acompañando la importancia de esta habilidad en el contexto profesional.<br>
+        <h4><u> Pensamiento crítico </u></h4>
+        <br>
+        En el entorno laboral es imprescindible que los integrantes del equipo estén en capacidad de efectuar análisis objetivos, evaluar situaciones y contexto. Esto con la finalidad de que formen un juicio propio acerca de un tema específico.
+        <br>
+        </fieldset>
+        <h3>Importancia de la soft skills</h3>
+        <br>
+        <fieldset>
+            <img src="https://abrhmg.org.br/wp-content/uploads/2019/05/001.png">
+            <br>
+            <br><br>
+            <br>
+        Las habilidades blandas son relevantes porque, con base en ellas, una empresa puede determinar si un candidato tendrá éxito en el rol que desempeñe. Si bien alguien puede ser un gran profesionista a nivel técnico, esto no significa que sea la persona más indicada para trabajar en equipo de forma efectiva.
+        
+        Estas habilidades muestran la empatía de la persona, pero también su nivel de compromiso que podría tener con la organización. De igual manera, las empresas buscan candidatos que gocen de habilidades blandas, pues estas son transferibles. Esto significa que pueden usarse de forma independiente a su desarrollo profesional.
+        
+        Por ejemplo, cuando una empresa requiere un profesional que brinde soporte a los clientes, es ideal que estos empleados cuenten con habilidades blandas que les permitan dar un trato amable y servicial. Es posible que haya un experto en resolver problemas a nivel técnico, pero si su relación no es cortés, podría generar una discordancia entre los valores y compromisos de la empresa y los clientes.
+        </fieldset>
         </section>
-    </main>
+        <button id="btn">
+        <a href="#inicio">Volver al inicio</a>
+         </button>
+            <section id="metodologia">
+                    <h2>¿Qué es la Metodología Ágil?</h2>
+                    <br>
+                    <fieldset>
+                    <img src="https://tdconsulting.es/wp-content/uploads/Metodo-AGILE.jpg">
+                    <br>
+                    <p class="texto-izquierda2">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <p>La metodología Agil se usa en el desarrollo de software y otros proyectos de alto rendimiento; se centra en la implementación rápida de un equipo eficiente y flexible para planear el flujo de trabajo y elegir la mejor opción en cada situación sin comprometer el proyecto.<br>
+        
+         </p></fieldset>
+                </section>
+                <section>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+        
+                    <h3>Principios de la Metodología Ágil</h3>
+                    <fieldset>
+                    <img src="https://cdn.plainconcepts.com/wp-content/uploads/2021/08/12-principios-agiles.jpg">
+                    <br>
+                    <br>
+                    <br>
+                    <li>Lograr la satisfacción del cliente a través de la entrega continua de software.</li>
+                    <li>No tener miedo de realizar cambios.</li>
+                    
+        <li>Entregar software funcional en una escala de tiempo menor.</li>
+        <li>Desarrolladores y gerencia deben trabajar juntos.</li>
+        <li>Desarrollar proyectos en torno a personas motivadas.</li>
+        <li>Interactuar cara a cara es el modo de comunicación más eficiente y efectivo.</li>
+        <li>Un software que funciona es la medida principal del progreso.</li>
+        <li>Los procesos ágiles promueven el desarrollo sostenible.</li>
+        <li>La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.</li>
+        <li>La simplicidad es esencial.</li>
+        <li>Las mejores arquitecturas, requisitos y diseños emergen de equipos autoorganizados.</li>
+        <li>Inspeccionar y adaptar.</li>
+        
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    </fieldset>
+                </section>
+                <section>
+                    <h3>Beneficios de la Metodología Ágil</h3><br>
+                    <fieldset>
+                    <img src="https://media.licdn.com/dms/image/D4D12AQFXyvJmrYGuFg/article-cover_image-shrink_720_1280/0/1679410554121?e=2147483647&v=beta&t=wmLd7zq6Gy3TFSuPoERTt8av7VgWHJ-yFyQghAjPrNk">
+                    <li><u>Identifica tus objetivos comerciales.</u> </li><br>
+                 
+        Antes de implementar esta metodología es primordial identificar los objetivos de tu negocio. Contar con una visión clara de cómo se espera que la nueva metodología contribuya a alcanzar los objetivos de tu empresa.
+        <br>
+        <br>
+                  <li> <u>Analiza la cultura de la empresa.</u></li> <br>
+                  
+        Tener cierta apertura dentro de tu empresa es una de las claves para la implementación de una metodología Agile, en donde la comunicación con transparencia y liderazgo juegan un papel vital dentro de tu equipo de trabajo. Tu cultura organizacional debe estar abierta a implementar este tipo de metodologías para que los esfuerzos no sean aislados, sino como parte de la estructura del negocio. 
+        <br>
+        <br>
+        <li><u>Detecta el impacto potencial en tus clientes.</u> </li><br>
+        Formular preguntas como: ¿cuál sería la mejoría en la experiencia de tus clientes? o ¿qué impacto tendrá en la calidad de tus servicios? y ¿cómo mejorará la interacción empresa/cliente? Estas cuestiones serán uno de los puntos cruciales para identificar cómo la implementación de Agile beneficiará a tus usuarios y a tu empresa.
+        <br>
+        <br>
+        <li><u> Determina los recursos disponibles en tu empresa </u> </li><br>
+        Para llevar a cabo este método es indispensable plantear si cuentas con las personas y las tecnologías necesarias que te permitan sacarle el mejor provecho a Agile, al igual que con la infraestructura y los proveedores más convenientes. Aspectos que, en su conjunto, te llevarán a una implementación exitosa.
+        <br>
+        <br>
+        <li><u> Apóyate en líderes de tu empresa. </u> </li><br>
+        Efectuar un nuevo enfoque de gestión de proyectos Agile representa un cambio de paradigma dentro de tu empresa, ya que tendrá un efecto en los procesos, tu personal y la manera en que se utilizará la tecnología. Por ello es importante que, desde el inicio de la transición a esta nueva modalidad, involucres a los líderes y expertos de la empresa. De esta forma podrás efectuar mejor los cambios.
+        <br>
+        <br>
+        <li><u> Implementa procesos con base en Agile. </u> </li><br>
+        Ahora sí es tiempo de implementar procesos ágiles que consideren nuevos flujos, quiénes serán las personas que participarán, así como las acciones y tecnologías que usarán para cumplir con los objetivos.
+                    <ul>
+              <br>
+              </fieldset>
+        
+            <h3>Metodologías ágiles más utilizadas</h3>
+            <fieldset>
+        <img src="https://www.freelancermap.com/blog/wp-content/uploads/2022/03/ejemplos-metodologias-agiles.png">
+        <br>
+        <h4>
+        Existen diferentes opciones pero las más utilizadas son:</h4>
+        <li><u> Programación extrema (XP)</u></li>
+        <br>
+        
+        Esta herramienta es muy útil sobre todo para empresas que están en proceso de consolidación, su principal objetivo es ayudar en las relaciones entre los empleados y clientes. La clave  es potenciar las relaciones personales, a través, del trabajo en equipo, fomentando la comunicación y eliminando los tiempos muertos.
+        <br>
+         Sus principales fases son:
+        <br>
+        Planificación del proyecto con el cliente
+        <br>
+        Diseño del proyecto
+        Codificación, donde los programadores trabajan en pareja para obtener resultados más eficientes y de calidad
+        <br>
+        Pruebas para comprobar que funcionan los códigos que se van implementando
+        <br>
+        <br>
+        <li><u> Scrum</u> </li>  
+        <br>
+        Se caracteriza por ser la «metodología del caos» que se basa en una estructura de desarrollo incremental, esto es, cualquier ciclo de desarrollo del producto y/o servicio se desgrana en «pequeños proyectos» divididos en distintas etapas: análisis, desarrollo y testing. 
+        <br>
+        Esta metodología permite abordar proyectos complejos que exigen una flexibilidad y una rapidez esencial a la hora de ejecutar los resultados.  La estrategia irá orientada a gestionar y normalizar los errores que se puedan producir en desarrollos demasiado largos, a través de, reuniones frecuentes para asegurar el cumplimiento de los objetivos establecidos.
+        <br>
+        <br>
+         <li> <u> Kanban</li></u>
+         <br>
+         La estrategia Kanban conocida como ‘Tarjeta Visual» muy útil para los responsables de proyectos. Esta consiste en la elaboración de un cuadro o diagrama en el que se reflejan tres columnas de tareas; pendientes, en proceso o terminadas.<br> Este cuadro debe estar al alcance de todos los miembros del equipo, evitando así la repetición de tareas o la posibilidad de que se olvide alguna de ellas. Por tanto, ayuda a mejorar la productividad y eficiencia del equipo de trabajo.
+        <br>
+        Las ventajas que proporciona esta metodología son:
+        <br>
+        Planificación de tareas
+        Mejora en el rendimiento de trabajo del equipo.
+        
+        
+        <br>
+        
+                    </ul>
+                    </fieldset>
+                   <h3>¿Por qué elegir la metodología ágil? </h3> 
+                   <fieldset>
+                    <img src="https://quodem.com/wp-content/uploads/2021/08/que-es-la-metodologia-agile.jpg">
+                    <br>
+                    <br><br>
+        Los equipos que eligen la metodología ágil ante los cambios en el mercado o ante el feedback de los clientes rápidamente sin arruinar la planificación de un año entero. 
+        
+        Pero aquí, los protagonistas no son los números: lo primero y más importante son las personas. Tal y como se describe en el manifiesto ágil, las verdaderas interacciones humanas son más importantes que los procesos rígidos. Colaborar con clientes y compañeros de equipo es mucho más importante que las disposiciones predefinidas, así como entregar una solución que resuelva el problema del cliente es más importante que una documentación minuciosamente detallada.
+        
+        Un equipo ágil comparte una visión y la hace realidad de la forma en la que consideran que es mejor. Cada equipo fija sus propios estándares de calidad, usabilidad e integridad. Su definición de "terminado" les permitirá determinar la rapidez con la que completarán el trabajo. Aunque al principio puede resultar intimidante, los líderes de las empresas comprueban que, cuando confían en un equipo ágil, el equipo cuenta con un mayor sentido del compromiso y se esfuerza para cumplir (o superar) las expectativas de la gestión.
+        
+                    
+          
+                </section>
+                <button id="btn">
+                <p><a href="#inicio">Volver al inicio</a></p></button>
+                </fieldset>
+            </main>
+             <!--::::Pie de Pagina::::::-->
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                    <div class="box">
+                        <figure>
+                            <a href="index.html">
+                                <img src="assets/images/diego/logocode.png" alt="Logo de CodeStart">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="box">
+                        <h2>SOBRE NOSOTROS</h2>
+                        <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
+                        <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
+                    </div>
+                    <div class="box">
+                        <h2>SIGUENOS</h2>
+                        <div class="red-social">
+                            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                            <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                            <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                            <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo-2">
+                    <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+                </div>
+            
+    <title>Document</title>
+</head>
+<body>
     
-
-    
-
-   
-
 </body>
 </html>
