@@ -5,32 +5,14 @@
     padding: 0;
     background-color: #f0f0f0;
 }
-header {
-    background-color: #0074c2;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-nav a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-}
-nav a:hover {
-    background-color: #555;
-}
+
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
+    max-width: 800px !important;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Agregar estilos para las imágenes */
@@ -38,4 +20,102 @@ img {
     max-width: 80%;
     height: auto;
     
+}
+/* pie de pagina */
+.pie-pagina {
+    width: 100%;
+    background-color: #2f5554;
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 280px;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+  }
+  .pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+  
+    .img-container img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+
+  /* fin de pagina */
+
+
+
+.navbar {
+    background-color: #265457; /* Cambia el color de fondo del navbar */
+    color: #FAE5D3;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+}
+.nav-item #a1{
+    margin-left: 1150px;
+    font-size: 25px;
+ }
+
+.contenedor{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 180px;
 }
