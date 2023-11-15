@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calidad - Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Forum&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: 'Forum';
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0EF6CC;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            
+            display: flex;
+            
+        }
+
+        /*----- Estilos Navbar -----*/
+
+        nav{
+           background-color: #335356 ;
+           width: 100%;
+           height: 80px;
+           display: flex;
+        }
+        .navbar {
+           background-color: #335356; /* Cambia el color de fondo del navbar */
+           color: #FAE5D3;
+        }
+        #a1{
+            color: #FAE5D3;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 25px;
+            margin-left: 1050px;
+            margin-top: 23px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #a1:hover{
+            color: #9fc9cd;
+        }
+        
+        .navbar-nav .navbar-nav {
+           font-size: 20px;
+           color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+           margin-left: 1130px;
+        }
+        .imglogo{
+            margin-top: 10px;
+            width: 1600px;
+        }
+        
+
+        /*----- Estilos para el main ----- */
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        h1{
+            font-size: 45px;
+            padding-left: 10px;
+
+        }
+
+        h2 {
+            color: #333;
+            font-size: 25px;
+        }
+        #quees{
+            padding-bottom: 40px;
+            font-size: 50px;
+            
+           
+
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        aside a{
+            text-decoration: none;
+            color: #0300FF;
+        }
+        aside a:hover{
+            color: #333;
+        }
+        .article-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+
+        .article-image img {
+            flex: 1;
+            padding: 0 20px;
+            width: 525px;
+            height: 325px;
+        }
+        #bene{
+            height: 550px;
+            width: 600px;
+        }
+
+        .article-image img:hover{
+            transition: 0.8s;
+            filter: blur(5px);
+        }
+
+        .article-text {
+            flex: 2;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        #imgdes{
+            width: 550px;
+            height: max-content;
+        }
+        #conclusion{
+            font-size: 50px;
+            text-align: center;
+        }
+        #concp{
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        /*----- Estilos Footer -----*/
+
+        .pie-pagina {
+           width: 100%;
+           background-color: #2f5554;
+           margin-top: 215px;
+        }
+        .pie-pagina .grupo-1 {
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 50px;
+          padding: 45px 0px;
+        }
+        .pie-pagina .grupo-1 .box figure {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .pie-pagina .grupo-1 .box figure img {
+          width: 280px;
+        }
+        .pie-pagina .grupo-1 .box h2 {
+          color: #fff;
+          margin-bottom: 25px;
+          font-size: 20px;
+        }
+        .pie-pagina .grupo-1 .box p {
+          color: #efefef;
+          margin-bottom: 10px;
+        }
+        .pie-pagina .grupo-1 .red-social a {
+          display: inline-block;
+          text-decoration: none;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          color: #fff;
+          margin-right: 10px;
+          background-color: #0d2033;
+          text-align: center;
+          transition: all 300ms ease;
+        }
+        .pie-pagina .grupo-1 .red-social a:hover {
+          color: aqua;
+        }
+        .pie-pagina .grupo-2 {
+          background-color: #0a1a2a;
+          padding: 15px 10px;
+          text-align: center;
+          color: #fff;
+        }
+        .pie-pagina .grupo-2 small {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 800px) {
+          .pie-pagina .grupo-1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+          }
+          .img-container {
+            text-align: center;
+            margin: 20px 0;
+          }
+        
+          .img-container img {
+            max-width: 50%;
+            height: auto;
+          }
+        }
+                
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+            
+            <!-- Logotipo de HTML -->
+            <img class="imglogo" src="\assets\images\joel\logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
+            
+        <!-- Botones de navegación -->
+            <a  id="a1" class="nav-link" href="#">Inicio</a>
+              
+    </nav>
+    </header>
+    
+    <section id="contenido">
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2 id="quees">Que es un control de Calidad de Software?</h2>
+                <p>El Control de Calidad es un conjunto de actividades que verifican si el producto desarrollado cumple con los requisitos mínimos de calidad, identificando cualquier problema.</p>
+                <h2>¿Cuáles son los componentes de la gestión de calidad de software?</h2>
+                <p>
+                    <ol>
+                        <li>Control de Calidad (CC): 
+                            <p>
+                                El objetivo principal del control de calidad es verificar que un software cumpla con los requisitos previamente planteados y evitar que surjan errores importantes una vez se haya lanzado al mercado.
+                            </p>
+                        </li>
+                        <li>Garantia de Calidad (QA): 
+                            <p>
+                                Este componente está más orientado a los procesos y debe incorporarse en la etapa de planificación del proyecto. Busca prevenir defectos en lugar de identificarlos a través de pruebas. 
+                            </p>
+                        </li>
+                        <li>Planificación de Calidad (QP): 
+                            <p>
+                                En la planificacion de calidad se busca establecer cuales seran las funciones y responsabilidades de cada parte interesada en la gestion de control de calidada. Asi como tambien se contemplaran que tipo de pruebas se realizaran, los requisitos del software y cuales son los objetivos que estos deben cumplir.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-control-calidad_53876-17826.jpg" alt="Imagen 1">
+                <br>
+                <img src="https://www.3digits.es/wp-content/uploads/2023/03/Gestion-de-la-calidad-del-software-thegem-blog-timeline-large.jpg" alt="Imagen 1.1">
+            </div>
+        </article>
+        
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2>¿Por qué es importante la gestión de control de calidad de software?</h2>
+                <p>
+                    Tener acceso a un software de alta calidad con la capacidad de satisfacer las demandas de los clientes es relevante debido a una serie de factores importantes que afectan tanto a las empresas como a los usuarios mismos, entre ellos, los siguientes: 
+                </p>
+                <ul>
+                    <li>
+                        Previsibilidad: 
+                        <p>un software de alta calidad es considerado como un sistema predecible en su rendimiento y resultados, lo que aporta un mayor sentido de confianza y estabilidad para los usuarios al momento de trabajar con el programa. </p>
+                    </li>
+
+                    <li>
+                        Reputación: 
+                        <p>las empresas que ofrecen softwares de alta calidad son reconocidas y preferidas no solo por usuarios individuales, sino por otras empresas e instituciones importantes que respaldan sus acciones.  Además, es importante destacar que un software de baja calidad puede ser altamente costoso para las empresas que lo ofrecen y para aquellas que lo utilizan.</p> 
+                    </li>
+                </ul>
+            </div>
+            <div class="article-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BgbnEPOddSLVCH8yKLihkh8vxSBu6NQLgg&usqp=CAU" alt="Imagen 2">
+                <br>
+                <img src="\assets\images\joel\reputacion-online-plan.jpg" alt="Imagen 2" style="border-radius: 10px;">
+            </div>
+        </article>
+
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2>Beneficios del control de calidad</h2>
+                <p>Ahora bien, tomando en cuenta todas las ventajas que proporciona el control de calidad ejecutado correctamente en una organización, vale la pena mencionar aquellos beneficios inherentes que se obtienen de este proceso.
+                    <br>
+                    <br>
+                    Los principales son que:</p>
+                <ul>
+                    <li>Refuerza la cultura de calidad en el equipo
+                        <p>
+                            Extendiendo en todas las áreas de la organización metodologías, filosofías y culturas centradas en la calidad y en cumplimiento de requisitos indispensables.
+                            <br>
+                            Esto no solo beneficia al producto final, sino que lleva el ambiente laboral hacia un estado en donde la excelencia y la entrega de los mejores resultados queda impuesto como la norma.
+                        </p>
+                    </li>
+
+                    <li>Permite el uso efectivo de los recursos
+                        <p>
+                            La optimización de los recursos es otro beneficio que proviene del control de calidad, dado que se establece desde el propio diseño del proceso el uso más rentable posible a los recursos disponibles con el objetivo de generar mayor eficiencia general.
+                            <br>
+                            Se trata de un hecho que no solo afecta positivamente la cadena de producción y el flujo de trabajo al reducir el desperdicio y las interrupciones, sino que se refleja directamente en el presupuesto y las ganancias del negocio.
+                        </p>
+                    </li>
+
+                    <li>Reduce costos
+                        <p>
+                            Obteniendo el mayor beneficio de la maquinaria, la materia prima y el talento humano disponible, asegurando que cada elemento, proceso y sistema cumpla su propósito con el menor esfuerzo.
+                        </p>
+                    </li>
+
+                    <li>Mejora los métodos de producción
+                        <p>
+                            Generando procesos de producción y manufactura optimizados, apoyándose en los más altos estándares de calidad y las iniciativas con mayor rendimiento del mercado.
+                        </p>
+                    </li>
+
+                    <li>Estandariza productos y servicios
+                        <p>
+                            La estandarización permite garantizar el cumplimiento de la calidad esperada y, al mismo tiempo, asegura que la organización estará siguiendo el camino marcado por años de estudio y análisis científico, dando como resultado productos y servicios de alto nivel.
+                        </p>
+                    </li>
+
+                    <li>Incrementa las ventas y la rentabilidad de la empresa
+                        <p>
+                            Una empresa que es capaz de brindar consistencia y congruencia en los productos y servicios que ofrece al mercado es una organización que será capaz de atraer una gran porción de los clientes potenciales con necesidades.
+                            <br>
+                            De esta forma tu negocio obtendrá mayores ventas al ofrecer productos ajustados a las expectativas de la industria y rentabilidad al diseñar procesos continuos y consistentes de producción que aprovechen las oportunidades de negocios latentes en el mercado.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="article-image">
+                <img src="\assets\images\joel\Beneficios1.jpg" alt="Imagen 3">
+                <br>
+                <img src="\assets\images\joel\Beneficios2.jpg" alt="Imagen 3.1">
+                <br>
+                <img src="\assets\images\joel\Beneficios3.jpg" alt="Imagen 3.2" id="bene">
+            </div>
+        </article>
+
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2>Errores que se cometen, al no contar con la implementación de calidad de software</h2>
+                <p>A pesar de que existen diversas causas que pueden afectar la calidad de un software, es indispensable hacer conciencia sobre los resultados de los errores que se cometen al no contar con un control de calidad, ya que existe una amplia probabilidad de que se presenten un sin número de problemas en el uso del sistema, haciendo que se perjudique visiblemente la imagen de la empresa, perdiendo clientes potenciales y costos visibles e invisibles que desfavorece a las organizaciones.</p>
+
+                <p>Algunos de esos errores pueden ser:
+                    <ul>
+                        <li>No contar con gestión de pruebas
+                            <p>
+                                Al no contar con un plan de pruebas, no tener casos de pruebas o datos y solo mirar la funcionalidad del software de manera superficial, hará que obtenga altos índices de incidencias y como consecuencia, una mala gestión. Esto, puede hacer que nadie use el sistema y que la inversión realizada no sirva, ocasionando a su vez costos adicionales de corrección y modificación en el sistema para arreglar los fallos.
+                            </p>
+                        </li>
+
+                        <li>Deficiencia en la gestión de datos de prueba
+                            <p>
+                                Es fundamental definir y gestionar datos previamente para identificar las características necesarias para abarcar todas las pruebas posibles. Si no se gestiona correctamente los datos de prueba, puede significar que no se prueben todos los escenarios posibles, ya que la información recopilada es la base para poder realizar estas pruebas de forma correcta.
+                            </p>
+                        </li>
+
+                        <li> Subestimar la planificación y la complejidad del software
+                            <p>
+                                La complejidad de un proyecto, en ocasiones, es el  principal obstáculo para dar inicio a su desarrollo. No contar con una planeación estratégica y verificación en cada etapa, de forma preventiva es muy posible el hecho de que contenga errores que hubieran podido haber sido detectados antes. 
+                            </p>
+                        </li>
+
+                        <li>No automatizar las pruebas
+                            <p>
+                                Es una práctica idónea que permite optimizar el tiempo de ejecución en las distintas etapas del desarrollo de software. Lo que hace, que este sea progresivo y funcional de acuerdo a las necesidades de cada empresa.
+                                <br>
+                                La automatización de pruebas brinda eficiencia en la identificación de fallas, reduciendo las probabilidades de errores humanos, entre otros beneficios.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="\assets\images\joel\errores.jpg" alt="Imagen 4" id="imgdes">
+                <br>
+                <img src="\assets\images\joel\calidad.jpg" alt="Imagen 4.1">
+            </div>
+        </article>
+
+        <article class="article-wrapper">
+            <div class="article-text">
+                <h2 id="conclusion">Conclusión</h2>
+                <p id="concp">El objetivo de este articulo es el de brindar el conocimiento basico que puede dar un control de calidad a la hora de desarrollar el software, tanto para el comienzo del desarrollo, durante el proceso, y al finalizar el mismo.
+                <br>
+                El control de calidad en definitiva es fundamental para brindar al cliente un producto acorde a las necesidades que desea satisfacer, asi como tambien brinda credibilidad y seguridad a la imagen de nuestra empresa y a futuros clientes que puedan llegar a ver nuestros productos y comprarnoslo o contratarnos.
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="\assets\images\joel\conclusion.jpg" alt="Imagen 5">
+            </div>
+        </article>
+    </section>
+    
+    <aside>
+        <h3>Fuentes de Información y Consulta</h3>
+        <ul>
+            <li><a href="https://www.sydle.com/es/blog/control-de-calidad-cual-es-su-funcion-descubre-como-hacerlo-635692df4037f135695fbd75#:~:text=El%20control%20de%20calidad%20se,que%20puedan%20afectar%20la%20productividad.">Control de calidad - SYDLE</a></li>
+            <li><a href="https://www.avenuglobal.com/noticias/que-es-la-gestion-de-control-de-calidad-de-software#:~:text=La%20gesti%C3%B3n%20de%20control%20de%20la%20calidad%20de%20software%20se,Standards%20Institute%20(ANSI)%2C%20Institute">Gestion control de calidad - AvenuLearning</a></li>
+            <li><a href="https://www.verity.cl/importancia-de-implementar-la-calidad-del-software/">Falta de un control de calidad _ errores - Verity</a></li>
+        </ul>
+    </aside>
+    
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="\assets\images\joel\logocode.png" alt="Logo de CodeStart">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
+                <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
+
