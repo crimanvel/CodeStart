@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 
-        home "SQL"
-    
-    </title>
+    <title>Home "SQL"</title>
     <meta name="description" content="Ejemplo de página web con etiqueta meta">
     <meta name="keywords" content="HTML, meta, ejemplo">
-    <meta name="author" content="vizcarra facundo">   
+    <meta name="author" content="vizcarra facundo">
     <link rel="icon" type="image/png" href="assets/images/png-transparent-favicon-buggi-trademark-logo-circle.png">
-    <link rel="stylesheet" type="text/css" href="/css/facundo.css">
+    <link rel="stylesheet" type="text/css" href="../css/facundo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
-<header>
+
 <body>
-    <h1>
-        SQL
-    </h1>
-    <nav>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <!-- Logotipo de HTML -->
+                <img class="imglogo" src="/assets/images/nico/logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
+            </a>
+            <!-- Botones de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="a1" class="nav-link" href="indexnico.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    </nav>
+
     <main>
-        <div>
-            <div class="contenido">
-                <div class="Articulo">
-                    <div class="secciones">
-                        <div>
-                            <h2>INFORMACION DE SQL</h2>
-                            <p>
-                                SQL, o Structured Query Language, es un lenguaje de programación utilizado para administrar y manipular bases de datos relacionales. Las bases de datos relacionales son sistemas que organizan la información en tablas con filas y columnas, y SQL se utiliza para realizar diversas operaciones en estos datos.
-                                <br>
-                                SQL es una herramienta poderosa para trabajar con bases de datos relacionales y es esencial para cualquier profesional de la informática que trabaje con datos. Las habilidades en SQL son valiosas en una amplia gama de campos, desde la administración de bases de datos hasta el análisis de datos y el desarrollo de software.</p>
-                        </div>
-                                 <div>
-                                    <img src="/assets/facundo/sql.webp"> </div>
+        <div class="contenido">
+            <div class="Articulo">
+                <div class="secciones">
+                    <div>
+                        <h3>INFORMACION DE SQL</h3>
+                        <p>
+                            SQL, o Structured Query Language, es un lenguaje de programación utilizado para administrar y manipular bases de datos relacionales. Las bases de datos relacionales son sistemas que organizan la información en tablas con filas y columnas, y SQL se utiliza para realizar diversas operaciones en estos datos.
+                            <br>
+                            SQL es una herramienta poderosa para trabajar con bases de datos relacionales y es esencial para cualquier profesional de la informática que trabaje con datos. Las habilidades en SQL son valiosas en una amplia gama de campos, desde la administración de bases de datos hasta el análisis de datos y el desarrollo de software.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../assets/facundo/sql.webp"  class = "img2">
+                    </div>
                 </div>
                 <div class="secciones">
                     <div>
-                        <h2>TIPOS Y OPERACIONES COMUNES DE SQL:</h2>
+                        <h3>TIPOS Y OPERACIONES COMUNES DE SQL:</h3>
                         <p>
-
                             SQL se divide en varios subconjuntos o categorías, incluidos:
                             <br>
                             SQL DDL (Data Definition Language): Utilizado para definir la estructura de la base de datos, como crear tablas, modificar tablas o eliminar tablas.
@@ -69,64 +78,92 @@
                             ALTER: Se utiliza para modificar la estructura de una tabla existente.
                             <br>
                             DROP: Se utiliza para eliminar tablas u otros objetos de base de datos.
-                            
-                            
-                            </p>
+                        </p>
                     </div>
-                             <div>
-                                <img src="/assets/facundo/sql1.webp"> </div>
-            </div>
-            <div class="secciones">
-                <div>
-                    <h2>Operaciones SQL comunes:</h2>
-                    <p>
-
-                        SELECT: Se utiliza para recuperar datos de una tabla.
-                        <br>
-                        INSERT: Se utiliza para agregar nuevos registros a una tabla.
-                        <br>
-                        UPDATE: Se utiliza para modificar registros existentes en una tabla.
-                        <br>
-                        DELETE: Se utiliza para eliminar registros de una tabla.
-                        <br>
-                        CREATE: Se utiliza para crear tablas, índices y otros objetos de base de datos.
-                        <br>
-                        ALTER: Se utiliza para modificar la estructura de una tabla existente.
-                        <br>
-                        DROP: Se utiliza para eliminar tablas u otros objetos de base de datos.</p>
+                    <div>
+                        <img src="../assets/facundo/sql1.webp" class = "img2">
+                    </div>
                 </div>
-                         <div>
-                            <img src="/assets/facundo/sql2.png"> </div>
-        </div>
-        <div class="secciones">
-            <div>
-                <h2>CLAUSULAS SQL</h2>
-                <p>
-
-                    SQL utiliza diversas cláusulas para refinar las consultas, como WHERE (para establecer condiciones), ORDER BY (para ordenar resultados), GROUP BY (para agrupar resultados) y JOIN (para combinar datos de múltiples tablas).</p>
-            </div>
-                     <div>
-                
-    </div>
-               </div>
-               <div>
-                <h2>TRANSACCIONES SQL</h2>
-                <p>
-                    SQL admite transacciones para garantizar la integridad de los datos. Esto incluye las instrucciones COMMIT (para confirmar cambios) y ROLLBACK (para deshacer cambios no deseados).
-                    </p>
-            </div>
-                     <div>
-                <div>
-                    
-        
+                <div class="secciones">
+                    <div>
+                        <h3>Operaciones SQL comunes:</h3>
+                        <p>
+                            SELECT: Se utiliza para recuperar datos de una tabla.
+                            <br>
+                            INSERT: Se utiliza para agregar nuevos registros a una tabla.
+                            <br>
+                            UPDATE: Se utiliza para modificar registros existentes en una tabla.
+                            <br>
+                            DELETE: Se utiliza para eliminar registros de una tabla.
+                            <br>
+                            CREATE: Se utiliza para crear tablas, índices y otros objetos de base de datos.
+                            <br>
+                            ALTER: Se utiliza para modificar la estructura de una tabla existente.
+                            <br>
+                            DROP: Se utiliza para eliminar tablas u otros objetos de base de datos.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../assets/facundo/sql2.png" class = "img2">
+                    </div>
                 </div>
-                
+                <div class="secciones">
+                    <div>
+                        <h3>CLAUSULAS SQL</h3>
+                        <p>
+                            SQL utiliza diversas cláusulas para refinar las consultas, como WHERE (para establecer condiciones), ORDER BY (para ordenar resultados), GROUP BY (para agrupar resultados) y JOIN (para combinar datos de múltiples tablas).
+                        </p>
+                    </div>
+                    <div>
+                        <!-- Contenido (si es necesario) -->
+                    </div>
+                </div>
+                <div class="secciones">
+                    <div>
+                        <h3>TRANSACCIONES SQL</h3>
+                        <p>
+                            SQL admite transacciones para garantizar la integridad de los datos. Esto incluye las instrucciones COMMIT (para confirmar cambios) y ROLLBACK (para deshacer cambios no deseados).
+                        </p>
+                    </div>
+                    <div>
+                        <!-- Contenido (si es necesario) -->
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-   
 
-    <footer>
-     Para mas informacion dirigirse al opcion de "mas info" que se encuentra al inicio. Gracias por visitar nuestra pagina. 
+    <!-- Pie de Página -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="assets/images/diego/logocode.png" alt="Logo de CodeStart">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
+                <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+        </div>
     </footer>
+    <!-- Fin del Pie de Página -->
+
 </body>
+
 </html>
