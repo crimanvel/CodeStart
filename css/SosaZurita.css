@@ -1,0 +1,57 @@
+* {
+  font-family: "Forum", serif;
+}
+/* Seccion navbar */
+/* .navbar {
+  background-color: #0b1819;
+}
+pre {
+  background-color: rgb(84, 171, 166);
+  margin: 10px 0px 10px 0px;
+}
+.nav-link {
+  color: #83ece3;
+  margin: 2px;
+  border-radius: 70%;
+}
+.nav-link:hover {
+  color: #06f1dd;
+  background-color: #fefefe;
+  border-radius: 70%;
+  transition: 1s;
+} */
+.logo {
+  max-width: 200px;
+  border-radius: 50%;
+}
+.imagen-inicio {
+  border-radius: 50%;
+}
+/* Introduccion a la pagina */
+.contendor-introduccion p {
+  font-size: 1.5em;
+}
+
+/* Secion botones */
+.botones a {
+  margin: 3px;
+}
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scroll-top-button:hover {
+  background-color: #0056b3;
+}
