@@ -1,0 +1,263 @@
+
+
+
+body{
+  background-color: white;
+  
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+   .navbar {
+        background-color: #265457; /* Cambia el color de fondo del navbar */
+        color: #FAE5D3;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+    }
+    .nav-item #a1{
+        margin-left: 1150px;
+        font-size: 25px;
+     }
+  
+    .contenedor{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 180px;
+    }
+
+    #a1 {
+    margin-left: auto; /* Esto coloca el enlace "Inicio" al extremo derecho */
+    margin-right: 20px; /* Ajusta el margen derecho según tu preferencia */
+    font-size: 25px;
+}
+
+
+
+.parrafo{
+
+  font-size: 22px;
+
+}
+
+.sombra {
+  transition: box-shadow 0.3s; /* Agrega una transición suave a la propiedad 'box-shadow' */
+}
+
+.sombra:hover {
+  box-shadow: 5px 5px 10px rgba(128, 166, 197, 0.737); /* Aplica una sombra al pasar el mouse */
+}
+
+
+a{
+
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+
+}
+
+
+.lista li::marker{
+
+  font-size: 25px;
+
+}
+
+.subtitulo{
+
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+
+}
+
+h3{
+
+  display: flex;
+	justify-content: center;
+	font-size: 30px;
+
+}
+
+.indice{
+
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.cua{
+
+  border: 1px solid black;
+
+}
+
+.rectangulo {
+  display: inline-block; /* Hacer que el span se comporte como un bloque en línea */
+  border: 1px solid black; /* Agregar un borde de 1 píxel sólido */
+  padding: 5px; /* Añadir espacio de relleno alrededor del texto */
+} 
+
+.cuadrado{
+
+  border: 1px solid black;
+  padding: 5px;
+  margin: 2px;
+
+}
+
+.contenido {
+
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s; /* Agrega una transición suave a la propiedad 'transform' */
+
+}
+
+.contenido:hover {
+  transform: scale(1.03); /* Aplica un zoom del 10% cuando se pasa el mouse */
+}
+
+
+.imag1{
+
+  text-align: center;
+  display: block;
+
+}
+
+.imag2{
+
+  width: 30px;
+	height: auto;
+
+}
+
+.imag3{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.banana{
+
+  height: 300px;
+  width: auto;
+
+}
+
+
+.seccion1{
+
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 25px;
+
+}
+
+
+.subrayar {
+  text-decoration: none; /* Inicialmente, sin subrayado */
+  display: inline-block;
+  position: relative;
+}
+
+.subrayar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px; /* Grosor del subrayado */
+  background-color: #3498db; /* Color del subrayado */
+  transform: scaleX(0); /* Sin ancho inicial del subrayado */
+  transform-origin: bottom;
+  transition: transform 0.3s; /* Agrega una transición suave a la propiedad 'transform' */
+}
+
+.subrayar:hover::after {
+  transform: scaleX(1); /* Aplica el subrayado completo al pasar el mouse */
+}
+
+.subrayar-block{
+
+  text-decoration: underline;
+  text-decoration-color: #3498db
+
+}
+
+
+.footer{
+
+  background-color: #3A4F50;
+
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #2f5554;
+  
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 280px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-top: -5px;
+}
+.pie-pagina .grupo-1 .box p {
+    margin-top: -20px;
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
