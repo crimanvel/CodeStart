@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <title>Soporte Técnico: Mantenimiento en Hardware y Software</title>
+  <style>
+    header{
+        display: flex;
+    }
+
+    nav{
+        background-color: #335356 ;
+        width: 100%;
+        height: 85px;
+        display: flex;
+    }
+
+    nav #a1{
+        margin-right: 30px;
+        font-size: 25px;
+        margin-left: 1175px;
+    }
+
+    .navbar {
+        background-color: #265457; /* Cambia el color de fondo del navbar */
+        color: #FAE5D3;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+    }
+    .nav-item #a1{
+        margin-right: 30px;
+        font-size: 25px;
+    }
+  body {
+      background-image: url('https://img.freepik.com/vector-premium/boton-soporte-tecnico-primer-dedo-punto-presionar-boton-ayuda-al-cliente-soporte-tecnico-servicio-al-cliente-concepto-tecnologia-negocios_127544-1504.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+       background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    header, main, footer {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      margin: 10px;
+      border-radius: 10px;
+    }
+    h1, h2, h3 {
+      color:red;
+    }
+    h4{
+      color:white;
+    }
+    button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 77px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+        footer{
+          background-color: #3a4f50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+         .footer {
+    background-color: #407c87;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #9fc9cd;
+}
+
+.footer-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    align-items: end;
+    
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #0300FF;
+}
+.footer-links a{
+    color:#f5f5f8;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.footer-links a:hover{
+    color: #0300FF;
+}
+
+/* Estilos para iconos de redes sociales */
+.icon{
+    width: 35px;
+}
+        li{
+          color:#3a4f50;
+          font-family: Arial, sans-serif;
+        }
+        .button {
+ --color: #00A97F;
+ padding: 0.8em 1.7em;
+ background-color: transparent;
+ border-radius: .3em;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ transition: .5s;
+ font-weight: 400;
+ font-size: 17px;
+ border: 1px solid;
+ font-family: inherit;
+ text-transform: uppercase;
+ color: var(--color);
+ z-index: 1;
+}
+
+.button::before, .button::after {
+ content: '';
+ display: block;
+ width: 50px;
+ height: 50px;
+ transform: translate(-50%, -50%);
+ position: absolute;
+ border-radius: 50%;
+ z-index: -1;
+ background-color: var(--color);
+ transition: 1s ease;
+}
+
+.button::before {
+ top: -1em;
+ left: -1em;
+}
+
+.button::after {
+ left: calc(100% + 1em);
+ top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+ height: 410px;
+ width: 410px;
+}
+
+.button:hover {
+ color: rgb(10, 25, 30);
+}
+
+.button:active {
+ filter: brightness(.8);
+}
+
+</style>
+</head>
+<body>
+  
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+            
+                <!-- Logotipo de HTML -->
+                <img class="imglogo" src="" alt="" width="150" height="60" class="d-inline-block align-top">
+                
+                <!-- Botones de navegación -->
+                <a  id="a1" class="nav-link" href="indexnico.html">Inicio</a>
+                  
+        </nav>
+        <header>
+  <h1>Soporte Técnico: Mantenimiento en Hardware y Software</h1>
+</header>
+<main>
+
+  <section>
+    <h2>Introducción</h2>
+    <h3>Bienvenido a nuestra página sobre el mantenimiento en hardware y software en el campo del soporte técnico. En esta sección, exploraremos la importancia y las prácticas esenciales para mantener un sistema informático funcionando de manera óptima y segura.</h3>
+  </section>
+
+  <section>
+    <h2>Mantenimiento de Hardware</h2>
+    <img src="https://img.freepik.com/foto-gratis/tecnico-reparacion-computadora-hardware-computadora-reparacion-actualizacion-tecnologia_1150-8861.jpg?size=626&ext=jpg&ga=GA1.1.1016474677.1696636800&semt=ais" alt="Mantenimiento de Hardware">
+    <subsection>
+      <h3>1. Limpieza y Cuidado Físico</h3>
+      <ul>
+        <h3><li><h4>Limpieza Regular: Explicación sobre cómo limpiar componentes físicos, como ventiladores, teclados y pantallas, para garantizar un rendimiento óptimo.</li>
+        <li><h4>Manejo Adecuado: Consejos sobre cómo manejar y transportar dispositivos de forma segura para evitar daños físicos.</h4></li><h3>
+      </ul>
+    </subsection>
+    <subsection>
+      <h3>2. Actualizaciones y Mejoras</h3>
+      <ul>
+        <li><h4>Actualización de Componentes: Información sobre cómo identificar y actualizar hardware obsoleto para mejorar el rendimiento y la eficiencia.</li>
+        <li><h4>Ampliación de Capacidades: Explicación sobre cómo agregar RAM, almacenamiento u otros componentes para mejorar la capacidad y la velocidad del sistema.</li>
+      </ul>
+    </subsection>
+  </section>
+
+  <section>
+    <h2>Mantenimiento de Software</h2>
+    <img src="https://dconfianza.pe/blog/wp-content/uploads/2020/09/Software-de-Mantenimiento-CMMS-1024x536.jpg" alt="Imagen de mantenimiento de software" width="800" height="400">
+    <subsection>
+      <h3>1. Actualizaciones y Parches</h3>
+      <ul>
+        <li><h4>Actualizaciones del Sistema Operativo: Importancia de mantener actualizado el sistema operativo y cómo hacerlo de forma segura.</li>
+        <li><h4>Actualizaciones de Software: Explicación sobre cómo mantener al día las aplicaciones y programas para garantizar la seguridad y el rendimiento.</li>
+      </ul>
+    </subsection>
+    <subsection>
+      <h3>2. Escaneo de Virus y Malware</h3>
+      <ul>
+        <li><h4>Software Antivirus: Información sobre la instalación y actualización de software antivirus para mantener el sistema protegido contra amenazas en línea.</li>
+        <li><h4>Escanéo Regular: Importancia de escanear el sistema regularmente en busca de malware y cómo realizarlo de manera efectiva.</li>
+      </ul>
+
+      <p>Concluimos nuestra guía sobre mantenimiento en hardware y software en el soporte técnico. Es crucial realizar un mantenimiento adecuado para garantizar que tus sistemas informáticos funcionen de manera eficiente, segura y duradera. Si necesitas más ayuda o tienes alguna pregunta,sobre este tema y desea saber mas.</p>
+  <button>
+    <a href="https://www.z-net.com.ar/blog-post/que-es-el-soporte-tecnico-informatico/">OPRIMA AQUÍ</a>
+</button>
+
+    </subsection>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Concluimos nuestra guía sobre mantenimiento en hardware y software en el soporte técnico. Es crucial realizar un mantenimiento adecuado para garantizar que tus sistemas informáticos funcionen de manera eficiente, segura y duradera. Si necesitas más ayuda o tienes alguna pregunta,sobre este tema y desea saber mas.</p>
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pie de pagina</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+     <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/:::::Pie de Pagina/
+.pie-pagina {
+  width: 100%;
+  background-color: #2f5554;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 280px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .img-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .img-container img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+</style>
+<body>
+  <main>
+  </main>
+<!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="assets/images/diego/logocode.png" alt="Logo de CodeStart">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
+                <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
+    <script>
+        function abrirNuevaPagina() {
+            // Abre una nueva ventana o pestaña con la URL deseada
+            window.open('https://youtu.be/dmrlfWp9bBc?si=z-lgy62KF0G_jFEO', '_blank');
+        }
+    </script>
+
+
+</body>
+</html>
