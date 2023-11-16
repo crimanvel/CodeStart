@@ -1,4 +1,22 @@
+.navbar {
+  background-color: #265457; /* Cambia el color de fondo del navbar */
+  color: #FAE5D3;
+}
 
+.navbar-nav .nav-link {
+  font-size: 20px;
+  color: #FAE5D3 ; /* Cambia el color del texto de los botones */
+}
+.nav-item #a1{
+  margin-left: 1150px;
+  font-size: 25px;
+}
+
+.contenedor{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 180px;
+}
 body{
     background-color: #0EF6CC;
     margin: 0;
