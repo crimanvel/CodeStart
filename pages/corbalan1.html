@@ -1,384 +1,558 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeStart - CSS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Forum&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Forum&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        /* Estilos CSS */
+      /* Estilos CSS */
 
-        *{
-            font-family: Forum;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            
-        }
+      * {
+        font-family: Forum;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
 
-        nav{
-           background-color: #335356 ;
-           width: 100%;
-           height: 80px;
-           display: flex;
-        }
-        .navbar {
-           background-color: #335356; /* Cambia el color de fondo del navbar */
-           color: #FAE5D3;
-        }
-        #a1{
-            color: #FAE5D3;
-            text-decoration: none;
-            margin-right: 30px;
-            font-size: 25px;
-            margin-left: 1050px;
-            margin-top: 23px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        #a1:hover{
-            color: #9fc9cd;
-        }
-        
-        .navbar-nav .navbar-nav {
-           font-size: 20px;
-           color: #FAE5D3 ; /* Cambia el color del texto de los botones */
-           margin-left: 1130px;
-        }
-        .imglogo{
-            margin-top: 10px;
-            width: 1600px;
-        }
+      nav {
+        background-color: #335356;
+        width: 100%;
+        height: 80px;
+        display: flex;
+      }
+      .navbar {
+        background-color: #335356; /* Cambia el color de fondo del navbar */
+        color: #fae5d3;
+      }
+      #a1 {
+        color: #fae5d3;
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 25px;
+        margin-left: 1050px;
+        margin-top: 23px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #a1:hover {
+        color: #9fc9cd;
+      }
 
-        h1 {
-            font-size: 46px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-style: italic;
-        }
+      .navbar-nav .navbar-nav {
+        font-size: 20px;
+        color: #fae5d3; /* Cambia el color del texto de los botones */
+        margin-left: 1130px;
+      }
+      .imglogo {
+        margin-top: 10px;
+        width: 1600px;
+      }
 
-        .container {
-            max-width: auto;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #A5DBDD;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2{
-            text-align: center;
-        }
+      h1 {
+        font-size: 46px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: italic;
+      }
 
-        #parrafo1{
-            text-align: center;
-            font-size: 25px;
-            line-height: 1.5;
-        }
+      .container {
+        max-width: auto;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #a5dbdd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
 
-        .imagen-frame{
-            width: 700px;
-            border-radius: 10px;
-            border-style: double;
-            border-color: #0078d4;
-            margin-bottom: 60px;
-        }
-        .imagen-frame:hover{
-            transition: 0.8s;
-            filter: blur(5px);
-        }
+      #parrafo1 {
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.5;
+      }
 
-        .titulo-frame{
-            font-size: 28px;
-            font-style: italic;
-        }
+      .imagen-frame {
+        width: 700px;
+        border-radius: 10px;
+        border-style: double;
+        border-color: #0078d4;
+        margin-bottom: 60px;
+      }
+      .imagen-frame:hover {
+        transition: 0.8s;
+        filter: blur(5px);
+      }
 
-        .division{
-            height: 7px;
-            background-color: #2f5554;
-        }
+      .titulo-frame {
+        font-size: 28px;
+        font-style: italic;
+      }
 
-        .conceptos{
-            font-size: 20px;
-        }
-        
-        
+      .division {
+        height: 7px;
+        background-color: #2f5554;
+      }
 
-        footer {
-            background-color: #407C87;
-            color: #fff;
-            text-align: center;
-            
-        }
+      .conceptos {
+        font-size: 20px;
+      }
 
-        /* Información sobre CSS */
-        .css-info {
-            background-color: #EEF1F6;
-            padding: 20px;
-            border: 1px solid #ccc;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
+      footer {
+        background-color: #407c87;
+        color: #fff;
+        text-align: center;
+      }
 
-        .titulo-inicio{
-            font-size: 40px;
-        }
+      /* Información sobre CSS */
+      .css-info {
+        background-color: #eef1f6;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
 
-        h3 {
-            font-size: 24px;
-            color: #333;
-        }
+      .titulo-inicio {
+        font-size: 40px;
+      }
 
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
-        }
+      h3 {
+        font-size: 24px;
+        color: #333;
+      }
 
-        /* Estilos mejorados para información CSS */
-        .css-info p {
-            font-size: 20px;
-        }
+      ul {
+        list-style-type: square;
+        margin-left: 20px;
+      }
 
-        .css-info ul {
-            list-style-type: disc;
-            margin-left: 30px;
-        }
+      /* Estilos mejorados para información CSS */
+      .css-info p {
+        font-size: 20px;
+      }
 
-        .css-info a {
-            color: #0078d4;
-            text-decoration: none;
-        }
+      .css-info ul {
+        list-style-type: disc;
+        margin-left: 30px;
+      }
 
-        .css-info a:hover {
-            text-decoration: underline;
-        }
-       /*----- Estilos Footer -----*/
+      .css-info a {
+        color: #0078d4;
+        text-decoration: none;
+      }
 
-       .pie-pagina {
-           width: 100%;
-           background-color: #2f5554;
-           
-        }
+      .css-info a:hover {
+        text-decoration: underline;
+      }
+      /*----- Estilos Footer -----*/
+
+      .pie-pagina {
+        width: 100%;
+        background-color: #2f5554;
+      }
+      .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+      }
+      .pie-pagina .grupo-1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pie-pagina .grupo-1 .box figure img {
+        width: 280px;
+      }
+      .pie-pagina .grupo-1 .box h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+      .pie-pagina .grupo-1 .box p {
+        color: #efefef;
+        margin-bottom: 10px;
+      }
+      .pie-pagina .grupo-1 .red-social a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+        transition: all 300ms ease;
+      }
+      .pie-pagina .grupo-1 .red-social a:hover {
+        color: aqua;
+      }
+      .pie-pagina .grupo-2 {
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+      }
+      .pie-pagina .grupo-2 small {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 800px) {
         .pie-pagina .grupo-1 {
-          width: 100%;
-          max-width: 1200px;
-          margin: auto;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-gap: 50px;
-          padding: 45px 0px;
+          width: 90%;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 30px;
+          padding: 35px 0px;
         }
-        .pie-pagina .grupo-1 .box figure {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .pie-pagina .grupo-1 .box figure img {
-          width: 280px;
-        }
-        .pie-pagina .grupo-1 .box h2 {
-          color: #fff;
-          margin-bottom: 25px;
-          font-size: 20px;
-        }
-        .pie-pagina .grupo-1 .box p {
-          color: #efefef;
-          margin-bottom: 10px;
-        }
-        .pie-pagina .grupo-1 .red-social a {
-          display: inline-block;
-          text-decoration: none;
-          width: 45px;
-          height: 45px;
-          line-height: 45px;
-          color: #fff;
-          margin-right: 10px;
-          background-color: #0d2033;
+        .img-container {
           text-align: center;
-          transition: all 300ms ease;
+          margin: 20px 0;
         }
-        .pie-pagina .grupo-1 .red-social a:hover {
-          color: aqua;
+
+        .img-container img {
+          max-width: 50%;
+          height: auto;
         }
-        .pie-pagina .grupo-2 {
-          background-color: #0a1a2a;
-          padding: 15px 10px;
-          text-align: center;
-          color: #fff;
-        }
-        .pie-pagina .grupo-2 small {
-          font-size: 15px;
-        }
-        @media screen and (max-width: 800px) {
-          .pie-pagina .grupo-1 {
-            width: 90%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 30px;
-            padding: 35px 0px;
-          }
-          .img-container {
-            text-align: center;
-            margin: 20px 0;
-          }
-        
-          .img-container img {
-            max-width: 50%;
-            height: auto;
-          }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
-            
-            <!-- Logotipo de HTML -->
-            <img class="imglogo" src="\assets\images\joel\logocode.png" alt="" width="150" height="60" class="d-inline-block align-top">
-            
+      <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+        <!-- Logotipo de HTML -->
+        <img
+          class="imglogo"
+          src="\assets\images\joel\logocode.png"
+          alt=""
+          width="150"
+          height="60"
+          class="d-inline-block align-top"
+        />
+
         <!-- Botones de navegación -->
-            <a  id="a1" class="nav-link" href="/indexnico.html">Inicio</a>
-              
-    </nav>
+        <a id="a1" class="nav-link" href="/index.html">Inicio</a>
+      </nav>
     </header>
     <div class="container">
-        <h2 style="font-size: 50px;">Bienvenidos al apartado Sobre CSS</h2>
-        <p id="parrafo1">En esta sección aprenderas todo lo basico que debas saber sobre CSS para empezar tu camino como programador</p>
-        
-        <div class="css-info">
-            <center><h3 class="titulo-inicio">¿Qué es CSS?</h3></center>
-            <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para definir la presentación y el diseño de páginas web escritas en HTML. Con CSS, puedes controlar la apariencia de elementos HTML como texto, colores, márgenes, tamaños y más.</p>
+      <h2 style="font-size: 50px">Bienvenidos al apartado Sobre CSS</h2>
+      <p id="parrafo1">
+        En esta sección aprenderas todo lo basico que debas saber sobre CSS para
+        empezar tu camino como programador
+      </p>
 
-            <hr class="division">
-            
-            <h3>Conceptos clave de CSS:</h3>
-            <ul class="conceptos">
-                <li>Selector: Especifica qué elementos HTML se verán afectados por las reglas de estilo.</li>
-                <li>Propiedad: Define la característica que deseas cambiar, como el color o el tamaño del texto.</li>
-                <li>Valor: Indica cómo se verá la propiedad, como "#333" para el color o "18px" para el tamaño de fuente.</li>
-                <li>Regla CSS: Combinación de un selector, propiedad y valor.</li>
-                <img src="\assets\images\joel\sintaxis-visual.png" alt="imagen de estructura">
-            </ul>
+      <div class="css-info">
+        <center><h3 class="titulo-inicio">¿Qué es CSS?</h3></center>
+        <p>
+          CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo
+          utilizado para definir la presentación y el diseño de páginas web
+          escritas en HTML. Con CSS, puedes controlar la apariencia de elementos
+          HTML como texto, colores, márgenes, tamaños y más.
+        </p>
 
-            <hr class="division">
+        <hr class="division" />
 
+        <h3>Conceptos clave de CSS:</h3>
+        <ul class="conceptos">
+          <li>
+            Selector: Especifica qué elementos HTML se verán afectados por las
+            reglas de estilo.
+          </li>
+          <li>
+            Propiedad: Define la característica que deseas cambiar, como el
+            color o el tamaño del texto.
+          </li>
+          <li>
+            Valor: Indica cómo se verá la propiedad, como "#333" para el color o
+            "18px" para el tamaño de fuente.
+          </li>
+          <li>Regla CSS: Combinación de un selector, propiedad y valor.</li>
+          <img
+            src="\assets\images\joel\sintaxis-visual.png"
+            alt="imagen de estructura"
+          />
+        </ul>
 
-            <h3>¿Para que sirve CSS?</h3>
-            <p>El CSS se puede usar para estilos de texto muy básicos como, por ejemplo, cambiar el color y el tamaño de los encabezados y los enlaces. Se puede utilizar para crear un diseño, como podría ser convertir una columna de texto en una composición con un área de contenido principal y una barra lateral para información relacionada. Incluso se puede usar para crear efectos de animación.</p>
+        <hr class="division" />
 
-            <h3>¿Como Funciona realmente CSS?</h3>
-            <p>Cuando un navegador muestra un documento, ha de combinar el contenido con la información de estilo del documento. Procesa el documento en una serie de etapas, que enumeraremos a continuación:</p>
-            <ol>
-                <li>El navegador carga el HTML (por ejemplo, lo recibe de la red).</li>
-                <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria del ordenador. </li>
-                <li>Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las imágenes y los videos incrustados... ¡y también el CSS vinculado! </li>
-                <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector. Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que encuentre, calcula qué reglas deben aplicarse</li>
-                <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+        <h3>¿Para que sirve CSS?</h3>
+        <p>
+          El CSS se puede usar para estilos de texto muy básicos como, por
+          ejemplo, cambiar el color y el tamaño de los encabezados y los
+          enlaces. Se puede utilizar para crear un diseño, como podría ser
+          convertir una columna de texto en una composición con un área de
+          contenido principal y una barra lateral para información relacionada.
+          Incluso se puede usar para crear efectos de animación.
+        </p>
 
+        <h3>¿Como Funciona realmente CSS?</h3>
+        <p>
+          Cuando un navegador muestra un documento, ha de combinar el contenido
+          con la información de estilo del documento. Procesa el documento en
+          una serie de etapas, que enumeraremos a continuación:
+        </p>
+        <ol>
+          <li>
+            El navegador carga el HTML (por ejemplo, lo recibe de la red).
+          </li>
+          <li>
+            Convierte el HTML en un DOM (Modelo de objetos del documento). El
+            DOM representa el documento en la memoria del ordenador.
+          </li>
+          <li>
+            Entonces, el navegador va a buscar la mayor parte de los recursos
+            vinculados al documento HTML, como las imágenes y los videos
+            incrustados... ¡y también el CSS vinculado!
+          </li>
+          <li>
+            El navegador analiza el CSS y ordena en diferentes «cubos» las
+            diferentes reglas según el tipo de selector. Por ejemplo, elemento,
+            clase, ID, y así sucesivamente. Para cada tipo de selector que
+            encuentre, calcula qué reglas deben aplicarse
+          </li>
+          <li>
+            En la pantalla se muestra el aspecto visual de la página (esta etapa
+            se llama pintura).
+          </li>
+        </ol>
 
-            </ol>
+        <hr class="division" />
 
-            <hr class="division">
+        <h3>Vinculado de documentos HTML - CSS</h3>
+        <p>
+          Hay tres maneras de vincular una hoja de estilo CSS a un documento
+          HTML:
+        </p>
+        <ol>
+          <li>
+            Incluir la regla de enlace en el elemento HEAD del documento HTML.
+          </li>
+          <img src="\assets\images\joel\metodo1.png" alt="link en head" />
+          <li>
+            Utilizar un atributo de estilo o la etiqueta style en el elemento
+            html para especificar los estilos de esa clase o contenedor.
+          </li>
+          <img src="\assets\images\joel\metodo2.png" alt="etiqueta style" />
+          <li>Vincula tu hoja de estilos CSS utilizando @import</li>
+          <img src="\assets\images\joel\metodo3.png" alt="con import" />
+        </ol>
 
-            <h3>Vinculado de documentos HTML - CSS</h3>
-            <p>Hay tres maneras de vincular una hoja de estilo CSS a un documento HTML:</p>
-            <ol>
-                <li>Incluir la regla de enlace en el elemento HEAD del documento HTML.</li>
-                <img src="\assets\images\joel\metodo1.png" alt="link en head">
-                <li>Utilizar un atributo de estilo o la etiqueta style en el elemento html para especificar los estilos de esa clase o contenedor.</li>
-                <img src="\assets\images\joel\metodo2.png" alt="etiqueta style">
-                <li> Vincula tu hoja de estilos CSS utilizando @import</li>
-                <img src="\assets\images\joel\metodo3.png" alt="con import">
-            </ol>
+        <hr class="division" />
 
-            <hr class="division">
+        <h3>Los frameworks de CSS</h3>
+        <p>Para empezar, ¿Qué es un Framework?</p>
+        <p>
+          Un framework es un esquema o marco de trabajo que ofrece una
+          estructura base para elaborar un proyecto con objetivos específicos,
+          una especie de plantilla que sirve como punto de partida para la
+          organización y desarrollo de software.
+        </p>
 
-            <h3>Los frameworks de CSS</h3>
-            <p> Para empezar, ¿Qué es un Framework?</p>
-            <p>Un framework es un esquema o marco de trabajo que ofrece una estructura base para elaborar un proyecto con objetivos específicos, una especie de plantilla que sirve como punto de partida para la organización y desarrollo de software.</p>
+        <h3>¿Cuales son los frameworks de CSS mas conocidos?</h3>
+        <p>
+          Dentro de CSS tenemos un grupo de frameworks que son los mas
+          utilizados en la actualidad, los cuales son:
+        </p>
+        <ol>
+          <li class="titulo-frame">Bootstrap</li>
+          <p>
+            Este Framework es uno de los más populares en la actualidad, hasta
+            la fecha de este Post se encuentra en su versión 4.4.1 pero sacarán
+            nuevas versiones en el futuro, cuenta con características muy
+            importantes como esquemas de color, modificadores, clases útiles
+            para usar formularios, cards, listas, tablas, videos, carrusel,
+            ventanas modales, tooltips, etc.
+          </p>
+          <center>
+            <a href="https://getbootstrap.com/"
+              ><img
+                src="\assets\images\joel\bootstrap5.png"
+                alt="bootstrap"
+                class="imagen-frame"
+            /></a>
+          </center>
 
+          <li class="titulo-frame">Foundation</li>
+          <p>
+            Este Framework junto con Bootstrap son uno de los más utilizados en
+            la actualidad, Foundation es más sofisticado, asimismo es muy
+            flexible y fácil de personalizar. Este Framework CSS te permite
+            crear aplicaciones y páginas web adaptables a los dispositivos,
+            empresas como Mozilla, HP, Cisco, eBay, Facebook, Adobe, Disney,
+            entre otras, usan Foundation.
+          </p>
+          <center>
+            <a href="https://get.foundation/"
+              ><img
+                src="\assets\images\joel\foundation.jpg"
+                alt="foundation"
+                class="imagen-frame"
+            /></a>
+          </center>
 
-            <h3>¿Cuales son los frameworks de CSS mas conocidos?</h3>
-            <p>Dentro de CSS tenemos un grupo de frameworks que son los mas utilizados en la actualidad, los cuales son: </p>
-            <ol>
-                <li class="titulo-frame">Bootstrap</li>
-                <p>Este Framework es uno de los más populares en la actualidad, hasta la fecha de este Post se encuentra en su versión 4.4.1 pero sacarán nuevas versiones en el futuro, cuenta con características muy importantes como esquemas de color, modificadores, clases útiles para usar formularios, cards, listas, tablas, videos, carrusel, ventanas modales, tooltips, etc.</p>
-                <center><a href="https://getbootstrap.com/"><img src="\assets\images\joel\bootstrap5.png" alt="bootstrap" class="imagen-frame"></a></center>
+          <li class="titulo-frame">Tailwind CSS</li>
+          <p>
+            Este Framework es muy personalizable, te permite crear una interfaz
+            de usuario única, te permite jugar con los colores, tamaños de
+            borde, tamaño de la fuente, paddings, margenes, sombras y otros
+            elementos y propiedades. Tailwind CSS se centra en los nombre de
+            clases, se le hará difícil dominarla si no tiene nociones de CSS y
+            de la herramienta Atomic CSS y si quieres saber más de este
+            Framework, puedes visitar su sitio web.
+          </p>
 
-                <li class="titulo-frame">Foundation</li>
-                <p>Este Framework junto con Bootstrap son uno de los más utilizados en la actualidad, Foundation es más sofisticado, asimismo es muy flexible y fácil de personalizar. Este Framework CSS te permite crear aplicaciones y páginas web adaptables a los dispositivos, empresas como Mozilla, HP, Cisco, eBay, Facebook, Adobe, Disney, entre otras, usan Foundation.</p>
-                <center><a href="https://get.foundation/"><img src="\assets\images\joel\foundation.jpg" alt="foundation" class="imagen-frame"></a></center>
+          <center>
+            <a href="https://tailwindcss.com/"
+              ><img
+                src="\assets\images\joel\tailwindcss.png"
+                alt="tailwind"
+                class="imagen-frame"
+            /></a>
+          </center>
 
-                <li class="titulo-frame">Tailwind CSS</li>
-                <p>Este Framework es muy personalizable, te permite crear una interfaz de usuario única, te permite jugar con los colores, tamaños de borde, tamaño de la fuente, paddings, margenes, sombras y otros elementos y propiedades.
-                Tailwind CSS se centra en los nombre de clases, se le hará difícil dominarla si no tiene nociones de CSS y de la herramienta Atomic CSS y si quieres saber más de este Framework, puedes visitar su sitio web.</p>
+          <li class="titulo-frame">Pure CSS</li>
+          <p>
+            Este Framework es adaptable a los dispositivos y fue creado por la
+            empresa Yahoo por el año 2014, fue construido sobre la herramienta
+            Normalize CSS. A diferencia de Bootstrap, no permite crear diseños
+            fijos y es muy ligero, pesa alrededor de 3.5 Kb solamente cuando se
+            comprime y se minimiza. Este Framework cuenta con menús verticales,
+            horizontales y desplegables, asimismo con formularios, botones,
+            tablas, etc.
+          </p>
 
-                <center><a href="https://tailwindcss.com/"><img src="\assets\images\joel\tailwindcss.png" alt="tailwind" class="imagen-frame"></a></center>
+          <center>
+            <a href="https://purecss.io/"
+              ><img
+                src="\assets\images\joel\purecss.png"
+                alt="purecss"
+                class="imagen-frame"
+            /></a>
+          </center>
 
-                <li class="titulo-frame">Pure CSS</li>
-                <p>Este Framework es adaptable a los dispositivos y fue creado por la empresa Yahoo por el año 2014, fue construido sobre la herramienta Normalize CSS. A diferencia de Bootstrap, no permite crear diseños fijos y es muy ligero, pesa alrededor de 3.5 Kb solamente cuando se comprime y se minimiza. Este Framework cuenta con menús verticales, horizontales y desplegables, asimismo con formularios, botones, tablas, etc.</p>
+          <li class="titulo-frame">Bulma</li>
+          <p>
+            Este Framework CSS es open source y esta creado para trabajar con el
+            diseño de cajas flexibles o Flexbox. Bulma es muy ligero, liviano y
+            con soporte para móviles. Cuenta con mas de 200 mil usuarios hasta
+            la actualidad y se encuentra entre los Frameworks más populares del
+            área, junto con Bootstrap y Foundation, si quieres saber más de este
+            Framework, puedes visitar su sitio web.
+          </p>
 
-                <center><a href="https://purecss.io/"><img src="\assets\images\joel\purecss.png" alt="purecss" class="imagen-frame"></a></center>
+          <center>
+            <a href="https://bulma.io/"
+              ><img
+                src="\assets\images\joel\bulma.png"
+                alt="bulma"
+                class="imagen-frame"
+            /></a>
+          </center>
+        </ol>
 
-                <li class="titulo-frame">Bulma</li>
-                <p>Este Framework CSS es open source y esta creado para trabajar con el diseño de cajas flexibles o Flexbox. Bulma es muy ligero, liviano y con soporte para móviles. Cuenta con mas de 200 mil usuarios hasta la actualidad y se encuentra entre los Frameworks más populares del área, junto con Bootstrap y Foundation, si quieres saber más de este Framework, puedes visitar su sitio web.</p>
+        <hr class="division" />
 
-                <center><a href="https://bulma.io/"><img src="\assets\images\joel\bulma.png" alt="bulma" class="imagen-frame"></a></center>
-            </ol>
+        <h3>Entrevista a Håkon Wium Lie (uno de los creadores de css)</h3>
+        <p>
+          En el siguiente link, podremos hallar las recomendaciones de porque
+          deberiamos utilizar css, y ademas conocer un poco sobre la vida de
+          nada mas, ni nada menos, que el creador de CSS.
+        </p>
+        <a
+          href="https://hackernoon.com/es/una-entrevista-con-css-creator-hakon-wium-lie"
+          >Enlace al sitio</a
+        >
 
-            <hr class="division">
-
-
-            <h3>Entrevista a Håkon Wium Lie (uno de los creadores de css)</h3>
-            <p>En el siguiente link, podremos hallar las recomendaciones de porque deberiamos utilizar css, y ademas conocer un poco sobre la vida de nada mas, ni nada menos, que el creador de CSS. </p>
-            <a href="https://hackernoon.com/es/una-entrevista-con-css-creator-hakon-wium-lie">Enlace al sitio</a>
-
-            
-            
-            
-            <h3>Recursos de aprendizaje:</h3>
-            <ul>
-                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Documentación de CSS en MDN Web Docs</a></li>
-                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - Tutorial de CSS</a></li>
-            </ul>
-
-
-
-            
-        </div>
+        <h3>Recursos de aprendizaje:</h3>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS"
+              target="_blank"
+              >Documentación de CSS en MDN Web Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/css/" target="_blank"
+              >W3Schools - Tutorial de CSS</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!--::::Pie de Pagina::::::-->
     <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="index.html">
-                        <img src="\assets\images\joel\logocode.png" alt="Logo de CodeStart">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>En nuestra página, te guiamos en tu viaje para adentrarte en el apasionante mundo de la programación.</p>
-                <p>Descubre recursos valiosos y consejos útiles para comenzar tu trayecto como desarrollador. ¡Te acompañamos en cada paso del camino!</p>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
-                    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
-                    <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
-                </div>
-            </div>
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="index.html">
+              <img
+                src="\assets\images\joel\logocode.png"
+                alt="Logo de CodeStart"
+              />
+            </a>
+          </figure>
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>
+            En nuestra página, te guiamos en tu viaje para adentrarte en el
+            apasionante mundo de la programación.
+          </p>
+          <p>
+            Descubre recursos valiosos y consejos útiles para comenzar tu
+            trayecto como desarrollador. ¡Te acompañamos en cada paso del
+            camino!
+          </p>
         </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a
+              href="https://www.facebook.com"
+              class="fa fa-facebook"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              class="fa fa-instagram"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.twitter.com"
+              class="fa fa-twitter"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.youtube.com"
+              class="fa fa-youtube"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2023 <b>CodeStart</b> - Todos los Derechos Reservados.</small
+        >
+      </div>
     </footer>
-</body>
+  </body>
 </html>
